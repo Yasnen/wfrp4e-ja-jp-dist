@@ -1,0 +1,53 @@
+{
+	"label": "GM Toolkit",
+	"entries": {
+		"Add Advantage": {
+			"name": "Add Advantage"
+		},
+		"Add XP": {
+			"name": "Add XP"
+		},
+		"Check Conditions": {
+			"name": "Check Conditions"
+		},
+		"Clear Advantage": {
+			"name": "Clear Advantage"
+		},
+		"GM Toolbox": {
+			"name": "GM Toolbox"
+		},
+		"Launch Damage Console": {
+			"name": "Launch Damage Console"
+		},
+		"Make Secret Group Test": {
+			"name": "Make Secret Group Test"
+		},
+		"Pull Everyone to Scene": {
+			"name": "Pull Everyone to Scene"
+		},
+		"Reduce Advantage": {
+			"name": "Reduce Advantage"
+		},
+		"Reset Fortune": {
+			"name": "Reset Fortune"
+		},
+		"Send Dark Whispers": {
+			"name": "Send Dark Whispers"
+		},
+		"Session Turnover": {
+			"name": "Session Turnover"
+		},
+		"Set Token Vision and Light": {
+			"name": "Set Token Vision and Light"
+		},
+		"Simply d100": {
+			"name": "Simply d100"
+		},
+		"Toggle Compendium Pack Visibility": {
+			"name": "Toggle Compendium Pack Visibility"
+		},
+		"Toggle Scene Visibility and Light": {
+			"name": "Toggle Scene Visibility and Light"
+		}
+	}
+}

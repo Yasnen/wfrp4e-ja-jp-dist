@@ -1,0 +1,2648 @@
+{
+    "WFRP4E.system.title" : "ウォーハンマーRPG 第4版",
+    "WFRP4E.system.description" : "Foundry VTTでウォーハンマーRPGの残酷で危険な世界を冒険する包括的なシステム。",
+
+    "TYPES.Actor.character" : "キャラクター",
+    "TYPES.Actor.npc" : "ノンプレイヤーキャラクター",
+    "TYPES.Actor.creature" : "クリーチャー",
+    "TYPES.Actor.vehicle" : "乗り物",
+
+    "TYPES.Item.ammunition" : "矢弾",
+    "TYPES.Item.armour" : "鎧",
+    "TYPES.Item.career" : "キャリア",
+    "TYPES.Item.container" : "運搬具",
+    "TYPES.Item.critical" : "致命的負傷",
+    "TYPES.Item.disease" : "病気",
+    "TYPES.Item.injury" : "負傷",
+    "TYPES.Item.money" : "貨幣",
+    "TYPES.Item.mutation" : "混沌変異",
+    "TYPES.Item.prayer" : "祈祷",
+    "TYPES.Item.psychology" : "心理ルール",
+    "TYPES.Item.talent" : "異能",
+    "TYPES.Item.trapping" : "所持品",
+    "TYPES.Item.skill" : "技能",
+    "TYPES.Item.spell" : "呪文",
+    "TYPES.Item.trait" : "特徴",
+    "TYPES.Item.weapon" : "武器",
+    "TYPES.Item.extendedTest" : "継続テスト",
+    "TYPES.Item.cargo" : "貨物",
+    "TYPES.Item.vehicleMod" : "乗り物改造",
+    "TYPES.Item.vehicleTest" : "乗り物操縦班テスト",
+    "TYPES.Item.vehicleRole" : "乗り物役割",
+    "TYPES.Item.template" : "テンプレート",
+
+    "SHEETS.Item.ammunition" : "矢弾シート",
+    "SHEETS.Item.armour" : "鎧シート",
+    "SHEETS.Item.career" : "キャリアシート",
+    "SHEETS.Item.container" : "運搬具シート",
+    "SHEETS.Item.critical" : "致命的負傷シート",
+    "SHEETS.Item.disease" : "病気シート",
+    "SHEETS.Item.money" : "貨幣シート",
+    "SHEETS.Item.mutation" : "混沌変異シート",
+    "SHEETS.Item.prayer" : "祈祷シート",
+    "SHEETS.Item.psychology" : "心理ルールシート",
+    "SHEETS.Item.talent" : "異能シート",
+    "SHEETS.Item.trapping" : "所持品シート",
+    "SHEETS.Item.skill" : "技能シート",
+    "SHEETS.Item.spell" : "呪文シート",
+    "SHEETS.Item.trait" : "特徴シート",
+    "SHEETS.Item.weapon" : "武器シート",
+    "SHEETS.Item.extendedTest" : "継続テストシート",
+    "SHEETS.Item.cargo" : "貨物シート",
+    "SHEETS.Item.vehicleMod" : "乗り物改造シート",
+    "SHEETS.Item.vehicleTest" : "乗り物操縦班テストシート",
+    "SHEETS.Item.vehicleRole" : "乗り物役割シート",
+    "SHEETS.Item.template" : "テンプレートシート",
+
+    "SHEETS.Actor.character" : "プレイヤーキャラクターシート",
+    "SHEETS.Actor.npc" : "ノンプレイヤーキャラクターシート",
+    "SHEETS.Actor.creature" : "クリーチャーシート",
+    "SHEETS.Actor.vehicle" : "乗り物シート",
+
+    "TOKEN.MOVEMENT.Status.immobile": "移動不能",
+    "TOKEN.MOVEMENT.Status.restricted": "制限付き",
+
+    "Targets" : "標的",
+    "Trapping" : "所持品",
+    "Weapon" : "武器",
+    "Melee" : "近接攻撃",
+    "Ranged" : "遠隔攻撃",
+    "comma separated" : "カンマ区切り",
+
+    "ITEM.Sell" : "売る",
+    "Import Results" : "インポート結果",
+    "ITEM.Import": "この照会結果をインポートしますか？<br>（{number}アイテム）",
+
+    "WFRP4e House Rules": "WFRP4eハウスルール",
+    "WFRP4e Homebrew": "WFRP4e 自家製ルール",
+    "Homebrew Settings": "自家製ルール設定",
+    "Settings for common homebrew/house rules": "一般的な、自作／ハウスルールの設定。",
+    "SETTINGS.DisableTheme" : "テーマ無効化",
+    "SETTINGS.DisableThemeHint" : "既定値のFoundry UIにおけるウォーハンマーテーマを無効化する（ドキュメントシートのテーマはシート上部のシート設定から切り替え可能です）。",
+    "SETTINGS.InitRule" : "イニシアチブルール",
+    "SETTINGS.InitHint" : "戦闘で誰が先に行動するか決める方法の設定。",
+    "SETTINGS.InitDefault" : "既定値（機転の高い順、同一なら敏捷力が高い方から）",
+    "SETTINGS.InitSL" : "機転テストで成功レベルの高い順",
+    "SETTINGS.InitD10" : "d10に機転を加えた値が高い順",
+    "SETTINGS.InitD10Agi" : "d10に【機転】ボーナスと敏捷度ボーナスを加えた値が高い順",
+    "SETTINGS.AdvantageMax" : "優位の上限",
+    "SETTINGS.AdvantageMaxHint" : "優位を予め設定した上限までに制限、２、４やそれ以上。",
+    "SETTINGS.CapAdvIB" : "優位の上限を【機＋】に",
+    "SETTINGS.CapAdvIBHint" : "優位の上限をキャラクターの【機転】ボーナスとする。優位の上限を上書きする。",
+    "SETTINGS.SLMethod" : "成功レベル（SL）計算方法",
+    "SETTINGS.SLMethodHint" : "成功レベル（SL）をどのように計算するか設定",
+    "SETTINGS.SLDefault" : "標準設定",
+    "SETTINGS.SLFast" : "手早い成功レベルの算出",
+    "SETTINGS.SLDOS" : "成功度[?]",
+    "SETTINGS.FastSL" : "手早い成功レベルの算出",
+    "SETTINGS.FastSLHint" : "選択ルール：手早い成功レベルの算出でSLを決定(p152)",
+    "SETTINGS.TestsAbove100" : "100%を上回るテスト",
+    "SETTINGS.TestsAbove100Hint" : "選択ルール：100%を上回る場合のテスト(p151)を使用。100%を超えるテストに成功すると超過分10%毎に+1 SLを獲得。",
+    "SETTINGS.AutomaticSuccess": "自動成功",
+    "SETTINGS.AutomaticSuccessHint": "すべてのテストは、出目がこの数値と同じか、それ以下であれば成功する。",
+    "SETTINGS.AutomaticFailure": "自動失敗",
+    "SETTINGS.AutomaticFailureHint": "すべてのテストは、出目がこの数値と同じか、それ以上であれば失敗する。",
+    "SETTINGS.CriticalsFumblesAllTests" : "全てのテストでクリティカルとファンブル",
+    "SETTINGS.CriticalsFumblesAllTestsHint" : "テストでゾロ目を振った場合、驚異的な成功／失敗を出したものとして扱われる",
+    "SETTINGS.ExtendedTests" : "継続テストと0 SL",
+    "SETTINGS.ExtendedTestsHint" : "継続テストで+/-0を出した場合、+1/-1とする(p155)。",
+    "SETTINGS.ChannelingNegativeSL": "〈魔風交信〉と負のSL",
+    "SETTINGS.ChannelingNegativeSLHint": "〈魔風交信〉での負のSLは+0として扱う",
+    "SETTINGS.TestDialogAutoPopulate" : "判定ダイアログ自動入力",
+    "SETTINGS.TestDialogAutoPopulateHint" : "この設定は、判定ダイアログの情報を自動的に入力する。例として、「防御用」の「特性」を持つ武器を装備している場合、近接武器のロールダイアログの「SLボーナス」が自動入力される。これはアクターの手番でない場合にのみ適用される。また「正確」または「低（高）精度」の特性を持つ武器を装備している場合（アクターの手番中）にも適用される。",
+    "SETTINGS.TestDialogDefaultDifficulty" : "非戦闘中の難易度の既定値",
+    "SETTINGS.TestDialogDefaultDifficultyHint" : "戦闘中では無い場合、テストの難易度の既定値を「普通」に設定する。戦闘がない場合かチェックが外れていると、テストの既定値は「手強い」になる。いずれにせよ難易度はロールダイアログで変更することができる。",
+    "SETTINGS.NpcAverageChar" : "NPC能力値を平均値に設定",
+    "SETTINGS.NpcAverageCharHint" : "NPCに認識された種族の値を入力すると、その種族の平均値が能力値に自動設定する。",
+    "SETTINGS.PartialChannelling" : "部分的な魔風交信",
+    "SETTINGS.PartialChannellingHint" : "〈魔風交信〉の柔軟性を向上させる一般的なハウスルール。SLが呪文のCNに達する変わりに、獲得済みのSLだけ呪文のCNを減らして何時でも呪文を詠唱できる。",
+    "SETTINGS.RoundSummary" : "ラウンドサマリの表示",
+    "SETTINGS.RoundSummaryHint" : "ラウンド終了時、状態が付いている参戦者を全員表示する。",
+    "SETTINGS.StatusTurnStart" : "ターン開始時に参戦者のステータス表示をする",
+    "SETTINGS.StatusTurnStartHint" : "参戦者のターン開始時に、ステータスを表示する（状態と修正値）。このステータスメッセージは、参戦者を右クリックしたときに表示されるメッセージと同じです。",
+    "SETTINGS.FocusTurnStart" : "ターン開始時にフォーカス",
+    "SETTINGS.FocusTurnStartHint" : "ターン開始時に手番のトークンにカメラがパンされる。",
+    "SETTINGS.HideTestData" : "テストのデータを隠す",
+    "SETTINGS.HideTestDataHint" : "GMのテストではプレイヤーにNPCのセンシティブなデータを表示しない。",
+    "SETTINGS.PlayerBrowser" : "プレイヤーのブラウザ使用",
+    "SETTINGS.PlayerBrowserHint" : "プレイヤーにアイテムブラウザの使用を許可。",
+    "SETTINGS.AdvantageBonus" : "優位ボーナス",
+    "SETTINGS.AdvantageBonusHint" : "優位で得られるボーナス修正値。",
+    "SETTINGS.UIACrits" : "『武器を掲げよ！』の致命的負傷の修正値を使用する",
+    "SETTINGS.UIACritsHint" : "『武器を掲げよ！』のp81に記述されている致命的負傷の修正値",
+    "SETTINGS.UIACritsMod" : "致命的負傷の修正値の量",
+    "SETTINGS.UIACritsModHint" : "致命的負傷の量を変更する（『武器を掲げよ！』のp81に記載）",
+    "SETTINGS.UIAShields" : "『武器を掲げよ！』の「シールド」の特性",
+    "SETTINGS.UIAShieldsHint" : "『武器を掲げよ！』のp90で定義されている『「シールド」の特性』の調整",
+    "SETTINGS.UIABleeding" : "『武器を掲げよ！』の「出血状態」",
+    "SETTINGS.UIABleedingHint" : "『武器を掲げよ！』のP80で定義されている「出血状態」のアップデート",
+    "SETTINGS.WeaponLength" : "武器の間合い",
+    "SETTINGS.WeaponLengthHint" : "武器の間合いによる修正値を使用（ルール、P.297）。",
+    "SETTINGS.SoundEffects" : "効果音パス",
+    "SETTINGS.SoundEffectsHint" : "状況に合わせた様々な状況を追加する、効果音ファイルのパスを設定する。",
+    "SETTINGS.CustomCursor" : "ウォーハンマーカーソル",
+    "SETTINGS.CustomCursorHint" : "ウォーハンマーカーソルを使用する（更新して適用、「systems/wfrp4e/ui/cursors」にカーソルファイルが必要）。",
+    "SETTINGS.AutoFillAdv" : "優位の自動反映",
+    "SETTINGS.AutoFillAdvHint" : "ロールダイアログで「修正値」の欄に現在の優位で得られるボーナスが自動的に入力される。ハウスルールで優位の使い方を変えている場合は無効にする。",
+    "SETTINGS.LimitEquippedWeapons" : "武器装備の制限",
+    "SETTINGS.LimitEquippedWeaponsHint" : "武器の装備個数の制限－両手武器を１つ、あるいは片手武器を２つ。装備できるのは両手武器1つ、あるいは片手武器2つだけです。",
+    "SETTINGS.ThrowMoney" : "投げ銭",
+    "SETTINGS.ThrowMoneyHint" : "（要Dice So Nice）「/pay」や「/credit」を使った支払い時にコインを飛ばす。",
+    "SETTINGS.RangeAutoCalculation" : "距離による修正値の自動計算",
+    "SETTINGS.RangeAutoCalculationHint" :  "トークン間の距離に基づき、ロールダイアログに修正値を予め入力する。",
+    "SETTINGS.PlayerExperienceEditing" : "プレイヤーの経験値修正",
+    "SETTINGS.PlayerExperienceEditingHint" :  "プレイヤーに自分の経験値の値を手動で変更することを許可する。",
+    "SETTINGS.UnofficialGrimoire" : "非公式な魔導書の魔術",
+    "SETTINGS.UnofficialGrimoireHint" : "非公式な魔導書（Unofficial Grimoire）に触発されたルール、詳細はWiki参照：<a href='https://github.com/moo-man/WFRP4e-FoundryVTT/wiki/Homebrew-Rules#magic-insiperd-by-unofficial-grimoire'>ここ</a>",
+    "SETTINGS.UseGroupAdvantage" : "グループ優位を使用する",
+    "SETTINGS.UseGroupAdvantageHint" : "プレイヤーと敵の両方とも優位をグループ化する（『武器を掲げよ！』に記載されている）。アクターが「プレイヤー」の仲間になるには、アクターがプレイヤーが所有しているか、トークンの性質が「友好的」である必要があり、そうでない場合は「敵」グループとして扱われる。",
+    "Configure": "設定",
+
+    "SETTINGS.TABLE_species" : "種族",
+    "SETTINGS.TABLE_minormis" : "小誤発動",
+    "SETTINGS.TABLE_majormis" : "大誤発動",
+    "SETTINGS.TABLE_mutatephys" : "肉体堕落",
+    "SETTINGS.TABLE_mutatemental" : "精神堕落",
+    "SETTINGS.TABLE_oops" : "やっちまった！",
+    "SETTINGS.TABLE_wrath" : "神々の天罰",
+    "SETTINGS.TABLE_doom" : "運命付け",
+    "SETTINGS.TABLE_critarm" : "致命的負傷：腕部",
+    "SETTINGS.TABLE_critleg" : "致命的負傷：脚部",
+    "SETTINGS.TABLE_crithead" : "致命的負傷：頭部",
+    "SETTINGS.TABLE_critbody" : "致命的負傷：胴体",
+
+    "SETTINGS.Moo": "Moo Manのハウスルール",
+    "SETTINGS.MooHint": "私がゲームを改善する可能性があると信じているメカニクスの変更点詰め合わせ。なお、ここに挙げたものは私が使っているハウスルールの完全なリストではなく、コードで適用可能なものだけです。<br><br>リスト全体はこちらの <a href='https://github.com/moo-man/WFRP4e-FoundryVTT/wiki/Homebrew-Rules'>Wikiページ</a> を参照してください。<br> これらのルールは、一般的にすべて一緒に使うことを意図していることに注意してください。仕組みについての議論は<a href='https://github.com/moo-man/WFRP4e-FoundryVTT/discussions/categories/moo-s-house-rules'>Github Discussion Board</a>をお使いください。",
+    "SETTINGS.MooAdvantage" : "優位",
+    "SETTINGS.MooAdvantageHint" : "優位毎に+10の代わりに<b>テスト成功時</b>に優位毎にSL+1します",
+    "SETTINGS.MooDifficulty" : "難易度オプション",
+    "SETTINGS.MooDifficultyHint" : "難易度オプションを対称にします",
+    "SETTINGS.MooCritsFumbles" : "MooCritsFumbles",
+    "SETTINGS.MooCritsFumblesHint" : "MooCritsFumblesHint",
+    "SETTINGS.MooConditions" : "状態変更",
+    "SETTINGS.MooConditionsHint" : "各状態変更のテキスト変更",
+    "SETTINGS.MooConditionTriggers" : "状態変更のトリガ",
+    "SETTINGS.MooConditionTriggersHint" : "状態変更をラウンド終了時ではなく、キャラクター行動終了時にする",
+    "SETTINGS.MooCritModifiers" : "致命的負傷表の修正値",
+    "SETTINGS.MooCritModifiersHint" : "「耐久値」が0を超えて失われた場合、君の【頑健力】ボーナスと失う「耐久値」の差1点に付きクリティカル表をロール結果に10を加算または減算。<br><br>例：「耐久値」が4、【頑健力】50で、ダメージを12受けた。「耐久値」は0を超えて8失った。【頑＋】が5あるので、この失った「耐久値」によってクリティカル表のロール結果に＋30される。<br><br>「耐久値」が４、【頑健力】50で、ダメージを5受けた。「耐久値」は0を超えて1失った。【頑＋】が5あるので、クリティカル表のロール結果に-40される。",
+    "SETTINGS.MooSLDamage" : "対抗ダメージ計算",
+    "SETTINGS.MooSLDamageHint" : "対抗ダメージの計算を攻撃側と防御側の差分ではなく攻撃側のSLのみに基づいて行う。",
+    "SETTINGS.MooRangedDamage" : "射撃ダメージ修正",
+    "SETTINGS.MooRangedDamageHint" : "射撃武器のダメージはテストの修正値の10の位を差し引く。20=-2ダメージ、-30=+3ダメージ。",
+    "SETTINGS.MooMagicAdvantage" : "魔法の優位変更",
+    "SETTINGS.MooMagicAdvantageHint" : "優位は〈言語：魔法語〉だけでなく〈魔風交信〉にも適用される。",
+    "SETTINGS.MooOvercasting" : "超過発動の支出",
+    "SETTINGS.MooOvercastingHint" : "超過発動はSLを消費するのでダメージ呪文の場合、超過発動を使うごとにダメージを-2する。",
+    "SETTINGS.MooCatastrophicMiscasts" : "破滅的誤発動表",
+    "SETTINGS.MooCatastrophicMiscastsHint" : "破滅的誤発動表を追加し、既存の表を変更する。さらに〈言語：魔法語〉〈魔風交信〉テストで100を出すと誤発動表が1レベル上昇する。",
+    "SETTINGS.MooCriticalChannelling" : "魔風交信のクリティカル",
+    "SETTINGS.MooCriticalChannellingHint" : "魔風交信がクリティカル成功すると、その呪文のCNに等しいSLが加算される。このSLは超過発動に使うことはできず、テストで発生したSLのみが使われる。テストに失敗した場合小誤発動が発生するか、大誤発動に発展する",
+    "SETTINGS.MooCastAfterChannelling" : "魔風交信後の呪文発動",
+    "SETTINGS.MooCastAfterChannellingHint" : "魔風交信後に呪文発動する際、失敗すると呪文発動は中断する。テスト成功時は魔風交信のSLを維持することができる。",
+    "SETTINGS.MooPenetrating" : "貫通",
+    "SETTINGS.MooPenetratingHint" : "貫通のオプションとして貫通Xという値を設定可能にする。武器ダメージはAPx分を無視する（何も指定しない時の規定値は貫通2）。",
+    "SETTINGS.MooQualities" : "新品質",
+    "SETTINGS.MooQualitiesHint" : "'シンプル'と'モメンタム'品質を追加",
+    "SETTINGS.MooShieldAP" : "盾AP",
+    "SETTINGS.MooShieldAPHint" : "盾APとクリティカル軽減（下記参照）は、防御テストに成功した場合のみ適用されます。",
+    "SETTINGS.MooCriticalMitigation" : "クリティカル軽減",
+    "SETTINGS.MooCriticalMitigationHint" : "(鎧で受け止める代わりに）致命的負傷を受けたとき、その場所のAPごとに、致命的負傷のロールが10減少する。出目が負になった場合、致命傷は与えられない。致命的負傷の解決後、アーマーの最外層はダメージを受け、そのAPが1減少する。",
+    "SETTINGS.MooRangeBands" : "射程範囲修正",
+    "SETTINGS.MooRangeBandsHint" : "遠隔攻撃武器は射程範囲に最適な距離が有る。目標とするクリーチャーがこの範囲に居ない場合、何段階離れているかに応じたペナルティが発生する。詳細は上述のwikiを参照。",
+    "SETTINGS.MooSizeDamage" : "サイズとダメージ計算",
+    "SETTINGS.MooSizeDamageHint" : "サイズによるダメージボーナスは相対差ではなく絶対差に基く（上記リンク先のwikiページ参照）。",
+    "SETTINGS.MooHomebrewItems" : "アイテム変更",
+    "SETTINGS.MooHomebrewItemHint" : "（上記の適用を含む）各種アイテムを変更する。** 警告: 新規ゲームで上記ルールのほとんどが含まれている場合のみ推奨 **",
+    "SETTINGS.useWoMOvercast" : "『魔力の風』の超過発動",
+    "SETTINGS.useWoMOvercastHint" : "『魔力の風』サプリメントの23ページに記載されている超過発動のるルールを使用する。",
+    "SETTINGS.useWoMChannelling" : "『魔力の風』の魔風交信",
+    "SETTINGS.useWoMChannellingHint" : "『魔力の風』サプリメントの22ページに記載されている魔風交信のルールを使用する。",
+    "SETTINGS.useWoMInfluences" : "『魔力の風』の悪意のある影響",
+    "SETTINGS.useWoMInfluencesHint" : "『魔力の風』サプリメントのP22ページに記載されている悪意のある影響ルールを使用する。",
+    "SETTINGS.ChannellingIngredients" : "魔風交信での具材",
+    "SETTINGS.ChannellingIngredientsHint" : "発動テストと同様に魔風交信テストでも具材の恩恵を受けられるようにする。",
+    "SETTINGS.Menu" : {
+        "TableSettings" : "ロール表設定",
+        "TableSettingsLabel" : "ロール表の設定を変更",
+        "TableSettingsHint" : "同じキーが存在する場合にどのロール表を使うか設定する。",
+
+        "HouseRules" : "ハウスルール",
+        "HouseRulesLabel" : "ホームブリュー設定",
+        "HouseRulesHint" : "一般的なホームブリュー／ハウスルールの設定"
+    },
+
+    "MOO.Prone": "<br><br><b>Mooのハウスルール</b>：遠隔攻撃を受けた際、一段階遠い間合いと見なされる。",
+    "MOO.Broken": "恐怖、敗北、パニック、その他、自分が死んでしまうと思い込んでしまう。自分のターンでは移動とアクションを、敵の視界外で上手く隠れられる場所に逃げ込むために使うことしかできなくなり、アクションと技能はより上手く隠れるために使おうとするためであれば使える。また、逃げも隠れもしない全てのテストに-10のペナルティを受けます。<br><br>敵と交戦中の場合、戦意喪失状態から回復するためのテストを行うことはできません。各ラウンドの終了時に交戦状態では無い場合、戦意喪失状態を取り除くための冷静さテストを試みることができ、SL分の戦意喪失状態を追加で取り除くことができる。難易度は君が現在置かれている状況によって変わる：君の血を求めて叫び続けるディーモンから3歩しか離れていないとき（超困難-30）よりも、危険から離れた路地で樽の後ろに隠ることが出来ればより簡単（普通+20）に立ち直ることが出来る。<br><br>敵の視界外に隠れて1ラウンド丸々経過した場合、戦意喪失状態を1つ取り除く。<br><br><strike>戦意喪失状態がすべて解除されると、疲労状態を1獲得する</strike>。",
+    "MOO.Bleeding": "ひどい出血。ラウンド終了時、すべての修正を無視して耐久値を1失う。更に「膿み傷」、「軽度の感染症」または「血液腐れ病」の抵抗テストに-10のペナルティを受ける。「耐久値」が 0 になったら、耐久テスト(1つの出血状態につき-10 のペナルティ)を行い、失敗すると@Condition[気絶状態]になる、出血でダメージを受けるたびにこのテストを行う必要がある。ラウンド終了時に「耐久値」が0であれば、@Condition[気絶状態] であるかどうかに関わらず、出血状態1つにつき10％の確率で死亡する。つまり、出血状態が3つあれば、0～30の出目で失血により死亡することになります。このダイスでゾロ目をロールした場合、君の傷は少し固まり、出血状態が1減る。出血状態がすべて取り除かれるまで、君は意識を取り戻すことができない（負傷を参照）<br><br>出血状態は以下の方法で取り除くことができる：治癒テストに成功し、SLごとに追加の出血状態を取り除く、または傷を癒す呪文や祈りで、傷を癒すごとに状態を1つ取り除ける。<br><br>すべての出血状態が取り除かれたら、@Condition[疲労状態] を1つ得る。",
+    "MOO.Penetrating": "装甲の貫通力が高い武器。(Rating)分APを無視する。",
+    "MOO.Simple": "Simple weaponsは〈近接攻撃 (基本武器類)〉でペナルティなしで使用出来る。",
+    "MOO.Momentum": "これらの武器は重く、十分に力を発揮するには勢いを付ける必要がある。使用者に優位がある場合、特定の特性が得られる。",
+    "MOO.Items": "自家製ルールのアイテム変更を事典に適用した。詳細はコンソールを参照。。",
+    "MOO.CriticalChanelling": "魔風交信クリティカルのSLボーナス",
+    "MOO.FailedCast": "発動失敗を魔風交信の中断と見なす。",
+
+    "SHEET.Close" : "閉じる",
+    "SHEET.Configure" : "シート設定",
+    "SHEET.Token" : "トークン設定",
+    "SHEET.Import" : "インポート",
+    "SHEET.Post" : "チャットに投稿",
+    "SHEET.NestedWarning" : "4段階を超えるネストされた運搬具は追加できません。",
+    "SHEET.LocationWarning" : "場所を変更する前に運搬具を取り外してください。",
+    "SHEET.SkillMissingWarning" : "君はこの技能を持っていない",
+    "SHEET.RequiredTrappingsError" : "このキャリアの必須装備をすべて揃えていなければ、収入技能ロールできません！",
+    "SHEET.NonCurrentCareer" : "君は現在このキャリアに就いていない。",
+    "SHEET.AddSkillTitle" : "キャリア技能の追加",
+    "SHEET.AddSkillPrompt" : "この技能を追加しますか？",
+    "SHEET.AddTalentTitle" : "キャリア異能の修得",
+    "SHEET.AddTalentPrompt" : "この異能を追加しますか？（100XP消費）",
+    "SHEET.RefundXPTitle" : "Add XP Back?",
+    "SHEET.RefundXPPrompt" : "経験点を戻しますか？",
+    "SHEET.CareerSkill" : "キャリア技能の修正",
+    "SHEET.CareerSkillPrompt" : "現在のキャリアにある技能の専門分野を変更しようとしています。この変更をキャリアにも適用しますか？",
+    "SHEET.CareerSkillNotif" : "{career}の{oldName}を{newName}に変更しました",
+    "SHEET.LoadingSkills" : "技能の読み込み中",
+    "SHEET.SkillSpecialization" : "技能の専門分野",
+    "SHEET.SkillSpecializationText" : "専門分野を選択してください、選択肢が無い場合、手動入力してください。",
+    "SHEET.SkillSpecializationEnter" : "技能の専門分野を入力",
+    "SHEET.SortItems" : "項目の並べ替え",
+    "SHEET.ArmourDamaged" : "鎧が1ダメージを受けた",
+    "SHEET.ArmourRepaired" : "鎧を1修理した",
+    "SHEET.ThrowingAmmoError" : "矢弾タイプの「投擲武器類」は「投擲武器類」を矢弾として使用するために用意されたものです。投擲武器そのものは通常「なし」のカテゴリーを使用します。",
+    "SHEET.GroupAdvantage" : "グループ優位",
+    "SHEET.Expand" : "開く",
+    "SHEET.Collapse" : "折畳む",
+    "SHEET.TemporaryEffectHint" : "アクティブ効果はアクターの所持品から発生しています。操作はアクターシートから行えます",
+    "SHEET.ExperienceLog" : "経験点の記録",
+    "Sheet.RollIncome" : "収入獲得",
+    "SHEET.ItemSheetEditableDisabled" : "Editing this Item has been disabled while under the effects of {effects}. Disable or delete these effects on the owning Actor.===(941D054)===",
+    "SHEET.AlterName" : "Alter Name===(941D055)===",
+    "SHEET.Prepend" : "Prepend===(941D056)===",
+    "SHEET.Append" : "Append===(941D057)===",
+    "SHEET.SkillName" : "Skill Name===(941D058)===",
+    "SHEET.TalentName" : "Talent Name===(941D059)===",
+    "SHEET.SpecialisationAbbrev" : "Spec.===(941D060)===",
+    "SHEET.TemplateSpecialisationTooltip" : "How many specialisations to pick (e.g. \"Melee\" and \"2\" corresponds to \"Melee (any two)\")===(941D061)===",
+    "SHEET.TemplateGroupTooltip" : "Providing a group number will give the option to choose between any other Item with the same group number.===(941D062)===",
+
+    "LOG.MemorizedSpell" : "習得：{name}",
+    "LOG.GainPrayer" : "習得：{name}",
+    "LOG.CareerChange": "キャリア変更：{career}",
+
+    "SHEET.MeleeWeaponHeader" : "近接武器",
+    "SHEET.RangedWeaponHeader" : "遠隔武器",
+    "SHEET.ArmourAP" : "鎧のAP",
+    "SHEET.ArmourPenalties" : "メイルやプレートのペナルティ",
+    "SHEET.ShieldAP" : "盾のAP",
+    "SHEET.TB" : "【頑健力】ボーナス",
+    "SHEET.CreateItem" : "アイテム作成",
+    "SHEET.PostItem" : "内容をチャットに表示",
+    "SHEET.EditItem" : "項目を編集",
+    "SHEET.Dropdown" : "内容をドロップダウン表示",
+    "SHEET.DeleteItem" : "項目を削除",
+    "SHEET.RemoveItem" : "アイテムを取り除く",
+    "SHEET.Encumbrance" : "荷重",
+    "SHEET.EncCount" : "荷重点",
+    "SHEET.MaxEnc" : "荷重３倍を超過",
+    "SHEET.VeryEnc" : "荷重上限の３倍まで",
+    "SHEET.Encumbered" : "荷重上限の２倍まで",
+    "SHEET.UnEnc" : "荷重上限まで：ペナルティなし",
+    "SHEET.EncAbbrev" : "重量",
+    "SHEET.QtyAbbrev" : "数",
+    "SHEET.CountEncOn" : "クリックするとこの運搬具の荷重を加算しません（二輪馬車など）",
+    "SHEET.CountEncOff" : "クリックするとこの運搬具の荷重を加算します（背負っている背負い袋の様に）",
+    "SHEET.CountEncTT" : "この荷重をキャラクターの荷重として追加します (運搬していない場合はチェックを外します｡二輪馬車など)",
+    "SHEET.PettySpell" : "初歩呪文",
+    "SHEET.LoreSpell" : "魔法体系呪文",
+    "SHEET.CN" : "発動値",
+    "SHEET.SL" : "《魔風交信》の成功レベル",
+    "SHEET.CareerToolTip": "「現在」にチェックしたキャリアがこのエリアに入力される－地位を左右クリックでボーナスやペナルティを反映する。",
+    "SHEET.CharAbbrev": "能力値",
+    "SHEET.AdvAbbrev": "成長",
+    "SHEET.BonusChar": "選択した能力値のボーナスがダメージに加算",
+    "SHEET.Offhand": "逆手",
+    "Off-hand": "逆手",
+    "Loaded": "装填済",
+    "SHEET.Qualities": "特", 
+    "SHEET.Flaws": "難",
+    "SHEET.Or": "または",
+    "SHEET.WeaponDamage": "武器の破損",
+    "SHEET.ArmourCurrent": "現在値",
+    "SHEET.ArmourMax": "最大",
+    "SHEET.NewExtendedTest": "新規継続テスト",
+    "SHEET.NewTrapping": "新規所持品",
+    "SHEET.NewCritical": "新規クリティカル",
+    "SHEET.NewInjury": "新規負傷",
+    "SHEET.DoesDamage": "ダメージ発生",
+    "SHEET.DamageValue": "ダメージ値",
+    "SHEET.Dismount": "乗騎から降りる",
+    "SHEET.RemoveMount": "乗騎を取り除く",
+    "SHEET.RemoveAttacker": "攻撃者を取り除く",
+    "SHEET.CannotDeleteItemEffect" : "これはアクターのアイテムの効果です。所持品のシートからアイテムかアイテムの効果を削除してください。",
+    "SHEET.CannotDeleteCrewEffect" : "この効果はアクターが乗車している車両から発生している、車両から削除しなければならない。",
+    "SHEET.Attacker" : "攻撃者",
+    "SHEET.LocationAP" : "Location AP===(941D064)===",
+    "SHEET.AppliedTemplates" : "Applied Templates===(941D065)===",
+    "SHEET.NewSkillHint" : "Enter name of new Skill and select its Characteristic===(941D066)===", 
+
+    "ACTOR.BasicSkillsTitle" : "基本技能を追加しますか？",
+    "ACTOR.BasicSkillsPrompt": "基本技能を追加しますか？",
+    "ACTOR.PreparationError" : "アクターデータ準備で何らかの問題が発生しました：",
+    "ACTOR.AddBasicSkills" : "基本技能を追加します",
+    "ACTOR.ImportStatBlock" : "スタットブロックのインポート",
+    "ACTOR.SpentExp" : "{reason} に {amount} XPを消費",
+    "ACTOR.AdvancementError": "経験値が不足しているため、「{item}」を{action}できません",
+    "ACTOR.ErrorImprove": "成長",
+    "ACTOR.ErrorAdd": "追加",
+    "ACTOR.ClearMount" : "騎乗をクリア",
+
+    "ITEM.PenniesValue" : "価値 (d)",
+    "ITEM.MeleeDamage" : "Melee Damage===(z007)===",
+    "ITEM.RangedDamage" : "Ranged Damage===(z008)===",
+    "ITEM.TwoHanded" : "両手持ち",
+    "ITEM.WeaponDamaged": "<b>武器は {damage}点破損している</b>",
+    "ITEM.ShieldDamaged" : "<b>破損</b>：AP {damage}点減少",
+    "ITEM.TrappingType" : "所持品タイプ",
+    "ITEM.MutationType" : "混沌変異の種類",
+    "ITEM.CountOwnerEnc" : "所有者の荷重に含める",
+    "ITEM.ArmourType" : "鎧分類",
+    "ITEM.AmmunitionType" : "矢弾タイプ",
+    "ITEM.AmmunitionGroup" : "矢弾グループ",
+    "ITEM.ConsumesAmmo" : "矢弾の消費",
+    "ITEM.ConsumeAmmoTT" : "矢弾グループが「なし」の場合はこのアイテムを消費する（所持数が減る）。",
+    "ITEM.CountEnc" : "荷重に加算する",
+    "ITEM.SkillModifier" : "技能テストの修正値",
+    "ITEM.SkillModifierTT" : "技能テストで「ボーナス／ペナルティ」ボックスに修正値を表示",
+    "ITEM.PrayerType" : "祈祷の種類",
+    "ITEM.TalentMax" : "Talent Max",
+    "ITEM.Custom" : "カスタム",
+    "ITEM.TalentTests" : "Talent Tests",
+    "ITEM.IsGrouped" : "専門化",
+    "ITEM.CostModifier" : "XP修正値",
+    "ITEM.CostModifierTT" : "技能を成長させる際の経験値の修正値",
+    "ITEM.ReloadingWeapon" : "{weapon}の再装填",
+    "ITEM.Reloading" : "再装填",
+    "ITEM.CreateReloadTest" : "継続テスト「{weapon}の再装填」を作成",
+    "ITEM.ReloadError" : "Could not find associated reloading Extended Test===(z009)===",
+    "ITEM.ReloadFinish" : "再装填の継続テストを完了",
+    "ITEM.VehicleMod" : "改造",
+    "ITEM.ModeOverride" : "遠近切替",
+    "ITEM.ModeOverrideTT" : "通常、武器は武器の分類によって近接か遠隔攻撃が決まりますが、ここで上書きできます",
+    "ITEM.CargoType" : "貨物タイプ",
+    "ITEM.UnitPrice" : "単価",
+    "ITEM.CargoQuality" : "品質",
+    "ITEM.Origin" : "産地",
+    "ITEM.OptimalRange" : "最適射程",
+    "ITEM.Ritual" : "儀式",
+    "ITEM.RandomVortex" : "不規則な渦",
+    "ITEM.Standard" : "標準",
+    "ITEM.TestSkill" : "テスト技能",
+    "ITEM.Roles" : "役割",
+    "ITEM.VitalRoles" : "重要な役割",
+    "ITEM.LearningXP" : "Learning XP===(941D068)===",
+    "as weapon": "武器に従う",
+    "half weapon": "武器の半分",
+    "third weapon": "武器の1/3",
+    "quarter weapon": "武器の1/4",
+    "twice weapon": "武器の二倍",
+
+    "Basic" : "基本",
+    "Advanced" : "上級",
+    "Qualities" : "特性",
+    "QualitiesOr": "または",
+    "SkillsOr": "または",
+    "Flaws" : "難点",
+    "Location" : "部位",
+    "Penalty" : "ペナルティ",
+    "Penalties" : "Penalties===(z010)===",
+    "PenaltyHint" : "複数指定する場合はカンマ「,」で区切る（例：-20 隠密, -10 知覚）",
+    "Max" : "最大修得回数",
+    "Tests" : "テスト",
+    "Specification" : "明細事項",
+    "Price" : "価格",
+    "Encumbrance" : "荷重",
+    "Availability" : "入手可能度",
+    "Special" : "特殊",
+    "Special Ammo" : "特殊矢弾",
+    "Specialization" : "専門分野",
+    "Reach" : "間合い",
+    "Contraction" : "罹患",
+    "Incubation" : "潜伏期間",
+    "IncubationPlaceholder" : "潜伏期間についての説明",
+    "Duration" : "持続時間",
+    "DurationPlaceholder" : "持続時間についての説明",
+    "Diagnosed" : "診断済み",
+    "DiagnosedTT" : "プレイヤーに病気を見せるか切り替える",
+    "Symptoms" : "症状",
+    "Permanent" : "不治",
+    "Status" : "地位",
+    "Status Tier" : "地位の階級",
+    "Status Standing" : "地位の段位",
+    "Class" : "クラス",
+    "Group" : "分類",
+    "Personal Details" : "Personal Details===(z011)===",
+    "Characteristics" : "能力値",
+    "Characteristic" : "能力値",
+    "Main" : "主要",
+    "Skills" : "技能",
+    "Skill" : "技能",
+    "Skill Type" : "技能種別",
+    "Talents": "異能",
+    "Talent": "異能",
+    "Times Taken": "修得回数",
+    "Combat": "戦闘",
+    "Magic": "魔法",
+    "Religion": "宗教",
+    "Trappings": "所持品",
+    "Notes": "注記",
+    "Income" : "収入",
+    "Wounds" : "耐久値",
+    "RestRecover" : "休息と耐久値の回復",
+    "Modifier" : "修正値",
+    "Modifiers" : "修正値",
+    "Range" : "射程",
+    "Target" : "目標",
+    "Damage" : "ダメージ",
+    "Ammunition" : "矢弾",
+    "Magic Missile" : "射撃系呪文",
+    "Lore" : "魔法体系",
+    "Lore Effect" : "魔法体系の効果",
+    "SPELL.Lore": "魔法体系：",
+    "CN" : "CN",
+    "SL" : "SL",
+    "SuccessLevels" : "成功レベル",
+    "Wearable" : "着用可",
+    "Choose" : "選択",
+    "Roll" : "ロール",
+    "Advantage" : "優位",
+    "None" : "なし",
+    "NoneAmmo" : "なし",
+    "Free" : "無償",
+    "Armour" : "鎧",
+    "Mutation" : "混沌変異",
+    "Mutations" : "混沌変異",
+    "Injury" : "負傷",
+    "Injuries" : "負傷",
+    "Criticals" : "致命的負傷",
+    "Equipped" : "装備済",
+    "Worn" : "着用",
+    "Blessing" : "祝福",
+    "Miracle" : "奇跡",
+    "Physical" : "肉体",
+    "Mental" : "精神",
+    "Success" : "Success===(z012)===",
+    "Cast" : "発動",
+    "Channel" : "魔風交信",
+    "Test" : "テスト",
+    "TestPlaceholder" : "例：「武器技術度」、「遠隔攻撃 (黒色火薬武器類)」、「肉体抵抗」",
+    "SkillTest" : "{skill}テスト",
+    "CharTest" : "{char}テスト",
+    "WeaponTest" : "武器テスト",
+    "CastingTest" : "発動テスト",
+    "ChannellingTest" : "魔風交信テスト",
+    "PrayerTest" : "祈念テスト",
+    "Opposed" : "対抗",
+    "Failure" : "Failure===(z013)===",
+    "Astounding" : "Astounding===(z014)===",
+    "Impressive" : "Impressive===(z015)===",
+    "Marginal" : "Marginal===(z016)===",
+    "Critical" : "クリティカル",
+    "Critical Wound" : "致命的負傷",
+    "Critical Wounds" : "致命的負傷",
+    "Experience" : "経験点",
+    "Spent" : "消費",
+    "Corruption" : "堕落ポイント",
+    "Fumble" : "ファンブル",
+    "Misfire" : "暴発",
+    "Unopposed" : "対抗テスト無し",
+    "Right" : "右",
+    "Left" : "左",
+    "Head" : "頭部",
+    "Body" : "胴体",
+    "Right Arm" : "右腕",
+    "Left Arm" : "左腕",
+    "Primary Arm" : "利き手",
+    "Secondary Arm" : "逆手",
+    "Right Leg" : "右脚",
+    "Left Leg" : "左脚",
+    "Arms" : "腕部",
+    "Legs" : "脚部",
+    "Spell" : "呪文",
+    "Total" : "合計",
+    "Carries" : "運搬",
+    "Memorized" : "習得済",
+    "Initial" : "初期値",
+    "Advances" : "成長",
+    "Current" : "現在",
+    "Complete" : "満了",
+    "Movement" : "移動力",
+    "Move" : "移動力",
+    "Walk" : "歩行移動",
+    "Run" : "走行移動",
+    "Swim" : "水泳",
+    "Fortune" : "幸運Ｐ",
+    "Fate" : "運命点",
+    "Resolve" : "決意Ｐ",
+    "Resilience" : "執念点",
+    "Career" : "キャリア",
+    "Careers" : "キャリア",
+    "Level" : "レベル",
+    "Biography" : "背景",
+    "Personal Ambitions" : "大望",
+    "Party Ambitions" : "パーティの大望",
+    "Short Term" : "短期的",
+    "Long Term" : "長期的",
+    "Motivation" : "動機",
+    "Psychology" : "心理ルール",
+    "Disease" : "病気",
+    "Diseases" : "病気",
+    "GM Notes" : "GMメモ",
+    "Blessed By" : "神の祝福",
+    "Sin" : "原罪点",
+    "Species" : "種族",
+    "Subspecies" : "種族詳細",
+    "Gender" : "性別",
+    "Career Level" : "キャリアレベル",
+    "Career Group" : "キャリアグループ",
+    "Career Class" : "キャリアクラス",
+    "Career Tier" : "キャリア・ティア",
+    "Earning Skill" : "収入技能",
+    "Required Trappings" : "必要な所持品",
+    "Age" : "年齢",
+    "CharacterHeight" : "身長",
+    "Weight" : "体重",
+    "Hair Colour" : "髪の色",
+    "Eye Colour" : "瞳の色",
+    "Distinguishing Mark" : "外見的特徴",
+    "Star Sign" : "星座",
+    "Basic Skills" : "基本技能",
+    "Grouped & Advanced Skills" : "グループ技能と上級技能",
+    "Creature Traits" : "クリーチャー特徴",
+    "Creature Trait" : "クリーチャー特徴",
+    "Creature Overview" : "クリーチャー概要",
+    "Trained Skills" : "訓練された技能",
+    "Traits" : "特徴",
+    "Randomize Attributes" : "特性の乱数化",
+    "RANDOMIZER.C": "C",
+    "RANDOMIZER.S": "S",
+    "RANDOMIZER.T": "T",    
+    "Character Name" : "キャラクター名",
+    "Extra" : "追加ポイント",
+    "Exp" : "XP",
+    "Details" : "詳細",
+    "Attributes" : "特性",
+    "Reroll" : "Reroll",
+    "Description" : "説明",
+    "Overcast" : "超過発動",
+    "Other" : "その他",
+    "Category" : "分類",
+    "God" : "神",
+    "Value" : "値",
+    "AoE" : "効果範囲",
+    "Radius" : "半径",
+    "Extendable Duration" : "持続時間の延長",
+    "Extendable AoE" : "効果範囲を広げる",
+    "Extendable AoE Tooltip" : "超過発動を消費して効果範囲を広げることが出来る",
+    "ExtDurHint" : "この呪文が終了する時、君は【意志力】テストに功することで、「持続時間」を＋1ラウンド延長することができる。",
+    "Rollable" : "ロール可能",
+    "Roll Characteristic" : "ロールする能力値",
+    "Bonus Characteristic" : "ボーナス能力値",
+    "Weapon Group" : "武器の分類",
+    "Type" : "種類",
+    "Container" : "運搬具",
+    "Money" : "貨幣",
+    "Prayer" : "祈祷",
+    "Trait" : "特徴",
+    "Protects" : "防御部位",
+    "AllowXPSpending" : "成長マークを有効",
+    "TooltipAllowXPSpending" : "現在のキャリアとは関係なく成長マークを表示し、経験値計算を自動化することが出来ます。",
+    "TooltipSkillModifier" : "技能に任意のボーナスまたはペナルティを追加します。",
+    "Extended Test" : "継続テスト",
+    "Extended Tests" : "継続テスト",
+    "Target SL" : "SLの目標値",
+    "Hide Test" : "テストを隠す",
+    "Hide Progress" : "進捗を隠す",
+    "Negative SL Possible" : "負の進捗を許可",
+    "Failing Decreases Progress" : "失敗時は進捗が減少",
+    "Effects" : "効果",
+    "Mount": "騎乗",
+    "Corruption&Mutation": "堕落と混沌変異",
+    "Social Group": "Social Group",
+    "the associated Threat": "the associated Threat",
+    "Sense": "Sense",
+    "the Terrain": "the Terrain",
+    "chosen Lore": "chosen Lore",
+    "Charging": "突撃",
+    "Players": "プレイヤー",
+    "Enemies": "敵",
+    "From Effect" : "効果元",
+    "Owner" : "所有者",
+
+    "BREAKDOWN.Base" : "基礎値",
+    "BREAKDOWN.AttackerBase": "攻撃側の基礎値",
+    "BREAKDOWN.Dice" : "ダイス",
+    "BREAKDOWN.OpposedSL" : "対抗テストのSL",
+    "BREAKDOWN.Multiplier" : "乗数",
+    "BREAKDOWN.Ignored" : "無視された",
+    "BREAKDOWN.Minimum1" : "最低1点ダメージ",
+    "BREAKADOWN.UserEntry" : "ユーザ入力",
+    "BREAKDOWN.Penetrating" : "貫通──{ignored}無視（{item}）",
+    "BREAKDOWN.Zzap" : "Zzap! - Ignore {ignored}===(0330)===",
+    "BREAKDOWN.Weakpoints" : "弱点──{ignored}無視（{item}）",
+    "BREAKDOWN.Partial" : "部分的──{ignored}無視（{item}）",
+    "BREAKDOWN.Undamaging" : "<strong>非致傷</strong>：{originalAP} AP * 2 = {modifiedAP}",
+    "BREAKDOWN.Moo" : "Moo House Rules===(0334)===",
+    "BREAKDOWN.PenetratingMoo" : "貫通──{ignored}無視",
+    "BREAKDOWN.ShieldMoo" : "Failed Defense - Ignore Shield AP ({ignored})===(0336)===",	
+
+    "BROWSER.Button" : "ブラウザ",
+    "BROWSER.ItemCategories" : "アイテム種別",
+    "BROWSER.IncludeWorld" : "ワールドアイテムを含む？",
+    "BROWSER.FilterOptions" : "フィルター設定",
+    "BROWSER.ModifiesDamage" : "ダメージ修正値",
+    "BROWSER.ModifiesRange" : "射程修正値",
+    "BROWSER.ItemList" : "アイテム一覧",
+    "BROWSER.LoadingBrowser" : "ブラウザ読み込み中……",
+    "BROWSER.Created" : "{num}個のアイテムを作成しました",
+
+    "On Completion": "目標値の達成時",
+    "ExtendedTest.None" : "なし",
+    "ExtendedTest.Reset" : "初期化",
+    "ExtendedTest.Remove" : "削除",
+    "Completed": "達成",
+    "ExtendedError1": "継続テストの目標値には正の整数値を入力してください",
+
+    "XP": "XP",
+    "EXP": "EXP",
+
+    "CHARGEN.Title" : "キャラクターの作成",
+    "CHARGEN.Stages" : "ステージ",
+    
+    "CHARGEN.StageSpecies" : "種族の決定",
+    "CHARGEN.StageCareer" : "クラスとキャリアの決定",
+    "CHARGEN.StageAttributes" : "特性の決定",
+    "CHARGEN.StageSkillsTalents" : "技能と異能の決定",
+    "CHARGEN.StageTrappings" : "所持品の決定",
+    "CHARGEN.StageDetails" : "詳細の決定",
+
+    "CHARGEN.StageTitle.Species" : "種族の決定",
+    "CHARGEN.StageTitle.Career" : "キャリアをロールする",
+    "CHARGEN.StageTitle.Attributes" : "特性の決定",
+    "CHARGEN.StageTitle.SkillsTalents" : "種族とキャリアから技能と異能を成長させる",
+    "CHARGEN.StageTitle.Trappings" : "クラスとキャリアから所持品を",
+    "CHARGEN.StageTitle.Details" : "キャラクターの詳細を入力",
+
+    "CHARGEN.Species.SelectSpecies" : "種族を選択する",
+    "CHARGEN.Species.SelectSubSpecies" : "サブ種族を選択する",
+    "CHARGEN.Species.NoSubspecies" : "サブ種族の選択肢はありません",
+    "CHARGEN.Species.ChooseSpecies" : "あるいは、ボーナス経験値なしで種族を選択する。",
+    "CHARGEN.Species.ExtraSpeciesOptions" : "Extra Species Options[w8]",
+    "CHARGEN.Species.RandomTalents" : "{num}個のランダム異能",
+
+    "CHARGEN.Career.ChooseCareer" : "{name} を選択",
+    "CHARGEN.Career.ReplacementsAvailable" : "さらなる選択肢",
+    "CHARGEN.Career.ReplacementsAvailableDescription" : "キャリアのロール結果には、さらなる選択肢が利用できます",
+    "CHARGEN.Career.RollAgain" : "経験値を減らせば、二つの選択肢をロール出来る。",
+    "CHARGEN.Career.KeepRolling" : "ロールを続ける(追加の経験値はなし)",
+    "CHARGEN.Career.DragDrop" : "代わりに、キャリアアイテムをドラッグ＆ドロップすることもできます（追加の経験値なし）",
+    "CHARGEN.Career.LoadingCareers" : "キャリアロード中",
+
+
+    "CHARGEN.Attributes.Reroll" : "ロールし直す",
+    "CHARGEN.Attributes.Allocate" : "割り当てる",
+    "CHARGEN.Attributes.Rearrange" : "並べ替える",
+    "CHARGEN.Attributes.Allocation" : "割り振り",
+    "CHARGEN.Attributes.NotHappy" : "この値で満足ですか？",
+    "CHARGEN.Attributes.Instructions" : "ロール値をドラッグ＆ドロップすることで、ステータスを入れ替えることができます（ただし、そうするとXPが少なくなります）。または、リロールしてもXPはもらえません。また、100ポイントを好きなように割り当てることもできます（XPはもらえません）。",
+    "CHARGEN.Attributes.AllocationPoints" : "100ポイントを10種類の「能力値」に好きなように割り当てるのだ。その際、個々の「能力値」に割り振る数値の最低値は4で、最高値は18である。",
+    "CHARGEN.Attributes.AllocationSpent" : "消費済み {spent}",
+    "CHARGEN.Attributes.ExtraPoints" : "「追加ポイント」を割り振る（残：{points}点）",
+    "CHARGEN.Attributes.CharacteristicAdvances" : "キャリアの能力値に5回分の成長を割り当てる",
+
+    "CHARGEN.SkillsTalents.SkillAdvances" : "3つの「技能」を5回「成長」させた後、更に別の3つの「技能」を3回「成長」させる。「技能」を適切な場所にドラッグ＆ドロップして成長させることが出来ます。",
+    "CHARGEN.SkillsTalents.NumAdvances" : "{num}回「成長」",
+    "CHARGEN.SkillsTalents.SpeciesTalents" : "種族異能の選択とロール",
+    "CHARGEN.SkillsTalents.RandomTalents" : "ランダム異能を{count}回ロール",
+    "CHARGEN.SkillsTalents.CareerSkills" : "キャリア技能を40回「成長」させる（残：{points}）",
+    "CHARGEN.SkillsTalents.CareerTalent" : "キャリア異能を1つ「修得」する",
+    "CHARGEN.SkillsTalents.ReplaceTalentDialog.Title" : "異能の置換",
+    "CHARGEN.SkillsTalents.ReplaceTalentDialog.Content" : "<p>《{talent}》を《{replacement}》で置き換えますか？</p>",
+    "CHARGEN.SkillsTalents.Traits" : "Traits[w8]",
+
+    "CHARGEN.RerollDuplicateTalent" : "既に得ている「異能」は、再ロールを選ぶことができる",
+    "CHARGEN.AdditionalRandomTalent" : "追加のランダム異能",
+    "CHARGEN.XAdditionalRandomTalents" : "{x}個の追加のランダム異能",
+
+    "CHARGEN.Trappings.ClassTrappings" : "クラス所持品",
+    "CHARGEN.Trappings.CareerTrappings" : "キャリア所持品",
+    "CHARGEN.Trappings.MissingTrappings" : "見つからない所持品",
+    "CHARGEN.Trappings.MissingTrappingsDescription" : "<p>これらの所持品は見つかりませんでした。空の所持品として残すか、削除するかを選択できます。<strong>注</strong>：存在するが見つからなかった所持品は削除し、手動で追加することをお勧めします（以下の「追加された所持品」を参照）。</p><p><strong>例：</strong>見つからなかった<em>クロスボウ（ボルト10本つき）</em>を削除し「クロスボウ」と「ボルト」のアイテムを追加</p>",
+    "CHARGEN.Trappings.AddedTrappings" : "追加された所持品",
+    "CHARGEN.Trappings.DragDrop" : "その他の所持品をドラッグ＆ドロップ",
+    "CHARGEN.Trappings.Keep" : "残す",
+    "CHARGEN.Trappings.Remove" : "削除",
+    "CHARGEN.Trappings.RollIncome" : "収入獲得",
+
+    "CHARGEN.Details.ShortTermAmbitions" : "短期的な大望",
+    "CHARGEN.Details.LongTermAmbitions" : "長期的な大望",
+    "CHARGEN.Details.Eyes" : "目",
+    "CHARGEN.Details.Hair" : "髪",
+    "CHARGEN.Details.Male" : "Male===(0228)===",
+    "CHARGEN.Details.Female" : "Female===(0229)===",
+
+    "CHARGEN.Message.Start" : "<p><strong>{user}</strong>がキャラクター作成を開始しました！</p>",
+    "CHARGEN.Message.Rolled" : "<p>ロール結果：<b>{rolled}</b>！</p>",
+    "CHARGEN.Message.RerolledDuplicateTalent" : "<strong>ロール</strong>：{rolled}</b>!</p>",
+    "CHARGEN.Message.Chosen" : "<strong>選択</strong>：{chosen}</b>!</p>",
+    "CHARGEN.Message.RolledCharacteristics" : "<strong>能力値をロールした</strong>",
+    "CHARGEN.Message.ReRolledCharacteristics" : "<strong>能力値のロールをやり直した</strong>",
+    "CHARGEN.Message.SwappedCharacteristics" : "<p>{ch1}と{ch2}を入れ替えた</p>",
+    "CHARGEN.Message.AllocateCharacteristics" : "<p>能力値を割り当て始めました</p>",
+    "CHARGEN.Message.Created" : "<p><strong>{name}</strong>が作成された！",
+    "CHARGEN.Message.ReplacedTalent" : "<p><b>《{talent}》</b>を<b>《{replacement}》</b>で置き換えました！</p>",
+    "CHARGEN.Message.Income" : "<p><b>Income:</b> {quantity} {name}</p>[w8]",
+
+    "CHARGEN.NoGMWarning" : "キャラクターを作成するには、GMがログインしているか、プレイヤーに「新しいアクターの作成」権限が必要です",
+    "CHARGEN.UseExistingData" : "既存データの使用",
+    "CHARGEN.UseExistingDataContent" : "以前のセッションで作成中のデータが見つかりました。このデータを使用しますか？",
+    "CHARGEN.ERROR.StageStart" : "このステージを開始できません：先に{stage}を完了する必要があります",
+    "CHARGEN.ERROR.StageAlreadySubmitted" : "ステージは提出済みで、再提出はできません",
+    "CHARGEN.ERROR.SpeciesSubmit" : "このページを提出するには、ロールするか種族を選択する必要があります。",
+    "CHARGEN.ERROR.CareerSubmit" : "このステージを提出するにはキャリアのロールか選択が必要です",
+    "CHARGEN.ERROR.MetaAllocation" : "追加ポイントの配分が超過しています",
+    "CHARGEN.ERROR.CharacteristicAllocation" : "「能力値」は100までしか割り当てられません",
+    "CHARGEN.ERROR.CharacteristicAllocationBounds" : "個々の「能力値」に割り振る数値の最低値は4で、最高値は18です",
+    "CHARGEN.ERROR.CharacteristicAdvances" : "能力値への成長の適用は５回までです",
+    "CHARGEN.ERROR.SpeciesSkillAdvancements" : "「成長」させる技能は3つまで",
+    "CHARGEN.ERROR.SpeciesTalentsNotRolled" : "ランダム異能がロールされていません",
+    "CHARGEN.ERROR.SpeciesTalentsNotChosen" : "種族異能を選択することができます",
+    "CHARGEN.ERROR.CareerTalentNotChosen" : "キャリア異能を選択してください",
+    "CHARGEN.ERROR.CareerSkillAllocation" : "8つの初期「技能」の「成長」は合計で40回まで",
+    "CHARGEN.ERROR.CareerSkillAllocationBounds" : "各「技能」を「成長」させられるのは最大で10回まで",
+    "CHARGEN.ERROR.ClassTrappingsNotFound" : "{class}のクラス所持品が見つかりませんでした",
+    "CHARGEN.ERROR.Create" : "アクター作成エラー：{error}",
+    "CHARGEN.ERROR.CareerItem" : "キャリアのキャリア・レベル１がありません：{career}",
+    "CHARGEN.ERROR.CareerItems" : "{num}個のキャリアアイテムが見つかりませんでした（{careers}がない）",
+    "CHARGEN.ERROR.SpeciesTable" : "ランダム種族表が見つかりません",
+    "CHARGEN.ERROR.TalentsTableNotFound" : "Could not find Random Talents Table '{key}' for {species} ({subspecies})===(0233)===",
+
+    "DIALOG.CastOrChannel" : "発動または魔風交信",
+    "DIALOG.CastChannel" : "この呪文を発動または魔風交信しますか？",
+    "DIALOG.ChannelSkill" : "魔風交信技能",
+    "DIALOG.MalignantInf" : "悪意のある影響",
+    "DIALOG.MalignantInfTT" : "一の位で8の目をロールする小誤発動",
+    "DIALOG.ChannelUntilReady" : "発動するまで魔風交信を続ける",
+    "DIALOG.ChannelUntilReadyToolTip" : "発動に成功するか誤発動するまで魔風交信を続ける",
+    "Delete Confirmation" : "削除確認",
+    "DIALOG.DeleteItem" : "本当に削除しても良いですか？",
+    "DIALOG.SLBonus" : "SLボーナス",
+    "DIALOG.SuccessBonus" : "成功ボーナス",
+    "DIALOG.TalentBonus" : "Talent Bonuses===(z018)===",
+    "DIALOG.DialogModifiers" : "ダイアログの修正値",
+    "DIALOG.Details" : "詳細",
+    "DIALOG.SLBonusTT" : "常にSLに加減算されるSL（例：防御用）",
+    "DIALOG.SuccessBonusTT" : "成功時にのみ適用されるSL（例：異能）",
+    "DIALOG.BonusTT" : "ボーナス候補のリスト",
+    "DIALOG.RollMode" : "ロールモード",
+    "DIALOG.Extensions" : "Extensions===(z019)===",
+    "DIALOG.CastSkill" : "発動技能",
+    "DIALOG.HitLocation" : "ロール結果に命中部位を含める",
+    "DIALOG.TableModifier" : "Table Modifier===(080)===",
+    "DIALOG.Min1" : "Minimum 1===(081)===",
+    "DIALOG.Charging" : "突撃",
+    "DIALOG.TableLookup" : "Table Lookup",
+    "DIALOG.DualWielding" : "二刀流",
+    "DIALOG.BeginCharacterCreation" : "キャラクターを作成しますか？",
+    "DIALOG.DifficultyStep" : "Difficulty Step",
+    "DIALOG.AdvantageUpdate" : "アクターの優位が更新されました",
+    "DIALOG.MutateTitle" : "心身の崩壊－{test}テスト",
+    "DIALOG.CorruptionTitle" : "堕落の影響力",
+    "DIALOG.CorruptionContent" : "この堕落に、{name}はどちらで抵抗するか？",
+    "DIALOG.CorruptionTestTitle" : "堕落の影響力－{test}テスト",
+    "DIALOG.VehicleActorSelect" : "Select the Actor to use the weapon===(083)===",
+    "DIALOG.ActorSelection" : "Select an Actor===(084)===",
+    "DIALOG.ShowTable" : "Table Visibility===(085)===",
+    "DIALOG.ShowTableHint": "Show table to players in sidebar and /table menu===(086)===",
+    "DIALOG.LinkCareer" : "Link Career===(941D072)===",
+    "DIALOG.LinkCareerContent" : "「{new}」を「{old}」とリンクしますか？　リンクすると、「{old}」のスキルが「{new}」に追加され、以前のキャリアで選択した専門分野の設定も引き継がれます。",
+    "Show" : "Show===(087)===",
+    "Hide" : "Hide===(088)===",
+    "ExpChange" : "経験点の修正",
+    "ExpChangeHint": "経験点を修正する理由を入力してください。",
+    "RevertExperience": "経験点を元に戻す",
+    "DIALOG.RevertExperience" : "経験点を元に戻しますか？",
+    "DIALOG.UseIngredient": "具材の使用方法（可能な場合）",
+    "DIALOG.UseIngredientTooltip": "呪文を放つまでに適切な素材を使って魔力を集中することが出来ます。魔力の具材への流し方によって反応が変わります。発動や魔風交信の前に、「威力」と「制御」のどちらに使用するか選択してください。<br/>威力の具材：発動テストに使用すると、威力の具材は成功した時のSLの値を2倍獲得できる（超過交信を参照）。発動テストに使用すると力の具材はテストの賽の目を入れ替えることが出来る。しかし、ひっくり返した発動テストの一の位が【意志力】ボーナスを越えると、エネルギーは君の手の内から離れ、「小誤発動」を引き起こす。<br/>制御の具材：魔風交信や発動テストで使用すると、制御の具材は制御不能になった魔術で身代わりになる。誤発動の深刻度を一段階引き下げる：例えば、破滅的を大に、大を小に、小ならなしに。",
+    "DIALOG.OverchannellingTooltip" : "魔風交信において、呪文のCNを0にするより多いSLは無害な形で排出されると思われます。テストをロールした後、集めた余分な魔法的な力を保持し、呪文を発動するときに超過交信として利用することを選択できる。（例：ビアンカがCN3の呪文の魔風交信に、SL+7を得た、余った4SLは呪文を発動すると超過交信として貯めておくことを選択する。）ただし、この余分な力には代償が必用だ。発動テストに失敗したすると、力は小誤発動となって表れる。更に、〈魔風交信〉や〈言語：魔法語〉の技能テストでゾロ目か一の位で0をロールして失敗した場合──00、99、90、88など──、それはファンブルとなり、クリティカルやファンブルしたときは「大誤発動」の影響を受ける。",
+    "DIALOG.Quickcasting" : "高速詠唱",
+    "DIALOG.QuickcastingTooltip" : "移動と全てのフリー・アクションを放棄することで、そのターンで素早く魔風交信と発動を使用しても良い。急いでやるため、誤発動の深刻度が一段階高くなる。（例、小が大に、大が破滅的に）。",
+    "DIALOG.EnterQuantity" : "数は？",
+    "DIALOG.PostQuantity" : "掲示回数",
+    "DIALOG.PostQuantityContent" : "How many times can this Item be retrieved? Leave blank for unrestricted.===(941D074)===",
+    "Post": "掲示",
+    "DIALOG.MemorizeSpell" : "呪文の習得",
+    "DIALOG.MemorizeSpellContent" : "呪文の習得に{xp} XP消費します。",
+    "DIALOG.Advancement" : "成長コスト",
+    "DIALOG.AdvancementContent" : "この成長のコストを確認または編集する",
+    "DIALOG.GainPrayer" : "奇跡の習得",
+    "DIALOG.GainPrayerContent" : "奇跡の習得に{xp} XP消費します。",
+    "DIALOG.ErrorMustSelectItem" : "最低１個のアイテム選択が必要",
+    "DIALOG.ItemDialog" : "アイテム・ダイアログ",
+    "DIALOG.ChoosePassenger" : "Choose Passenger===(941D075)===",
+    "DIALOG.ChooseArmour" : "Choose Armour to damage===(941D076)===",
+
+    "CHAT.Quickcasting" : "高速詠唱",
+    "CHAT.CareerChoose" : "キャリアを選択する",
+    "CHAT.DamageError" : "ダメージ計算エラー：",
+    "CHAT.DamageAppliedError" : "ダメージは有りません。攻撃側が武器などのダメージを与えるアイテムを使用しているか確認してください。",
+    "CHAT.DamageAppliedErrorTiring" : "ダメージを自動化できません（疲労の影響、武器／特徴が正しくセットアップ出来ていない可能性があります）",
+    "CHAT.DamageApplied" : "ダメージの適用",
+    "CHAT.ApplyDamageBasic" : "<b>{name}</b> は、@DAMAGE ダメージを受けた",
+    "CHAT.ApplyHack" : "「切断」を適用",
+    "CHAT.CriticalDeflection" : "Critical Deflection===(941D077)===",
+	"CHAT.DamageToArmour" : "1 Damage applied to {item} ({type})===(941D078)===",
+    "CHAT.DamageShield" : "盾",
+    "CHAT.CriticalsNullified" : "クリティカルは無視された",
+    "CHAT.DamageAP" : "APに1ダメージ",
+    "CHAT.ScatterTarget" : "的",
+    "CHAT.ScatterNote" : "注：距離は自分と目標との距離の半分以下",
+    "CHAT.ScatterYou" : "君の足元に落ちた",
+    "CHAT.ScatterThem" : "標的の足元に落ちた",
+    "Overcasts" : "超過発動",
+    "CHAT.OvercastReset" : "超過発動リセット",
+    "CHAT.GrimoireMiscast" : "魔導書の誤発動[ja]",
+    "CHAT.ChooseFrom" : "次から選択",
+    "CHAT.MustChoose" : "Must Choose===(095)===",
+    "CHAT.CritCast" : "その呪文がダメージを与える場合、それは「致命的負傷」も与える。詳細はP.172を参照のこと。",
+    "CHAT.TotalPower" : "この呪文はCNと君が得たSLの値に関わらず発動するが、「解呪」をすることはできる。",
+    "CHAT.UnstoppableForce" : "君が呪文を発動するために充分なSLを出したなら、その呪文は「解呪」することができなくなる。",
+    "CHAT.ColumnPrompt" : "どの表を振るか選択",
+    "CHAT.CriticalWoundsApplied" : "「耐久値」を失う ⇒",
+    "CHAT.OpposedWonAgainst" : "の勝利",
+    "CHAT.By" : "に対して",
+    "CHAT.EditItem" : "項目編集",
+    "CHAT.Haggle" : "値切り",
+    "CHAT.HaggleHint" : "アイテム価格の変更：+/-10%",
+    "CHAT.CorruptingInfluence" : "堕落の影響力",
+    "CHAT.Resist" : "抵抗",
+    "CHAT.ContextualMenu" : "コンテキストメニューが利用可能（右クリック）",
+    "CHAT.EditTest" : "テストを編集",
+    "CHAT.OpposedTest" : "対抗テスト",
+    "CHAT.RemovedConditions" : "<b>{name}</b>から<b>{condition}</b>が取り除かれた",
+    "CHAT.AutoWitchcraftMiscast" : "俗魔術－自動的に「小誤発動表」をロールする。",
+    "CHAT.WitchcraftMiscast" : "俗魔術－誤発動により「堕落ポイント」を1点を獲得",
+    "CHAT.MalignantInfluence" : "悪意のある影響による誤発動",
+    "CHAT.PowerIngredientMiscast" : "Miscast due to usage of Power Ingredient - number 8 in reversed roll.===(291)===",
+    "CHAT.ChannellingMiscast" : "魔風交信後の発動に失敗",
+    "CHAT.OverchannellingMiscast" : "Miscast due to Overchannelling===(105)===",
+    "CHAT.FumbleMiscast": "ファンブルによる誤発動",
+    "CHAT.TotalPowerMiscast" : "Miscast due to Full Power===(106)===",
+    "CHAT.CritCastMiscast" : "呪文発動におけるクリティカルによる誤発動",
+    "CHAT.CritChannelMiscast" : "魔風交信のクリティカルによる誤発動",
+    "CHAT.ModifiersBreakdown" : "修正値の内訳",
+    "Size" : "サイズ",
+    "CHAT.ChannelledSL" : "魔風交信の成功レベル（SL）[ja]",
+    "CHAT.VortexMove": "Random Vortex Movement===(6501)===",
+    "CHAT.CausesFear" : "<b>{actor}</b>は{fear}を{target}に引き起こす<br>",
+    "CHAT.Fear" : "恐怖",
+    "CHAT.FearReminder" : "以下のアクターは<b>恐怖</b>を引き起こされている、恐怖心を乗り越えるためテストを実行できる。",
+    "CHAT.InjuryFinish" : "{injury}は完治した（持続時間が完了）。",
+    "CHAT.InjuryError": "数字では無いので「{injury}」を減らせません。",
+    "Minor Infections" : "軽度の感染症",
+    "CHAT.InfectionReminder" : "以下のアクターは「致命的負傷」を得たため、<b>超容易(+60)な肉体抵抗</b>テストを行い、失敗したなら@UUID[Compendium.wfrp4e-core.items.1hQuVFZt9QnnbWzg]{軽度の感染症}に罹患する。",
+    "CHAT.DiseaseIncubation" : "{disease}の潜伏期間が終了した。",
+    "CHAT.DiseaseDuration" : "完治に{duration} {unit}必用。",
+    "CHAT.DiseaseRollError" : "病気の潜伏期間か持続時間のロールでエラーが発生しました。",
+    "CHAT.DiseaseFinish" : "「{disease}」の持続時間は終了した。",
+    "CHAT.LingeringExtended" : "　長患い：治癒の期間が{roll}日間延長した。",
+    "CHAT.LingeringFestering" : "　長患い：「膿み傷」を発症した。",
+    "CHAT.LingeringRot" : "　長患い：「血液腐れ病」を発症した。",
+    "CHAT.ApplyTT" : "GM：ターゲットしたトークンに適用する。\nプレイヤー：割り当てたキャラクターに適用する。",
+    "CHAT.Terror" : "恐慌",
+    "CHAT.Apply" : "適用",
+    "CHAT.Place" : "場所",
+    "CHAT.ApplyCondition" : "{condition}を適用",
+    "CHAT.ApplyError" : "君はこの効果を適用することはできません。",
+    "CHAT.EditError" : "このチャット・メッセージを編集する権限が有りません",
+    "CHAT.Experience" : "経験点の獲得",
+    "CHAT.EndCombat" : "戦闘終了時のリマインダ",
+    "CHAT.Receive" : "受け取る",
+    "CHAT.PostError" : "マイナスの数字は入力できません。",
+    "CHAT.PostMoreThanHave" : "持っている個数以上はポストできません。",
+    "CHAT.PostQuantityReduced" : "{num}個減りました",
+    "CHAT.NoMoreLeft" : "「クレジット」のインスタンスは残されていません。",
+    "CHAT.ExpReceived" : "<b>{reason}</b>で経験値を<b>{amount}</b>獲得",
+    "CHAT.ExpReceivedNoReason" : "Received <b>{amount}</b> experience.===(941D079)===",
+    "CHAT.DiseasesRules" : "<br>Refer to the diseases for their Contraction Rules===(127)===",
+    "CHAT.CorruptionTest" : "<br><b>堕落に対するテストを促すため、堕落のリンクをクリックしてください",
+    "CHAT.CorruptionFail" : "<b>{name}</b>は堕落に{number}回の影響を受けた。",
+    "CHAT.DissolutionTitle" : "心身の崩壊",
+    "CHAT.Dissolution" : "堕落が君の内心で暴威を振るうにつれて、混沌のねじくれた吐息が君の内面をくすぐり続け、君の<ruby><rb>肉体</rb><rp>（</rp><rt>フレッシュ</rt><rp>）</rp></ruby>を<ruby><rb>新た</rb><rp>（</rp><rt>フレッシュ</rt><rp>）</rp></ruby>な何らかの形状に作り変えてしまうか、君の魂に忘れようとしても忘れ去ることの能わない精巧至上なる知識系統によって穴を<ruby><rb>穿</rb><rp>（</rp><rt>うが</rt><rp>）</rp></ruby>つことになる。",
+    "CHAT.CorruptionLoses" : "<b>{name}</b>は{number}堕落Ｐを失った。",
+    "CHAT.DissolutionTable" : "種族に応じた心身の崩壊表を振る：<br>@Table[corruption]",
+    "CHAT.CorruptionReroll" : "<b>{name}</b>は振り直した結果、堕落を{number}喪失した。",
+    "CHAT.MutateSuccess" : "君はどうにか今回ばかりは堕落の影響をはね除けることができた。",
+    "CHAT.TestModifiers.WeaponLength" : "<b>{attacker}</b>の武器間合いが短いため-10ペナルティ",
+    "CHAT.TestModifiers.FastWeapon" : "素早い武器に対する防御のための－10のペナルティ。",
+    "CHAT.TestModifiers.DefendingLarger" : "大きい相手に対する〈近接攻撃〉対抗テストのSLペナルティ。",
+    "CHAT.TestModifiers.AttackingLarger" : "大きい相手を攻撃している。",
+    "CHAT.TestModifiers.ShootingSizeModifier" : "{size}サイズの目標を遠隔攻撃。",
+    "CHAT.TestModifiers.AttackerMountLarger" : "Bonus for attacking from a larger mount.===(139)===",
+    "CHAT.TestModifiers.DefenderMountLarger" : "Penalty for attacking the rider of a larger mount.===(140)===",
+    "CHAT.TestModifiers.SlowDefend" : "鈍重の武器で攻撃されている",
+    "CHAT.TestModifiers.WrapDefend" : "「巻きこみ」武器で攻撃",
+    "CHAT.TestModifiers.IgnoreDefenderMountLarger" : "武器の間合い内のため、騎乗者を攻撃するペナルティを無視（『武器を掲げよ！』）。",
+    "CHAT.SpreadPointBlank" : "Point Blank: Damage increased by {damage}===(631f)===",
+    "CHAT.SpreadExtreme" : "Extreme: Damage reduced by {damage}===(631g)===",
+    "CHAT.CrewTest" : "Crew Test===(406)===",
+    "CHAT.NoCrewWithRole" : "No crew with role!===(407)===",
+    "CHAT.RoleNotFound" : "役割「<strong>{role}</strong>」が見つかりません！",
+    "CHAT.TotalSL" : "合計SL",
+    "CHAT.Vital" : "Vital===(410)===",
+    "CHAT.CrewTestVital" : "操縦班テスト（重要）",
+    "CHAT.AttackerTooSmallDamage" : "Attacker is too small to damage this vehicle===(412)===",
+    "CHAT.VehicleTBTooltipMultiply" : "{number} × TB===(413)===",
+    "CHAT.VehicleTBTooltipSubtract" : "TB - {number}===(414)===",
+    "CHAT.CommandLine.Help.Commands" : "Tables,Conditions,Properties,CharacterGeneration,NameGeneration,AvailabilityTest,Pay,Credit,Corruption,Travel,Exp",
+    "CHAT.CommandLine.Help.Label.Command" : "コマンド",
+    "CHAT.CommandLine.Help.Label.Example": "入力例",
+    "CHAT.CommandLine.Help.Label.Note": "注",
+    "CHAT.CommandLine.Help.Tables.Title" : "テーブル",
+    "CHAT.CommandLine.Help.Tables.Usage.Command" : "/table 〈テーブル名〉 〈テーブル列〉 〈修正値〉",
+    "CHAT.CommandLine.Help.Tables.Usage.Example" : "<br>/table critarm +20<br>/table career human",
+    "CHAT.CommandLine.Help.Tables.Usage.Note" : "/table で〈認識できない〉入力をするとヘルプメニューが表示されます",
+    "CHAT.CommandLine.Help.Conditions.Title" : "状態",
+    "CHAT.CommandLine.Help.Conditions.Usage.Command" : "/cond <condition-name>",
+    "CHAT.CommandLine.Help.Conditions.Usage.Example" : "<br>/cond 炎上状態<br>/cond 気",
+    "CHAT.CommandLine.Help.Conditions.Usage.Note" : "最も近い状態を選択し表示します（例、/cond 気 ＝＝ /cond 気絶状態）",
+    "CHAT.CommandLine.Help.Properties.Title" : "アイテムの特性",
+    "CHAT.CommandLine.Help.Properties.Usage.Command" : "/prop <property-name>",
+    "CHAT.CommandLine.Help.Properties.Usage.Example" : "<br>/prop 衝撃<br>/prop 粗悪",
+    "CHAT.CommandLine.Help.Properties.Usage.Note" : "最も似た特性を選択し表示します（例、/prop 高品質 ＝＝ /prop 高精度）",
+    "CHAT.CommandLine.Help.CharacterGeneration.Title" : "キャラクター生成",
+    "CHAT.CommandLine.Help.CharacterGeneration.Usage.Command" : "/char",
+    "CHAT.CommandLine.Help.CharacterGeneration.Usage.Example" : "/char",
+    "CHAT.CommandLine.Help.CharacterGeneration.Usage.Note" : "キャラクター生成を開始",
+    "CHAT.CommandLine.Help.NameGeneration.Title" : "名前生成",
+    "CHAT.CommandLine.Help.NameGeneration.Usage.Command" : "/name",
+    "CHAT.CommandLine.Help.NameGeneration.Usage.Example" : "<br>/name dwarf<br>/name helf male<br>/name welf female",
+    "CHAT.CommandLine.Help.NameGeneration.Usage.Note" : "チャットに名前が出力される（NPCやクリーチャーの〈名称〉ラベルクリックでも良い（が動かない模様））",
+    "CHAT.CommandLine.Help.AvailabilityTest.Title" : "入手可能度テスト",
+    "CHAT.CommandLine.Help.AvailabilityTest.Usage.Command" : "/avail",
+    "CHAT.CommandLine.Help.AvailabilityTest.Usage.Example" : "<br>/avail 町 普及<br>/avail 都市 舶来",
+    "CHAT.CommandLine.Help.AvailabilityTest.Usage.Note" : "入手可能度テストを実行して、アイテムの在庫や入手できるか判断する。",
+    "CHAT.CommandLine.Help.Pay.Title" : "支払い",
+    "CHAT.CommandLine.Help.Pay.Usage.Command" : "/pay",
+    "CHAT.CommandLine.Help.Pay.Usage.Example" : "<br>/pay 3gc2bp<br>/pay 10bp450ss",
+    "CHAT.CommandLine.Help.Pay.Usage.Note" : "このコマンドには三つのオプションが有ります：<ul><li><strong>/pay amount</strong>：（GMならば）全ユーザーにチャットカードを表示し、支払い用のボタンを表示するか、（プレイヤーならば）ユーザーに割り当てられたアクターから指定された金額が支払われる。例：/pay 12gc2bp</li><li><strong>/pay amount player_name </strong>：GMのみ使用可。指定されたプレイヤー用のチャットカードを表示する。</li><li><strong>/pay amount actor_name</strong>：GMのみ使用可。自動的に指定したアクターから指定の金額を引き落とす。アクターの名前の一部でも指定できます、アクターの名前がKastor Lieberungならば、/pay 12ss kastor と入力できる。アクターに紐づいたプレイヤーが存在する場合、プレイヤーにダイアログでコマンドの承認を求める。プレイヤーが居ない（またはオフラインの）アクターからは自動的に引き落とされる。</li></ul>",
+    "CHAT.CommandLine.Help.Credit.Title" : "クレジット",
+    "CHAT.CommandLine.Help.Credit.Usage.Command" : "/credit",
+    "CHAT.CommandLine.Help.Credit.Usage.Example" : "<br>/credit 3gc2bp<br>/credit 10bp450ss each<br>/credit 1bp420ss John<br>/credit 1gc12ss Kastor Lieberung",
+    "CHAT.CommandLine.Help.Credit.Usage.Note" : "GM専用。GMが入力した金額を、プレイヤー／アクターに送信できる。金額は次のオプションでGMが指定する：<ul><li><strong>/credit amount split （既定）</strong>：全ユーザに支払いを受け取るボタンが付いたチャットカードを表示する。例：/credit 12gc2bp</li><li><strong>/credit amount player_name</strong>：指定したプレイヤーにだけチャットカードを表示する。</li><li><strong>/credit amount actor_name </strong>：指定したアクターへ自動的に金額が追加される。アクター名の一部だけを指定することも可能で、アクターの名前が「Kastor Lieberung」であれば「/credit 12ss kastor」。</li></ul>",
+    "CHAT.CommandLine.Help.Corruption.Title" : "堕落",
+    "CHAT.CommandLine.Help.Corruption.Usage.Command" : "/corruption",
+    "CHAT.CommandLine.Help.Corruption.Usage.Example" : "<br>/corruption minor<br>/corruption moderate",
+    "CHAT.CommandLine.Help.Corruption.Usage.Note" : "プレイヤーに堕落の影響力に対する対抗テストを促す。",
+    "CHAT.CommandLine.Help.Exp.Title" : "経験点",
+    "CHAT.CommandLine.Help.Exp.Usage.Command" : "/exp",
+    "CHAT.CommandLine.Help.Exp.Usage.Example" : "<br>/exp 50<br>/exp 100 ボスを倒した",
+    "CHAT.CommandLine.Help.Exp.Usage.Note" : "プレイヤーに経験値付与するために使用する。受け取ったプレイヤーの経験点ログに、自動的に理由が記入される。",
+    "CHAT.CommandLine.Help.Travel.Title" : "移動",
+    "CHAT.CommandLine.Help.Travel.Usage.Command" : "/travel",
+    "CHAT.CommandLine.Help.Travel.Usage.Example" : "<br>/travel<br>/travel Altdorf Kemperbad",
+    "CHAT.CommandLine.Help.Travel.Usage.Note" : "<a href='http://www.gitzmansgallery.com/docs/Travel%20Distances%20in%20the%20Empire.pdf'>Travel Distances in the Empire（帝国内の移動距離）</a>のPDFが移動距離の出典。",
+    "CHAT.CommandLine.Help.Link" : "この仕組みの詳細については、<a href={link}>Wiki</a>をご覧ください",
+    "Commands" : "コマンド",
+    "CHAT.CastSpell" : "{spell}を発動",
+    "CHAT.Dispel" : "解呪",
+    "CHAT.InvokePrayer" : "{prayer}を顕現",
+
+    "ErrorSpeciesSkills" : "Could not add skills for species===(144)===",
+    "ErrorSpeciesTalents" : "Could not add talents for species===(145)===",
+    "ErrorCriticalWound" : "Error applying wounds value===(146)===",
+    "ErrorDamageCalc" : "ダメージ計算エラー",
+    "ErrorOpposed" : "対抗テストを完了できませんでした",
+    "ErrorMacroItemMissing" : "操作中のアクターは持っていないアイテム：",
+    "ErrorNoAmmo" : "矢弾が無い！",
+    "ErrorNotLoaded" : "装填されていません－装填中",
+    "ErrorLimitedWeapons" : "これ以上武器を装備することはできません。",
+    "ErrorDamagePermission" : "このアクターにダメージを適用する権限がありません。",
+    "ErrorArmourDamagePermission" : "You do not have permission to apply armour damage to this actor.===(941D084)===",
+    "ErrorNoArmourToDamage" : "被害を与える鎧アイテムがありません",
+    "ErrorTokenMount" : "乗騎のトークンは乗騎でシーンが表示できる必要があります。",
+    "ErrorMountNotFound" : "Error retrieving mount. Try removing the mount.===(150)===",
+    "ErrorCharAssigned" : "キャラクターが割り当てられていません。プレイヤー設定メニューでキャラクターを割り当ててください。",
+    "ErrorMoneyConvert" : "両替するには、両替元と先両方の貨幣が必要です。",
+    "ErrorTarget": "効果を適用する目標を選択してください。",
+    "ErrorExp": "経験値を取得するトークンを選択する。",
+    "ErrorMultExp": "はこの報酬を受け取り済。",
+    "WarnUnlinkedMount" : "リンクされているアクターにリンクされていない乗騎は非推奨です。",
+    "ErrorCorruption": "無効な堕落の強さ",
+
+    "INCOME.YouEarn" : "収入は",
+    "INCOME.Failure" : "君はとてもついていない週を過ごしたことになり、まったく稼ぎを得られない（またはお金を盗まれるなどの不運にあってしまう）のだ。",
+
+    "ROLL.CastingSuccess" : "発動成功",
+    "ROLL.CastingFailed" : "発動失敗",
+    "ROLL.ChannelFailed" : "魔風交信失敗",
+    "ROLL.ChannelSuccess" : "魔風交信成功",
+    "ROLL.TotalPower" : "全力（Total Power）",
+    "ROLL.UnstoppableForce" : "止められない力（Unstoppable Force）",
+    "ROLL.CritCast" : "発動大成功（Critical Cast）",
+    "ROLL.CritChannel" : "魔風交信のクリティカル",
+    "ROLL.MinorMis" : "小誤発動表",
+    "ROLL.MajorMis" : "大誤発動表",
+    "ROLL.CatastrophicMis" : "破滅的誤発動表",
+    "ROLL.PrayRefused" : "祈祷は届かなかった",
+    "ROLL.PrayGranted" : "祈祷は聞き届けられた",
+    "ROLL.Wrath" : "神々の天罰",
+    "ROLL.CancelOppose" : "対抗判定はキャンセルされました",
+    "ROLL.HitLocation" : "命中部位",
+    "ROLL.OpposedStart" : "対抗テスト開始！",
+    "ROLL.Targeting" : "<b>{attacker}</b> は<br /><b>{defender}</b> をターゲット",
+    "ROLL.MisfireText1" : "武器がダメになった！",
+    "ROLL.MisfireText2" : "ダメージを利き腕に受ける。",
+    "ROLL.Reverse" : "出目をひっくり返す",
+    "ROLL.AstoundingSuccess" : "超大成功",
+    "ROLL.ImpressiveSuccess" : "大成功",
+    "ROLL.Success" : "成功",
+    "ROLL.MarginalSuccess" : "小成功",
+    "ROLL.AstoundingFailure" : "超大失敗",
+    "ROLL.ImpressiveFailure" : "大失敗",
+    "ROLL.Failure" : "失敗",
+    "ROLL.MarginalFailure" : "小失敗",
+    "ROLL.SizeCausedSuccess" : "サイズの修正値で失敗が命中した：成功レベル（SL）＋0",
+    "ROLL.HitAnotherEngagedTarget": "<b>Oops! You hit wrong target, select random engaged actor and apply normal damage</b>===(621i)===",
+    "ROLL.CalledShot" : "狙い撃ち",
+
+    "WFRP4E.Reach.Personal" : "接触",
+    "WFRP4E.Reach.VShort" : "極短",
+    "WFRP4E.Reach.Short" : "短",
+    "WFRP4E.Reach.Average" : "中",
+    "WFRP4E.Reach.Long" : "長",
+    "WFRP4E.Reach.VLong" : "極長",
+    "WFRP4E.Reach.Massive" : "超極長",
+
+    "WFRP4E.ArmourType.SLeather" : "ソフト・レザー",
+    "WFRP4E.ArmourType.BLeather" : "ボイルド・レザー",
+    "WFRP4E.ArmourType.Mail" : "メイル",
+    "WFRP4E.ArmourType.Plate" : "プレート",
+    "WFRP4E.ArmourType.Other" : "その他",
+    "WFRP4E.ArmourType.OtherMetal" : "その他（金属製）",
+
+    "WFRP4E.Availability.Special" : "特殊",
+    "WFRP4E.Availability.Common" : "普及",
+    "WFRP4E.Availability.Scarce" : "品薄",
+    "WFRP4E.Availability.Rare" : "稀少",
+    "WFRP4E.Availability.Exotic" : "舶来",
+
+    "MARKET.Village" : "村",
+    "MARKET.Town" : "町",
+    "MARKET.City" : "都市",
+    "MARKET.AvailabilityTest" : "入手可能度テスト",
+    "MARKET.AvailWrongCommand": "パラメータが違います。パラメータ入力規則：<br>土地の規模［村、町、都市］<br>入手可能度［普及、品薄、稀少、舶来］<br>（オプション）ロール修正値",
+    "MARKET.AvailCommandExample": "例：/avail 村 稀少 10",
+    "MARKET.SettlementSize" : "居留地の規模：",
+    "MARKET.Rarity" : "入手可能度：",
+    "MARKET.InStock": "在庫はあるか？：",
+    "MARKET.QuantityAvailable": "購入可能数：",
+    "MARKET.RollForAvailability" : "入手可能度テスト",
+    "MARKET.SelectSettlementSize" : "居留地サイズの選択：",
+    "MARKET.PayForItem" : "支払",
+    "MARKET.ReceiveCredit" : "受け取る",
+    "MARKET.Exchange" : "両替（貨幣枚数を最少に）",
+    "MARKET.Abbrev.GC" : "GC",
+    "MARKET.Abbrev.SS" : "SS",
+    "MARKET.Abbrev.BP" : "BP",
+    "MARKET.PayCommand" : "支払い対応",
+    "MARKET.PayRequest" : "支払い要請",
+    "MARKET.CreditCommand" : "支払いへの応答",
+    "MARKET.CreditRequest" : "支払いの提示",
+    "MARKET.d": "d",
+    "MARKET.CreditCommandNotAllowed" : "GMのみ、このコマンドの使用を許可されています。",
+    "MARKET.PaidBy" : "支払い人：",
+    "MARKET.PaidFor": "<b>商品購入</b>：「{product}」",
+    "MARKET.For": "誰に",
+    "MARKET.ReceivedBy" : "受領者：",
+    "MARKET.MoneyTransactionWrongCommand" : "構文が間違っています。入力コマンドの例は以下のとおり：",
+    "MARKET.PayCommandExample" : "/pay 3gc2bp<br>/pay 450bp<br>/pay 2ss12bp4gc<br>/pay 1gc John<br>/pay 12ss Kastor Lieberung",
+    "MARKET.CreditCommandExample" : "/credit 3gc2bp<br>/credit 450bp each<br>/credit 2ss12bp4gc split<br>/credit 2ss John<br>/credit 12gc Kastor Lieberung",
+    "MARKET.CantFindMoneyItems" : "失敗。所持品にアイテムに必用な貨幣(GC/BP/SS)が有りません",
+    "MARKET.NotEnoughMoney" : "支払いに必要なお金が有りません。<br>",
+    "MARKET.MoneyNeeded" : "必用な金額：",
+    "MARKET.MoneyAvailable": "所持金：",
+    "MARKET.Paid": "<b>支払い完了</b>： {number1} GC {number2} SS {number3} BP",
+    "MARKET.Credit": "<b>支払い完了</b>： {number1} GC {number2} SS {number3} BP",
+    "MARKET.RequestMessageForSplitCredit": "総額「{initialAmount}」を{activePlayerNumber}人のプレイヤーへの分配。提示額：",
+    "MARKET.RequestMessageForEachCredit": "「{initialAmount}」を{activePlayerNumber}人のプレイヤーに配布。提示額：",
+    "MARKET.NoPlayers": "ゲームのセッションに有効なプレイヤーが存在しません。",
+    "MARKET.NoMatchingPlayer": "指定されたプレイヤー名は見つかりませんでした",    
+    "MARKET.CreditToUser": "{initialAmount}の金額をユーザー「{userName}」に送信しました",
+    "MARKET.NotifyNoActor": "現在、ユーザーにキャラクターが割り当てられていないか選択されていません",
+    "MARKET.NotifyUserMustBePlayer": "「支払い」がクリック出来るのはプレイヤーだけです",
+    "MARKET.ItemAdded" : "{actor}は「{item}」を入手した",
+    "Post Quantity" : "ポスト数",
+
+    "WFRP4E.TrappingType.Weapon" : "武器",
+    "WFRP4E.TrappingType.Armour" : "鎧",
+    "WFRP4E.TrappingType.Money" : "所持金",
+    "WFRP4E.TrappingType.Ammunition" : "矢弾",
+    "WFRP4E.TrappingType.Container" : "運搬具",
+    "WFRP4E.TrappingType.ClothingAccessories" : "衣服と装飾品",
+    "WFRP4E.TrappingType.FoodDrink" : "食料と飲料",
+    "WFRP4E.TrappingType.ToolsKits" : "道具類",
+    "WFRP4E.TrappingType.BooksDocuments" : "書物と文書",
+    "WFRP4E.TrappingType.TradeTools" : "職能道具と工房",
+    "WFRP4E.TrappingType.DrugsPoisonsHerbsDraughts" : "薬物、毒物、薬草、ドラフト",
+    "WFRP4E.TrappingType.Ingredient" : "具材",
+    "WFRP4E.TrappingType.Ingredients" : "具材",
+    "WFRP4E.TrappingType.Misc" : "その他",
+    "WFRP4E.TrappingType.Cargo" : "貨物",
+    "SECTION.Passengers" : "乗客",
+
+    "WFRP4E.EncumbrancePenalties.Encumbered" : "移動力－1（最低値：3）、【敏捷力】－10、行程疲労＋1",
+    "WFRP4E.EncumbrancePenalties.VeryEnc" : "移動力－2（最低値：2）、【敏捷力】－20（最低値：10）、行程疲労＋2",
+    "WFRP4E.EncumbrancePenalties.MaxEnc" : "移動不可",
+
+    "WFRP4E.ConditionName.Ablaze" : "炎上状態",
+    "WFRP4E.ConditionName.Bleeding" : "出血状態",
+    "WFRP4E.ConditionName.Blinded" : "目がくらんだ状態",
+    "WFRP4E.ConditionName.Broken" : "戦意喪失状態",
+    "WFRP4E.ConditionName.Deafened" : "耳鳴り状態",
+    "WFRP4E.ConditionName.Entangled" : "組み付かれた状態",
+    "WFRP4E.ConditionName.Fatigued" : "疲労状態",
+    "WFRP4E.ConditionName.Poisoned" : "服毒状態",
+    "WFRP4E.ConditionName.Prone" : "伏せ状態",
+    "WFRP4E.ConditionName.Stunned" : "朦朧状態",
+    "WFRP4E.ConditionName.Surprised" : "不意を討たれた状態",
+    "WFRP4E.ConditionName.Unconscious" : "気絶状態",
+    "WFRP4E.ConditionName.Grappling" : "組み付き",
+    "WFRP4E.ConditionName.Fear" : "恐怖",
+    "WFRP4E.ConditionName.Engaged": "交戦中",
+    "WFRP4E.ConditionName.Dead" : "死亡",
+
+    "WFRP4E.LocationsTable": "命中部位",
+    "WFRP4E.Locations.head": "頭部",
+    "WFRP4E.Locations.body": "胴体",
+    "WFRP4E.Locations.rArm": "右腕",
+    "WFRP4E.Locations.lArm": "左腕",
+    "WFRP4E.Locations.rLeg": "右脚",
+    "WFRP4E.Locations.lLeg": "左脚",
+    "WFRP4E.Locations.arm": "腕部",
+    "WFRP4E.Locations.leg": "脚部",
+    
+    "WFRP4E.ScatterTable": "Scatter",
+    "WFRP4E.Scatter.TopLeft": "Top Left",
+    "WFRP4E.Scatter.TopMiddle": "Top Middle",
+    "WFRP4E.Scatter.TopRight": "Top Right",
+    "WFRP4E.Scatter.CenterLeft": "Center Left",
+    "WFRP4E.Scatter.CenterRight": "Center Right",
+    "WFRP4E.Scatter.BottomLeft": "Bottom Left",
+    "WFRP4E.Scatter.BottomMiddle": "Bottom Middle",
+    "WFRP4E.Scatter.BottomRight": "Bottom Right",
+    "WFRP4E.Scatter.AtYourFeet": "At your feet",
+    "WFRP4E.Scatter.AtTargetFeet": "At the target's feet",
+
+    "WFRP4E.MagicLores.petty": "初歩",
+    "WFRP4E.MagicLores.beasts": "獣",
+    "WFRP4E.MagicLores.death": "死",
+    "WFRP4E.MagicLores.fire": "焔",
+    "WFRP4E.MagicLores.heavens": "天空",
+    "WFRP4E.MagicLores.metal": "金属",
+    "WFRP4E.MagicLores.life": "生命",
+    "WFRP4E.MagicLores.light": "光",
+    "WFRP4E.MagicLores.shadow": "影",
+    "WFRP4E.MagicLores.hedgecraft": "似非",
+    "WFRP4E.MagicLores.witchcraft": "俗",
+    "WFRP4E.MagicLores.daemonology": "悪魔術",
+    "WFRP4E.MagicLores.necromancy": "死霊術",
+    "WFRP4E.MagicLores.undivided" : "未分化",
+    "WFRP4E.MagicLores.nurgle": "ナーグル",
+    "WFRP4E.MagicLores.slaanesh": "スラーネッシュ",
+    "WFRP4E.MagicLores.tzeentch": "ティーンチ",
+
+    "WFRP4E.MagicWind.petty": "なし",
+    "WFRP4E.MagicWind.beasts": "ガウル",
+    "WFRP4E.MagicWind.death": "シャイシュ",
+    "WFRP4E.MagicWind.fire": "アキュシー",
+    "WFRP4E.MagicWind.heavens": "アズィル",
+    "WFRP4E.MagicWind.metal": "シャモン",
+    "WFRP4E.MagicWind.life": "グューラン",
+    "WFRP4E.MagicWind.light": "ハイシュ",
+    "WFRP4E.MagicWind.shadow": "ウルグ",
+    "WFRP4E.MagicWind.hedgecraft": "なし",
+    "WFRP4E.MagicWind.witchcraft": "なし",
+    "WFRP4E.MagicWind.daemonology": "ダハール",
+    "WFRP4E.MagicWind.necromancy": "ダハール",
+    "WFRP4E.MagicWind.undivided": "ダハール",
+    "WFRP4E.MagicWind.nurgle": "ダハール",
+    "WFRP4E.MagicWind.slaanesh": "ダハール",
+    "WFRP4E.MagicWind.tzeentch": "ダハール",
+
+    "WFRP4E.prayerTypes.blessing": "祝福",
+    "WFRP4E.prayerTypes.miracle": "奇跡",
+
+    "WFRP4E.mutationTypes.physical": "肉体",
+    "WFRP4E.mutationTypes.mental": "精神",
+
+    "WFRP4E.hitLocationTables.hitloc": "標準",
+    "WFRP4E.hitLocationTables.snake": "蛇型",
+    "WFRP4E.hitLocationTables.spider": "蜘蛛型", 
+    
+    "WFRP4E.effectApplication.actor" : "アクター",
+    "WFRP4E.effectApplication.item" : "アイテム",
+    "WFRP4E.effectApplication.equipped" : "アイテムの装備中",
+    "WFRP4E.effectApplication.apply" : "目標に適用",
+    "WFRP4E.effectApplication.damage" : "アイテムがダメージを適用したとき",
+
+    "WFRP4E.applyScope.actor" : "アクター",
+    "WFRP4E.applyScope.item" : "アイテム",
+
+    "WFRP4E.TogglePassengers" : "乗客トグル",
+
+    "CONDITION.Apply" : "{condition}を適用",
+    "CONDITION.ApplyError" : "このアクターの状態効果を適用できません",
+    "Formula": "式",
+    "BleedUnc": "<b>{name}</b>は気絶した！",
+    "BleedRoll": "失血死ロール",
+    "Rolled": "出目：",
+    "BleedFail": "<b>{name}</b>は出血で死んだ！",
+    "BleedCrit": "<b>{name}</b>の出血状態が1つ減った",
+    "TookDamage": "{damage}ダメージを受けた",
+
+    "Wounds Healed" : "耐久値を回復",
+    "ITEM.LoreEffectPlaceholder" : "魔法体系の固有効果を上書き",
+    "ITEM.ChannelOverride" : "魔風交信の上書き",
+    "ITEM.ChannelPlaceholder" : "魔風交信テストに使用する技能の既定値を上書きする。",
+    "Casting Number" : "発動値（CN）",
+    "ITEM.DefaultDifficulty" : "既定の難易度",
+    "ITEM.Progress" : "進捗",
+    "ITEM.DiceRoll" : "ダイス・ロール",
+    "ITEM.AddSL" : "SLを追加",
+    "ITEM.ValuePerOvercast" : "SL+2毎",
+    "ITEM.ExtraOvercasting" : "超過発動の追加",
+    "Label" : "追加効果",
+    "ITEM.SkillOverride" : "テスト技能の上書き",
+    "ITEM.CastSkillOverride" : "発動技能の上書き",
+    "ITEM.AttackType" : "攻撃種別",
+    "ITEM.Maximum" : "最大",
+    "CHAR.WS": "武器技術度",
+    "CHAR.BS": "射撃技術度",
+	"CHAR.S": "筋力",
+	"CHAR.T": "頑健力",
+	"CHAR.I": "機転",
+	"CHAR.Ag": "敏捷力",
+	"CHAR.Dex": "器用度",
+	"CHAR.Int": "知力",
+	"CHAR.WP": "意志力",
+    "CHAR.Fel": "協調力",
+
+    "CHARAbbrev.WS": "武技",
+    "CHARAbbrev.BS": "射技",
+	"CHARAbbrev.S": "筋",
+	"CHARAbbrev.T": "頑",
+	"CHARAbbrev.I": "機",
+	"CHARAbbrev.Ag": "敏",
+	"CHARAbbrev.Dex": "器",
+	"CHARAbbrev.Int": "知",
+	"CHARAbbrev.WP": "志",
+    "CHARAbbrev.Fel": "協",
+
+    "CHARBonus.WS": "【武器技術度】ボーナス",
+	"CHARBonus.BS": "【射撃技術度】ボーナス",
+	"CHARBonus.S": "【筋力】ボーナス",
+	"CHARBonus.T": "【頑健力】ボーナス",
+	"CHARBonus.I": "【機転】ボーナス",
+	"CHARBonus.Ag": "【敏捷力】ボーナス",
+	"CHARBonus.Dex": "【器用度】ボーナス",
+	"CHARBonus.Int": "【知力】ボーナス",
+	"CHARBonus.WP": "【意志力】ボーナス",
+    "CHARBonus.Fel": "【協調力】ボーナス",
+    "Bonus" : "ボーナス",
+
+    "ToughnessDesc": "頑健",
+    "TBRed": "TB",
+
+    "NAME.Armour" : "鎧",
+    "NAME.Hardy" : "スタミナ",
+    "NAME.Small" : "小柄",
+    "NAME.Mindless" : "Mindless",
+    "NAME.Construct" : "魔法被造物",
+    "NAME.Swarm" : "群れ",
+    "NAME.Size" : "サイズ",
+    "NAME.Ward" : "守護",
+    "NAME.TraitWeapon" : "武器",
+    "NAME.TraitRanged" : "遠隔攻撃",
+    "NAME.TraitArmour" : "鎧",
+    "NAME.Unstable" : "不安定性",
+    "NAME.Infighter" : "肉薄の間合い",
+    "NAME.DeadeyeShot" : "百発百中",
+    "NAME.StrikeToStun" : "気絶打撃",
+    "NAME.Arcane" : "秘術魔術",
+    "SPEC.Tiny" : "超小型",
+    "SPEC.Little" : "小型",
+    "SPEC.Small" : "小柄",
+    "SPEC.Average" : "平均",
+    "SPEC.Large" : "大柄",
+    "SPEC.Enormous" : "大型",
+    "SPEC.Monstrous" : "超大型",
+
+    "NAME.BP" : "ペニー真鍮銭",
+    "NAME.SS" : "シリング銀貨",
+    "NAME.GC" : "クラウン金貨",
+
+    "NAME.BPPlural" : "ペニー真鍮銭",
+    "NAME.SSPlural" : "シリング銀貨",
+    "NAME.GCPlural" : "クラウン金貨",
+
+    "TIER.Gold" : "黄金級",
+    "TIER.Silver" : "白銀級",
+    "TIER.Brass" : "真鍮級",
+
+    "TABLE.ConvertTable" : "WFRP4eのロール表に変換",
+    "TABLE.Lookup" : "参照：",
+    "TABLE.Cancel" : "出目：{result}（キャンセルされた）",
+    "TABLE.Key" : "テーブルキー",
+    "TABLE.Column" : "テーブル列",
+
+    "NAME.Pray" : "祈念",
+    "NAME.Language" : "言語",
+    "NAME.Channelling" : "魔風交信",
+    "NAME.Melee" : "近接攻撃",
+    "NAME.MeleeBrawling" : "近接攻撃 (格闘武器類)",
+    "NAME.Ranged" : "遠隔攻撃",
+    "NAME.Endurance" : "肉体抵抗",
+    "NAME.Cool" : "冷静さ",
+    "NAME.Dodge" : "回避",
+    "NAME.Stride" : "広歩幅",
+    "NAME.Unarmed" : "素手",
+    "NAME.Stomp" : "踏みつけ",
+    "NAME.Improvised" : "代用武器",
+    "NAME.Fear" : "恐怖",
+    "NAME.FearExtendedTest" : "「恐怖」の継続テスト",
+    "NAME.Terror" : "恐慌",
+    "NAME.ID" : "我流魔術",
+    "NAME.AA" : "エーテル順応",
+    "NAME.SMB" : "強打",
+    "NAME.AS" : "射撃威力増大",
+    "NAME.Robust" : "頑健無比",
+    "NAME.PS" : "清らかな魂",
+    "NAME.StrongBack" : "強固な背筋",
+    "NAME.Sturdy" : "運搬者",
+    "NAME.ConsumeAlcohol" : "大酒飲み",
+    "NAME.Stealth" : "隠密",
+    "NAME.PickLock" : "開錠",
+    "NAME.Champion" : "猛者",
+    "NAME.Riposte" : "突き返し",
+    "NAME.Ambi" : "両手利き",
+    "NAME.Distract" : "注意そらし",
+    "NAME.Resolute" : "断固とした突撃",
+    "NAME.DualWielder" : "二刀流",
+    "NAME.Trickriding" : "曲乗り",
+    "NAME.Corruption" : "堕落",
+    "NAME.Infected" : "感染",
+    "NAME.Disease" : "病気",
+    "NAME.Daemonic" : "悪魔的",
+    "NAME.Undead" : "アンデッド",
+    "NAME.Ethereal" : "エーテル状態",
+    "NAME.Slayer" : "でかぶつ殺し",
+    "NAME.Doomed" : "運命づけ",
+    "NAME.Etiquette" : "礼儀作法",
+    "NAME.Resistance" : "耐性",
+    "NAME.AcuteSense" : "鋭敏感覚",
+    "NAME.Strider" : "渡り", 
+    "NAME.Savant" : "識者",
+    "NAME.Art" : "芸術",
+    "NAME.Athletics" : "運動",
+    "NAME.Bribery" : "賄賂",
+    "NAME.Charm" : "話術",
+    "NAME.CharmAnimal" : "てなずけ",
+    "NAME.Climb" : "登攀",
+    "NAME.Drive" : "操縦",
+    "NAME.Entertain" : "芸能",
+    "NAME.Gamble" : "賭博",
+    "NAME.Gossip" : "世間話",
+    "NAME.Haggle" : "値切り",
+    "NAME.Intimidate" : "威圧",
+    "NAME.Intuition" : "直観",
+    "NAME.Leadership" : "指揮",
+    "NAME.Navigation" : "方角案内",
+    "NAME.OutdoorSurvival" : "野外生存術",
+    "NAME.Perception" : "知覚",
+    "NAME.Ride" : "騎乗",
+    "NAME.Row" : "舟漕ぎ",
+    "NAME.AnimalCare" : "動物の世話",
+    "NAME.AnimalTraining" : "調教",
+    "NAME.Evaluate" : "値踏み",
+    "NAME.Heal" : "治療",
+    "NAME.Lore" : "知識",
+    "NAME.Perform" : "大道芸",
+    "NAME.Play" : "演",
+    "NAME.Research" : "調査",
+    "NAME.Sail" : "航海",
+    "NAME.SecretSigns" : "符丁",
+    "NAME.SetTrap" : "罠設置",
+    "NAME.SleightOfHand" : "手先の早業",
+    "NAME.Swim" : "水泳",
+    "NAME.Track" : "追跡",
+    "NAME.Trade" : "職能",
+    "NAME.Luck" : "幸運",
+    "NAME.NightVision" : "夜目",
+    "NAME.StrongMinded" : "頑固一徹",
+    "NAME.DarkVision" : "暗視",
+    "NAME.ArcaneMagic" : "秘術魔術",
+    "NAME.ChaosMagic" : "混沌魔術",
+    "NAME.FastHands" : "スリ",
+    "NAME.MagicalSense" : "魔力感知",
+    "NAME.PettyMagic" : "初歩魔術",
+    "NAME.SecondSight" : "第二の視覚",
+    "NAME.WarWizard" : "戦闘魔術師",
+    "NAME.Witch" : "魔女！",
+    "NAME.Frenzy" : "狂乱",
+    "NAME.MagicResistanceTalent" : "魔法耐性",
+    "NAME.MagicResistanceTrait" : "魔法耐性",
+    "NAME.Schemer" : "陰謀家",
+    "NAME.FuriousAssault" : "連続攻撃",
+    "NAME.SeaLegsTalent" : "船上慣れ",
+    "NAME.Ogre" : "オウガ",
+    "NAME.Lingering" : "長患い",
+    "NAME.Amphibious" : "水陸両生",
+    "NAME.Flight" : "飛翔",
+
+    "SPEC.Any": "任意",
+    "SPEC.Basic" : "基本武器類",
+    "SPEC.Cavalry" : "騎兵用武器類",
+    "SPEC.Fencing" : "突剣類",
+    "SPEC.Brawling" : "格闘武器類",
+    "SPEC.Flail" : "フレイル類",
+    "SPEC.Parry" : "受け流し用武器類",
+    "SPEC.Polearm" : "長柄武器類",
+    "SPEC.TwoHanded" : "両手用武器類",
+    "SPEC.Blackpowder" : "黒色火薬武器類",
+    "SPEC.Bow" : "弓類",
+    "SPEC.Crossbow" : "クロスボウ類",
+    "SPEC.Entangling" : "捕縛武器類",
+    "SPEC.Engineering" : "技師用武器類",
+    "SPEC.Explosives" : "爆破武器類",
+    "SPEC.Sling" : "投石武器類",
+    "SPEC.Throwing" : "投擲武器類",
+    "SPEC.Vehicle" : "車載兵器類",
+    "SPEC.Magick" : "魔法語",
+    "SPEC.Horse" : "馬",
+    "SPEC.Urban" : "都市",
+    "SPEC.Rural" : "農村",
+    "SPEC.Underground" : "地下",
+    "SPEC.Sing" : "歌唱",
+    "SPEC.Singing" : "歌唱",
+    "SPEC.Eltharin" : "エルサリン語",
+    "SPEC.Cathayan" : "キャセイ語",
+    "SPEC.Lute" : "リュート",
+    "SPEC.Sight" : "視覚",
+    "SPEC.Hearing" : "聴覚",
+    "SPEC.Smell" : "嗅覚",
+
+
+    "SHEET.CharacterSheet" : "キャラクターシート",
+    "SHEET.NPCSheet" : "NPCシート",
+    "SHEET.CreatureSheet" : "クリーチャーシート",
+    "SHEET.VehicleSheet" : "乗り物シート",
+    "SHEET.CharacterSheetNoTheme" : "キャラクターシート (テーマなし)",
+    "SHEET.NPCSheetNoTheme" : "NPCシート (テーマなし)",
+    "SHEET.CreatureSheetNoTheme" : "クリーチャーシート (テーマなし)",
+    "SHEET.VehicleSheetNoTheme" : "乗り物シート (テーマなし)",
+
+    "SHEET.DupPrompt" : "このアイテムを複製しますか？",
+    "SHEET.DupTitle" : "アイテムの複製",
+    "SHEET.SplitPrompt" : "分割する量を入力",
+    "SHEET.SplitTitle" : "アイテムの分割",
+    "Split" : "分割",
+    "Invalid Quantity" : "不正な数量",
+    "SHEET.SwitchToSkills" : "技能に切替",
+    "SHEET.SwitchToExtendedTests" : "継続テストに切替",
+    "SHEET.TemporaryEffects" : "一時的効果",
+    "SHEET.PassiveEffects" : "受動効果",
+    "SHEET.DisabledEffects" : "無効化された効果",
+    "SHEET.AppliedEffects" : "適用された効果",
+    "SHEET.Source" : "ソース",
+    "SHEET.AdvanceDiseases" : "病気を進行",
+    "SHEET.ApplyToTarget" : "目標に適用",
+    "SHEET.Target" : "目標",
+    "SHEET.ToggleEffect" : "効果の切替",
+    "SHEET.Additional" : "追加",
+    "SHEET.OtherCost": "その他の費用",
+    "SHEET.OtherCostPlaceholder": "数式又は値",
+    "SHEET.ApplyEffect" : "{effect}を適用",
+    "SHEET.InvokeEffect" : "{effect}を発動",
+    "SHEET.ExpChange" : "支出 / 合計の修正",
+    "Reason" : "理由",
+    "SHEET.TotalSpentExp" : "支出 / 合計　の値",
+    "SHEET.CharacteristicCurrent" : "現在値",
+    "SHEET.ExperienceCurrent" : "現在値",
+    "SHEET.CareerCurrent" : "現在値",
+    "New" : "新規",
+    "SHEET.ToggleTraits" : "クリーチャー特徴の切替",
+    "SHEET.Unarmed": "素手",
+    "SHEET.Dodge": "回避",
+    "SHEET.Improvised": "代用武器",
+    "SHEET.Stomp": "踏みつけ",
+    "SHEET.GenerateName" : "名前生成",
+    "SHEET.Randomize" : "ランダム化",
+    "SHEET.UnusedQualitiesHint" : "この特性を扱うのに適当な技能を持っていません。",
+
+    "DISEASE.IncubationFinished" : "{disease}の潜伏期間が終了した。",
+
+    "ERROR.ParseDisease": "病気のロールをパースできませんでした",
+    "ERROR.ParseInjury": "負傷のロールをパースできませんでした",
+    "ERROR.ParseSpell": "エラー：呪文のダメージをパースできませんでした。詳細はコンソールを参照",
+    "ERROR.Parser": "「{name}」が見つかりません",
+    "ERROR.NoSkill": "事典かワールドに技能（または専門分野）「{skill}」が見つかりません",
+    "ERROR.NoTalent": "事典かワールドに異能（または専門分野）「{talent}」が見つかりません",
+    "ERROR.SpellLore": "アクターが所有している呪文の魔法体系は編集できません",
+    "ERROR.Column": "ロールするのに適切な列がを見つけられません",
+    "ERROR.Table": "テーブル{key}が見つかりません。公式モジュールのテーブルの場合、事典からインポートしてください。",
+    "ERROR.Found": "{name}は見つかりませんでした",
+    "ERROR.Species": "「{name}」という種族は見つかりません",
+    "ERROR.Experience": "経験値は数値を入力してください。",
+    "ERROR.ID": "{name}のIDはコレクションに存在するため、ユニークIDを付与しました。",
+    "ERROR.Opposed": "対抗テスト結果の算出には、攻撃・防御双方のテストが必要",
+    "ERROR.CannotUseArm" : "腕が使えません",
+    "ERROR.NoOwnedCrew" : "このロールに紐づいた操縦班がありません",
+    "WARNING.Target": "効果を適用する目標を選択してください。",
+    "WARNING.ActorTest": "使用できるアクターのテストクラスがありません。テストオブジェクトから直接「roll()」を呼びだしてください",
+    "APPLYREQUESTGM": "効果の適用要求をGMに送信",
+    "APPLYREQUESTOWNER": "適用された効果のコマンドを所有者に送信",
+    "EFFECT.Applied" : "「{name}」の適用 ⇒",
+    "ERROR.EFFECT": "効果「{effect}」の実行時エラー、コンソール（F12）を確認してください",
+    "ERROR.AMMO_MODS": "「{type}」値の矢弾を解決できません。コンソール(F12)で詳細を確認してください",
+    "SinReduced": "「原罪点」を1点減じた",
+    "TargetingCancelled": "ターゲットを取消：対抗テスト済",
+    "ERROR.Property": "WFRP4eのロールはアイテムのプロパティ特定が必要です",
+    "ERROR.Speaker": "WFRP4eのロールにはスピーカー特定が必要です",
+    "GroupAdvantageNoCombatant" : "このアクターがグループ優位を更新するには戦闘に参加している必要があります。",
+    "AutoFillAdvantageDisabled" : "「優位の自動反映」設定が無効化されています",
+    "GroupAdvantageUpdated" : "グループ優位を更新。プレイヤー：{players}｜敵：{enemies}",
+    "ERROR.PrayerAoEOvercast" : "祈祷の効果範囲は超過発動で伸ばせません",
+    "ERROR.EffectNotFound" : "テストアイテムに効果が見つかりません",
+    "ERROR.StandardTraitsOnVehicle" : "通常の特徴は乗り物には追加できません",
+    "ERROR.VehicleTraitsOnStandard" : "アクターに乗り物特徴を追加できません",
+    "ERROR.NoAvailableActors" : "No available owned Actors to choose!===(419)===",
+    "ERROR.SkillAlreadyExists" : "アクターにはこの名前の技能が既に存在しています",
+
+    "Item Properties": "アイテム特性",
+    "PROPERTY.Group" : "または",
+    "PROPERTY.GroupDescription" : "同じ番号を付与した特性グループからはそのうち一つを選択できます（「切断」または「突き刺し」）",
+    "PROPERTY.Accurate": "正確",
+    "PROPERTY.Blackpowder": "黒色火薬",
+    "PROPERTY.Blast": "爆風",
+    "PROPERTY.Damaging": "損傷",
+    "PROPERTY.Defensive": "防御用",
+    "PROPERTY.Distract": "攪乱",
+    "PROPERTY.Entangle": "絡みつき",
+    "PROPERTY.Fast": "素早い",
+    "PROPERTY.Hack": "切断",
+    "PROPERTY.Impact": "衝撃",
+    "PROPERTY.Impale": "突き刺し",
+    "PROPERTY.Penetrating": "貫通",
+    "PROPERTY.Pistol": "ピストル",
+    "PROPERTY.Precise": "高精度",
+    "PROPERTY.Pummel": "痛打",
+    "PROPERTY.Repeater": "連発式",
+    "PROPERTY.Shield": "シールド",
+    "PROPERTY.TrapBlade": "トラップ・ブレード",
+    "PROPERTY.Unbreakable": "頑丈",
+    "PROPERTY.Wrap": "巻きこみ",
+    "PROPERTY.Magical": "魔法的",
+    "PROPERTY.Dangerous": "危険性",
+    "PROPERTY.Imprecise": "低精度",
+    "PROPERTY.Reload": "再装填",
+    "PROPERTY.Slow": "鈍重",
+    "PROPERTY.Tiring": "疲労",
+    "PROPERTY.Undamaging": "非致傷",
+    "PROPERTY.Ugly": "不細工",
+    "PROPERTY.Shoddy": "粗悪品",
+    "PROPERTY.Unreliable": "低信頼性",
+    "PROPERTY.Bulky": "かさばる",
+    "PROPERTY.Durable": "耐久性",
+    "PROPERTY.Fine": "精緻",
+    "PROPERTY.Lightweight": "軽量",
+    "PROPERTY.Practical": "実用性",
+    "PROPERTY.Unbalanced": "不安定",
+    "PROPERTY.Custom": "カスタム",
+    "PROPERTY.CustomHint": "書式　－　{type} 1: {type} 1 説明 | {type} 2 (値) : {type} 2 説明 | など。",
+    "PROPERTY.SlashAlert": "<b>斬撃の特性</b>：致命的負傷で@Condition[出血状態]を与え、優位を{value}消費することでさらに1つの出血状態を与えることが出来る。",
+    "Simple": "Simple===(204)===",
+    "Momentum": "Momentum===(205)===",
+
+    "PROPERTY.Flexible" : "柔靭",
+    "PROPERTY.Impenetrable" : "堅固",
+    "PROPERTY.Partial" : "部分的",
+    "PROPERTY.Weakpoints" : "弱点",
+
+    "PROPERTIES.TraitWarning" : "一部の特性／難点はクリーチャー特徴に適用されません、「再装填」、「黒色火薬」、「連発式」、「シールド」、「耐久性」、「精緻」、「軽量」、「かさばる」など",
+
+    "WFRP4E.BPandEng" : "黒色火薬武器類および技師用武器類",
+    "WFRP4E.Bow" : "弓類",
+    "WFRP4E.Crossbow" : "クロスボウ類",
+    "WFRP4E.Sling" : "投石武器類",
+    "WFRP4E.Vehicle" : "乗り物",
+
+    "ITEM.IsSpec" : "専門分野あり",
+    "ITEM.NoSpec" : "専門分野なし",
+
+    "Instant" : "瞬間",
+
+    "AP" : "AP",
+    "Scatter" : "散乱",
+    "yard" : "ヤード",
+    "yards" : "ヤード",
+    "Ammo" : "Ammo",
+    "yds" : "ﾔｰﾄﾞ",
+
+    "NAME.CombatReflexes" : "先制",
+    "FORTUNE.Use" : "幸運ポイントの使用",
+    "FORTUNE.UsageRerollText" : "{character}は幸運ポイントを使用して、失敗したテストを再ロールした。",
+    "FORTUNE.PointsRemaining" : "幸運ポイントの残り：",
+    "FORTUNE.UsageAddSLText" : "{character}は幸運ポイントを使用して、SLを+1追加した。テスト結果は更新された。",
+    "DARKDEAL.Use" : "邪悪な取引を受ける",
+    "DARKDEAL.UsageText" : "{character}は邪悪な取引を受けて再ロールして、堕落ポイントを＋１獲得した。",
+
+    "OPPOSED.DefenderWins" : "<b>{defender}</b> の勝利<br />SL差：{SL}で <b>{attacker}</b> は敗北。",
+    "OPPOSED.AttackerWins" : "<b>{attacker}</b> の勝利<br />SL差：{SL}で <b>{defender}</b> は敗北。",
+    "ROLL.Misfire" : "<b>暴発</b>：君の武器は暴発し、君の手の中で炸裂した！　腕に{damage}ダメージを受ける。",
+    "OPPOSED.FailedRanged" : "<b>テスト失敗</b>：対抗テストは自動失敗",
+    "OPPOSED.Daemonic" : "<b>悪魔的</b>：攻撃は無視された（出目：{roll}）",
+    "OPPOSED.DaemonicRoll" : "<b>悪魔的の出目</b>：{roll}",
+    "OPPOSED.Ward" : "<b>守護</b>：打撃は無視された（出目：{roll}）",
+    "OPPOSED.WardRoll" : "<b>守護の出目</b>：{roll}",
+
+    "CHATOPT.ApplyDamage": "ダメージを適用",
+    "CHATOPT.ApplyDamageNoAP": "ダメージを適用（AP無視）",
+    "CHATOPT.ApplyDamageNoTB": "ダメージを適用（【頑＋】無視）",
+    "CHATOPT.ApplyDamageNoTBAP": "ダメージを適用（APおよび【頑＋】無視）",
+    "CHATOPT.UseFortuneReroll":"幸運Ｐを消費してリロール", 
+    "CHATOPT.UseFortuneSL":"幸運Ｐを消費して成功レベル（SL）を＋1", 
+    "CHATOPT.DarkDeal": "邪悪な取引をし再ロール（堕落Ｐ１点獲得）",
+    "CHATOPT.StartOpposed": "対抗テスト開始",
+    "CHATOPT.DefendOpposed": "Defend Opposed===(941D103)===",
+    "CHATOPT.CompleteUnopposed": "全て対抗テスト無し、で完了",
+    "CHATOPT.ApplyAllDamage": "全てのダメージを適用",
+    "CHATOPT.Reroll": "再ロール",
+    "CHATOPT.TotalPower": "Total Power===(0245)===",
+    "CHATOPT.EditTest": "テストを修正",
+
+    "TRAVEL.TravelMessageBase": "出発地＝<b>{from}</b>、目的地＝<b>{to}</b> : ",
+    "TRAVEL.TravelMessageRoad": "<br><b>道路</b>：{road_distance}マイル<br>　四輪馬車で{road_days}日間、危険度は「{road_danger_string}」<br>　運用馬で{road_horse_heavy_days}日間、危険度は「{road_danger_string}」<br>　早馬で{road_horse_fast_days}日間、危険度は「{road_danger_string}」<br>　徒歩で{road_feet_days}日間、危険度は「{road_danger_feet_string}」",
+    "TRAVEL.TravelMessageRiver": "<br><b>河川</b>：{river_distance}マイル<br>　船で{river_days}日間、危険度は「{river_danger_string}」",
+    "TRAVEL.TravelMessageSea": "<br><b>海</b>：{sea_distance}マイル<br>　船で{sea_days}日間、危険度は「{sea_danger_string}」",
+    "TRAVEL.TownPrompt": "目的の町を選択",
+    "TRAVEL.TownOriginPrompt": "出発する町を選択",
+    "TRAVEL.DangerVeryLow": "極めて低い",
+    "TRAVEL.DangerLow" : "低い",
+    "TRAVEL.DangerMedium" : "普通",
+    "TRAVEL.DangerHigh" : "高い",
+    "TRAVEL.DangerVeryHigh" : "極めて高い",
+    "TRAVEL.Helper" : "距離は、<i>Jackdays</i>の<i>「エンパイアの移動距離」</i>という文献に基づくものです。距離は、中世の移動に関する史料に基づいて見直されています。川が流れる方向についても考慮されています。<br><b>使い方</b>：「<b>/travel 町</b>」または「<b>/travel 町1 町2</b>」または「<b>/travel</b>」",
+
+    "TRADE.ManageCargo": "交易の管理",
+    "TRADE.Encumbrance": "荷重",
+    "TRADE.Modifier": "修正値（+/-x%）の適用結果",
+    "TRADE.Price": "現在価格",
+    "TRADE.CargoTitle": "「{town}」には「<b>{name}</b>」の貨物があります！",
+    "TRADE.Quality": "品質",
+    "TRADE.MerchantData": "売主：<b>{name}</b>：{species}の{gender}商人（〈値切り〉{haggle}）",
+    "TRADE.MerchantTest": "<strong>商人テスト</strong>：成功レベル（SL）{SL}（出目：{roll}）",
+    "TRADE.CreateCargoItem": "アイテム作成",
+    "TRADE.Cancel": "取消",
+    "TRADE.CargoPrefix": "Cargo of ===(430)===",
+    "TRADE.CargoDescr": "{town}で<b>{name}</b>から購入",
+    "TRADE.MerchantDataBuy": "<h2>貨物の購入</h2><b>{cargoName}</b><br><b>荷重</b>：{cargoSize}<br><b>価格</b>：{cargoPrice} GC",
+    "TRADE.BuyCargo": "この貨物を買う！",
+    "TRADE.NotEnoughMoney": "You don't have enough money to buy this cargo!===(434)===",
+    "TRADE.CargoBought" : "Cargo has been bought by <b>{name}</b>===(435)===", 
+    "TRADE.CargoItemName" : "「{name}」の貨物", 
+    "TRADE.NoCargoFound" : "<b>{town}</b>には購入できる貨物は有りませんでした（出目：{rolls}）。", 
+
+    "TRADE.SettlementName" : "居住地名",
+    "TRADE.SettlementDetails" : "居留地の詳細",
+    "TRADE.Surplus" : "Surplus===(440)===",
+    "TRADE.Demand" : "Demand===(441)===",
+    "TRADE.Trade" : "交易",
+    "TRADE.River" : "River===(443)===",
+    "TRADE.Maritime" : "Maritime===(444)===",
+    "TRADE.Settlement" : "居住地",
+    "TRADE.Size" : "規模",
+    "TRADE.Wealth" : "富",
+    "TRADE.Produces" : "生産",
+    "TRADE.Season" : "季節",
+    
+    "Cargo": "貨物",
+    "Cost": "価格",
+    "Length": "全長",
+    "VEHICLE.yd": "yd",
+    "Motive Power": "動力",
+    "VEHICLE.Type" : "乗り物の種類",
+    "VEHICLE.ModEncumbranceTT" : "Encumbrance from Modifications: {amt}===(217)===",
+    "VEHICLE.CarryEncumbranceTT" : "Encumbrance from Cargo: {amt}===(218)===",
+    "VEHICLE.CrewRoles" : "操縦班の役割",
+    "VEHICLE.Crew" : "操縦班",
+    "VEHICLE.VehicleCrew" : "乗り物の操縦班",
+    "VEHICLE.Skill" : "技能",
+    "VEHICLE.Modifications" : "乗り物改造",
+    "VEHICLE.ModType" : "改造タイプ",
+    "VEHICLE.TestNotFound" : "技能も能力値も見つかりません",
+    "VEHICLE.TestNotPermitted" : "このテストに必要な権限が有りません。",
+    "VEHICLE.NoActor" : "役割にアクターを割り当ててください。",
+    "VEHICLE.RoleTest" : "役割のテスト",
+    "VEHICLE.RoleTestLabel" : "テストの名称",
+    "VEHICLE.EnterRoleName" : "役割を入力",
+    "VEHICLE.Handling" : "乗り物を操縦する",
+    "VEHICLE.HandlingTT" : "技能を乗り物を取り扱うテストの勘定に入れるか",
+    "VEHICLE.HandlingNoPenalty" : "荷重最大値以下：ペナルティなし",
+    "VEHICLE.HandlingPenalty" : "操縦テストに－{penalty}成功レベル（SL）のペナルティ",
+    "VEHICLE.CantUseActor" : "You do not have permission to perform tests with this actor.===(231)===",
+    "VEHICLE.NoActorOnBoard" : "Your assigned character isn't in the vehicle.===(232)===",
+    "VEHICLE.Enabled" : "有効",
+    "VEHICLE.PrimaryMode" : "主推進方式",
+    "Vehicle Settings" : "乗り物の設定",
+    "VEHICLE.Move" : "乗り物の移動",
+    "VEHICLE.Sail" : "帆",
+    "VEHICLE.Oars" : "櫂",
+    "VEHICLE.S" : "帆",
+    "VEHICLE.O" : "櫂",
+    "VEHICLE.Morale" : "士気",
+    "VEHICLE.VehicleMorale" : "乗り物の士気",
+    "VEHICLE.MoraleEffects" : "Morale Effects===(457)===",
+    "VEHICLE.MoraleRolls" : "Morale Rolls===(724-08)===",
+    "VEHICLE.NoMoraleModifiers" : "No Active Morale Modifiers===(724-09)===",
+    "VEHICLE.ManannsMood" : "Manann's Mood===(458)===",
+    "VEHICLE.ManannsMoodRolls" : "Manann's Mood Rolls===(724-10)===",
+    "VEHICLE.NoManannsMoodModifiers" : "No Active Mood Modifiers===(724-11)===",
+    "VEHICLE.Change" : "Change===(724-12)===",
+    "VEHICLE.Starting" : "開始",
+    "VEHICLE.Sources" : "士気",
+    "VEHICLE.Delete" : "Delete this entry?===(724-13)===",
+    "VEHICLE.CrewTests" : "操縦班テスト",
+    "VEHICLE.NoSkill" : "This Actor has no Skill that can be used with this Role===(724-14)===",
+    "VEHICLE.ChooseSkill" : "Choose the Skill to use===(724-15)===",
+    "VEHICLE.CollisionRating" : "衝突率",
+    "VEHICLE.WeekLabel" : "Week Label===(463)===",
+    "VEHICLE.LabelError" : "ロールのラベルを入力",
+    "VEHICLE.Man" : "Man.===(464)===",
+    "VEHICLE.Custom" : "カスタム",
+    "VEHICLE.SetValue" : "値を設定",
+    "VEHICLE.SetValueToolTip" : "ロールする代わりに特定の値を設定する。",
+    "VEHICLE.Roles" : "役割",
+    "VEHICLE.NewRole" : "新しい役割",
+    "VEHICLE.AssignedActors" : "割り当て済みアクター",
+    "VEHICLE.SellCargo" : "Sell Cargo===(724-20)===",
+    "NewRole" : "新しい役割",
+    "Add Encumbrance for Actors" : "アクターを荷重に加算",
+    "Submit" : "提出",
+    "Confirm" : "決定",
+
+    "Actor Settings": "アクター設定",
+
+    "BUTTON.PostBug" : "苦情を投稿",
+    "BUTTON.CharacterCreation" : "キャラクター作成",
+
+    "CAREER.LeaveComplete" : "満了したキャリアを離れる",
+    "CAREER.LeaveIncomplete" : "満了していないキャリアを離れる",
+    "CAREER.DifferentClass" : "別のクラスに入る",
+    "CAREERAdvHint" : "<p>このキャリアの成長をアクターに適用しますか？",
+    "CAREERAdv" : "キャリアの成長",
+    "CAREER.AddSkillError" : "技能「{skill}」の追加時に何らかの問題が発生しました：{error}",
+    "CAREER.AddTalentError" : "異能「{talent}」の追加時に何らかの問題が発生しました：{error}",
+    "CAREER.Loading" : "キャリア読込中",
+
+    "EFFECT.TabWFRP" : "WFRP",
+    "EFFECT.EffectType" : "効果タイプ",
+    "EFFECT.EffectApplication" : "効果の適用先",
+    "EFFECT.PreventDuplicate" : "効果の重複を防ぐ",
+    "EFFECT.DodgeMount" : "騎乗中の〈回避〉",
+    "EFFECT.HideEffect" : "プレイヤーから隠す",
+    "EFFECT.SystemEffects" : "システム効果",
+    "EFFECT.SelectEffect" : "効果を選択",
+    "EFFECT.Tooltip": "ダイアログの値に影響を与えている効果",
+    "EFFECT.Target": "目標：",
+    "EFFECT.ReduceQuantityOption": "使用量の削減",
+    "EFFECT.QuantityError": "Insufficient Quantity===(243)===",
+    "New Effect": "新しい効果",
+    "EFFECT.Prevent": "効果「{name}」の追加を止めました：既に効果は存在します",
+    "EFFECT.TestsToAffect": "影響するテスト",
+    "EFFECT.AffectTheSourceOfFearName" : "{name}に関わるテスト",
+    "EFFECT.AffectTheSourceOfFear" : "「恐怖」の対象に対して行なおうとするあらゆるテスト",
+    "EFFECT.Encumbrance": "荷重",
+    "EFFECT.ColdExposure": "寒気への露出",
+    "EFFECT.HeatExposure": "暑熱への露出",
+    "EFFECT.Thirst": "渇き",
+    "EFFECT.Starvation": "飢え",
+    "EFFECT.Infighting": "肉薄戦闘",
+    "EFFECT.OnDefensive": "防御的",
+    "EFFECT.DualWielder": "二刀流",
+    "EFFECT.ConsumeAlcohol": "大酒飲み",
+    "EFFECT.MarienburghersCourage": "マリエンブルク人の勇敢さよ！",
+    "EFFECT.TestsRelatedToHearing": "聴覚が関与するテスト",
+    "EFFECT.TestsRelatedToMovementOfAnyKind": "移動に関わるあらゆるテスト",
+    "EFFECT.TestsRelatedToSight": "視覚が関与するあらゆるテスト",
+    "EFFECT.ShooterEngagedError": "君が「交戦中」の場合には遠隔攻撃は行えないが、「ピストル」の「特性」（第11章『消費者購入手引』を参照）を有する遠隔武器を用いている場合には、その限りではない。",
+    "EFFECT.ShooterEngaged": "射手が近接戦闘で交戦中 - 射程の修正値なし",
+    "EFFECT.ShootingAtEngagedTarget": "「交戦中」の目標",
+    "EFFECT.Applying": "{name}を適用",
+    "EFFECT.NotSelf" : "本人には適用しません",
+    "EFFECT.DeletingEffectItems" : "効果のアイテムを削除：{items}",
+    "EFFECT.PromptItem" : "アイテムを指定",
+    "EFFECT.ItemFilters" : "アイテム・フィルター",
+    "EFFECT.ItemChoice" : "選択したアイテム",
+    "EFFECT.CanBeAsync" : "スクリプトでは「async/await」キーワードが使用できます",
+    "EFFECT.BlackpowderShock" : "Blackpowder Shock===(724-20)===",
+    "EFFECT.CharacteristicsModifier" : "能力値（修正値）",
+    "EFFECT.CharacteristicsInitial" : "能力値（初期値）",
+    "EFFECT.CharacteristicsBonus" : "能力値（ボーナス修正値）",
+    "EFFECT.BonusModifier" : "ボーナス修正値",
+    "EFFECT.CalculationBonusModifiers" : "ボーナス計算修正値",
+    "EFFECT.CalculationBonusModifier" : "CBM",
+
+    "WFRP4E.MountButtonNotify" : "The left-side actor ({mounter}) has mounted the right-side actor ({mountee})===(z027)===",
+    "MountError": "自分より小さいクリーチャーには騎乗できません。",
+
+
+    "minor": "Minor===(941D109)===",
+    "moderate": "Moderate===(941D110)===",
+    "major": "Major===(941D111)===",
+    "Minor": "軽度",
+    "Moderate": "中度",
+    "Major": "重度",
+    "CORRUPTION.Minor": "小規模",
+    "CORRUPTION.Moderate": "中規模",
+    "CORRUPTION.Major": "大規模",
+    "CORRUPTION.Exposure": "堕落への露出",
+    "Quantity": "数量",
+    "Infinite": "無制限",
+    "Halved" : "半減",
+
+    "IngredientNone" : "なし",
+    "IngredientPower" : "威力（Power）",
+    "IngredientControl" : "制御（Control）",
+    "ConsumedIngredient" : "<p>具材が消費された</p>",
+    "Overchannelling" : "超過交信",
+
+    "CondStatus": "状態",
+    "CondRound": "－ラウンド{round}",
+
+    "Hit Location Table" : "命中部位表",
+
+    "Human": "人間",
+    "Dwarf": "ドワーフ",
+    "Halfling": "ハーフリング", 
+    "High Elf": "ハイ・エルフ",
+    "Wood Elf": "ウッド・エルフ",
+
+    "Difficulty": "難易度",
+    "DIFFICULTY.VEasy": "「超容易」（＋60）な",
+    "DIFFICULTY.Easy": "「容易」（＋40）な",
+    "DIFFICULTY.Average": "「普通」（＋20）の",
+    "DIFFICULTY.Challenging": "「手強い」（＋0）",
+    "DIFFICULTY.Difficult": "「難しい」（－10）",
+    "DIFFICULTY.Hard": "「多難」（－20）な",
+    "DIFFICULTY.VHard": "「超多難」（－30）な",
+    "DIFFICULTY.Futile": "「無駄」（－40）な",
+    "DIFFICULTY.Impossible": "「不可能」（－50）な",
+
+    "DIFFICULTYNAME.VEasy": "「超容易」（＋60）",
+    "DIFFICULTYNAME.Easy": "「容易」（＋40）",
+    "DIFFICULTYNAME.Average": "「普通」（＋20）",
+    "DIFFICULTYNAME.Challenging": "「手強い」（＋0）",
+    "DIFFICULTYNAME.Difficult": "「難しい」（－10）",
+    "DIFFICULTYNAME.Hard": "「多難」（－20）",
+    "DIFFICULTYNAME.VHard": "「超多難」（－30）",
+    "DIFFICULTYNAME.Futile": "「無駄」（－40）",
+    "DIFFICULTYNAME.Impossible": "「不可能」（－50）",
+
+    "DIFFICULTY.MooVEasy": "「超容易」（＋40）な",
+    "DIFFICULTY.MooEasy": "「容易」（＋30）な",
+    "DIFFICULTY.MooDifficult": "「難しい」（－20）",
+    "DIFFICULTY.MooHard": "「多難」（－30）な",
+    "DIFFICULTY.MooVHard": "「超多難」（－40）な",
+    "DIFFICULTY.MooFutile": "「無駄」（－50）な",
+    "DIFFICULTY.MooImpossible": "「不可能」（－60）な",
+
+    "Point Blank": "至近距離",
+    "Short Range": "短射程",
+    "Normal": "通常射程",
+    "Long Range": "長射程",
+    "Extreme": "最大射程",
+
+    "Career Selector": "キャリア選択",
+    "SHEET.NoCareers": "キャリアが見つかりません",
+    "XP Cost": "経験点（XP）の消費",
+    "Select": "選択",
+    
+    "Species Characteristics": "種族特性",
+    "SpecChar": "<p>アクターに種族の特性値を設定しますか？",
+
+    "Stat Block Parser": "Stat Block Parser===(266)===",
+    "Possessions": "Possessions===(267)===",
+
+    "Years": "年",
+    "Months": "月",
+    "Days": "日",
+    "Hours": "時間",
+    "Minutes": "分",
+    "Seconds": "秒",
+    "Treatment": "処置",
+    "Round": "round===(941D114)===",
+
+    "Morrslieb - Currently On ": "モールスリーブ　－　現在有効",
+    "Morrslieb - Currently Off": "モールスリーブ　－　現在無効",
+    "Mask": "Mask===(271)===",
+    "Unmask": "Unmask===(272)===",
+
+    "Domain": "ドメイン",
+    "BUGREPORT.Contact": "連絡先",
+    "BUGREPORT.ContactPlaceholder": "Discordタグか、Ｅメール。",
+    "BUGREPORT.DescriptionPlaceholder": "何が起きたのか、どうすれば再現できるのか、など。",
+    "BUGREPORT.MatchingGrudges": "苦情の記録は完了してますか？",
+    "BUGREPORT.Warning": "<b>ご注意</b>：この情報はGitHubのIssuesページに掲載し公開されていますので、Discordタグが望ましい。それ以外には、直接私（<a href='mailto:russellt@cubicle7games.com'>Moo Man</a>）に連絡してください。",
+    "BUGREPORT.Updated": "<p>すべてのWFRP4eパッケージが最新です！</p>",
+    "BUGREPORT.NotUpdated": "<p>以下のWFRP4eパッケージが最新では有りません</p>",
+    "BUGREPORT.ManyModules": "WFRP4e以外のモジュールが有効になっていますが、そのうちの一つが干渉していませんか？",
+    "GrudgePost": "長髭族が苦情を受け取りました！コンソールのリンクをご参照ください。",
+    "GrudgeError": "長髭族が苦情の受取を拒みました。詳細はコンソールをご確認ください。",
+    "Something went wrong": "誤りがあります",
+    "BugReport.ErrorForm": "フォームにご記入ください",
+    "BugReport.ErrorName1": "連絡先の欄にDiscordタグまたはEメールの入力をお願いします。",
+    "BugReport.DiscordChange" : "リマインダ： Discordのユーザーネームが変更されます。ユーザー名が変更になった場合は、新しいユーザー名を使用してください。",
+    "BUGREPORT.AlertHint" : "このレポートには再現性が無いか追加の情報が必要です。詳細はタイトルをクリック。",
+    "BUGREPORT.NeedsAttention" : "要注意",
+    "BUGREPORT.Settled" : "解決積み",
+    "BUGREPORT.APiLimitReached" : "GitHubのAPI使用制限に達しました。投稿する前に1時間待つか、Githubウェブサイトで手動で投稿する必要があります。",
+    "BUGREPORT.LoadingIssues" : "イシュー読み込み中",
+    "BUGREPORT.Troubleshooting" : "<a href='https://moo-man.github.io/WFRP4e-FoundryVTT/pages/troubleshooting.html'>問題解決</a>のページを参照してから報告してください。",
+    
+    "UpdaterTitle": "「{title}」のデータ更新",
+    "Updater1": "この処理では、事典から新しく文書がインポートされ、以前に事典からインポートされたドキュメントを上書きします。",
+    "Updater2": "\n※※※君が変更した内容が上書きされることを意味します。※※※",
+    "Updater3": "以前にこのモジュールを初期化したことがある場合のみ使用してください。",
+    "UPDATER.OverwriteActors": "アクターを上書き",
+    "UPDATER.OverwriteItems": "アイテムを上書き",
+    "UPDATER.OverwriteTables": "テーブルを上書き",
+    "UPDATER.OverwriteJournals": "ジャーナルを上書き",
+    "UPDATER.OverwriteScenes": "シーンを上書き",
+    "UPDATER.Exclude": "名前変更は含まない",
+    "UPDATER.ExcludeHint": "チェックすると、名前が変更されたドキュメントは更新されない",
+    "UPDATER.Error": "このモジュールを少なくとも一度初期化して居る場合にのみ、更新することができます。",
+    "UPDATER.Notification": "{name} - {version}から、ドキュメントを{created}個作成、{updated}個更新",
+    "UPDATER.DeleteModuleContent" : "モジュールのコンテンツ削除",
+    "UPDATER.DeleteModuleContentPrompt" : "<p><strong>警告</strong>：このワールドにインポートされたモジュール<strong>{id}</strong>に関するコンテンツが全て削除されます。</p><p>続行して宜しいですか？",
+    
+    "INIT.ResolveDuplicates" : "重複の解決",
+    "INIT.ResolveDuplicatesNote" : "以下のドキュメントは既にワールドに存在しています。初期化するモジュールのデータで上書きしますか？<br><br>チェックを付けたドキュメントは新しいデータで上書きされます、外すと何も変更されません。",
+
+
+    "SOCKET.SendingSocketRequest" : "Sending Socket Request===(320)===",
+
+    "WFRP4e Content Setup": "WFRP4eコンテンツセットアップ",
+    "Setup": "セットアップ",
+    "WFRP4e Content Initialization": "WFRP4eコンテンツ初期化",
+    "Initialization": "初期化",
+    "Import or update the content from the WFRP4e Core Module": "WFRP4eコアモジュールからコンテンツをインポートもしくは更新",
+
+
+    "WH" : {
+        "TransferType" : {
+          "Crew" : "乗員"
+        },
+
+        "Models" : {
+
+            "standard": {
+                "FIELDS": {
+                    "details" : {
+                        "mainHand" : {
+                            "label" : "利き手",
+                            "hint" : "システムが区別するときに、どちらの手が「主」とみなすか。"
+                        },
+                        "hitLocationTable.value" : {
+                            "label" : "命中部位表",
+                            "hint" : "アクターが攻撃されたときに使用する既定の命中部位表を指定する。"
+                        }
+                    },
+                    "settings": {
+                        "equipPoints" : {
+                            "label" : "装備点数",
+                            "hint" : "装備可能な武器数の制限、2点は「手」が2本を意味する。"
+                        },
+  
+                        "autoCalc": {
+                            "size": {
+                                "label": "トークンサイズ自動計算",
+                                "hint": "トークンののサイズをこのアクターのサイズに基づいて自動的に計算する"
+                            },
+                            "run": {
+                                "label": "「走行移動」のスピード自動計算",
+                                "hint": "「走行移動」のスピードの既定値は4×「移動力」"
+                            },
+                            "walk": {
+                                "label": "「歩行移動」のスピード自動計算",
+                                "hint": "「歩行移動」のスピードの既定値は2×「移動力」"
+                            },
+                            "wounds": {
+                                "label": "「耐久値」の自動計算",
+                                "hint": "「耐久値」の既定値は【筋＋】＋（2×【頑＋】）＋【志＋】（サイズが平均の場合）"
+                            },
+                            "criticals": {
+                                "label": "「致命的負傷」の自動計算",
+                                "hint": "「致命的負傷」の最大値の既定値は【頑＋】"
+                            },
+                            "corruption": {
+                                "label": "「堕落ポイント」の自動計算",
+                                "hint": "「堕落ポイント」の閾値の既定値は【意＋】＋【頑＋】"
+                            },
+                            "encumbrance": {
+                                "label": "「荷重」の自動計算",
+                                "hint": "「超過荷重」の閾値の既定値は【筋＋】＋【頑＋】"
+                            }
+                        }
+                    }
+                }
+            },
+
+            "vehicle" : {
+                "FIELDS" : {
+                    "vehicleType" : {
+                        "label" : "Vehicle Type===(941D135)==="
+                    },
+                    "details.hitLocationTable.value" : {
+                        "label" : "Hit Location Table===(941D136)===",
+                        "hint" : "Defines a custom hit location table for when this Actor is attacked.===(941D137)==="
+                    },
+                    "status.morale.transferEffects" : {
+                        "label" : "Transfer Morale Effects===(941D138)===",
+                        "hint" : "Apply morale effects to Actors on this vehicle.===(941D139)==="
+                    }
+                }
+            },
+
+
+            "ammunition" : {
+                "FIELDS" : {
+                    "ammunitionType.value" : {
+                        "label" : "矢弾種類",
+                        "hint" : "この矢弾を使用できる武器の種類を指定します"
+                    },
+                    "range.value" : {
+                        "label" : "射程",
+                        "hint" : "この矢弾を使用した武器の射程を修正。例：追加：+2、低下：-2、乗算：*2、徐算：/2"
+                    },
+                    "damage.value" : {
+                        "label" : "ダメージ値",
+                        "hint" : "この矢弾を使用した武器のダメージを修正する。射程の例を参照してください。"
+                    },
+                    "damage.dice" : {
+                        "label" : "さいころ",
+                        "hint" : "ダメージに追加するダイス・ロール"
+                    },
+                    "special.value" : {
+                        "label" : "特殊"
+                    }
+                }
+            },
+            "armour" : {
+                "FIELDS" : {
+                    "armorType.value" : {
+                        "label" : "鎧分類"
+                    },
+                    "AP" : {
+                        "head" : {
+                            "label" : "頭部"
+                        },
+                        "lArm" : {
+                            "label" : "左腕"
+                        },
+                        "rArm" : {
+                            "label" : "右腕"
+                        },
+                        "lLeg" : {
+                            "label" : "左脚"
+                        },
+                        "rLeg" : {
+                            "label" : "右脚"
+                        },
+                        "body" : {
+                            "label" : "胴体"
+                        }
+                    },
+                    "special.value" : {
+                        "label" : "特殊",
+                        "hint" : "チャットカードに表示される補足情報。"
+                    }
+                }
+            },
+            "career" : {
+                "FIELDS" : {
+                    "class.value" : {
+                        "label" : "クラス"
+                    },
+                    "careergroup.value" : {
+                        "label" : "キャリアグループ"
+                    },
+                    "level.value" : {
+                        "label" : "キャリアレベル"
+                    },
+                    "status" : {
+                        "tier" : {
+                            "label" : "階級"
+                        },
+                        "standing" : {
+                            "label" : "段位"
+                        }
+                    }
+                }
+            },
+            "cargo" : {
+                "FIELDS" : {
+                    "tradeType" : {
+                        "label" : "Trade Type===(941D163)==="
+                    },
+                    "cargoType.value" : {
+                        "label" : "貨物タイプ"
+                    },
+                    "unitPrice.value" : {
+                        "label" : "単価"
+                    },
+                    "origin.value" : {
+                        "label" : "産地"
+                    },
+                    "quality" : {
+                        "value" : {
+                            "label" : "品質"
+                        }
+                    }
+                }
+            },
+            "container" : {
+                "FIELDS" : {
+                    "wearable.value" : {
+                        "label" : "着用可"
+                    },
+                    "carries.value" : {
+                        "label" : "運搬"
+                    },
+                    "countEnc.value" : {
+                        "label" : "運搬中",
+                        "hint" : "キャラクターの荷重計算にこの荷重点を加算（持ち歩かない場合はオフ。例：荷車など）"
+                    }
+                }
+            },
+            "disease" : {
+                "FIELDS" : {
+                    "contraction.value" : {
+                        "label" : "罹患"
+                    },
+                    "incubation.value" : {
+                        "label" : "Incubation===(941D173)==="
+                    },
+                    "duration.value" : {
+                        "label" : "潜伏期間"
+                    },
+                    "symptoms.value" : {
+                        "label" : "症状"
+                    },
+                    "permanent.value" : {
+                        "label" : "不治"
+                    }
+                }
+            },
+            "extendedTest" : {
+                "FIELDS" : {
+                    "SL.target" : {
+                        "label" : "SLの目標値"
+                    },
+                    "test.value" : {
+                        "label" : "テスト"
+                    },
+                    "difficulty.value" : {
+                        "label" : "既定の難易度"
+                    },
+                    "negativePossible.value" : {
+                        "label" : "負の進捗を許可",
+                        "hint" : "テストの進捗を0未満にすることを許可"
+                    },
+                    "failingDecreases.value" : {
+                        "label" : "失敗時は進捗が減少",
+                        "hint" : "テストに失敗すると進捗が減少する"
+                    },
+                    "completion.value" : {
+                        "label" : "目標値の達成時",
+                        "hint" : "目標値を達成したら、このアクションを実行する"
+                    },
+                    "hide.test" : {
+                        "label" : "テストを隠す",
+                        "hint" : "このテストをプレイヤーから隠す"
+                    },
+                    "hide.progress" : {
+                        "label" : "進捗を隠す",
+                        "hint" : "テストの進捗をプレイヤーから隠す"
+                    }
+                }
+            },
+            "money" : {
+                "FIELDS" : {
+                    "coinValue.value" : {
+                        "label" : "効果の価値",
+                        "hint" : "この種類のコインの価値（真鍮銭での）"
+                    }
+                }
+            },
+            "skill" : {
+                "FIELDS" : {
+                    "advanced.value" : {
+                        "label" : "技能種別"
+                    },
+                    "grouped.value" : {
+                        "label" : "専門分野"
+                    },
+                    "characteristic.value" : {
+                        "label" : "能力値"
+                    },
+                    "modifier.value" : {
+                        "label" : "修正値"
+                    },
+                    "advances.force" : {
+                        "label" : "Force Advancement Indicator===(941D196)===",
+                        "hint" : "Show the Advancement Indicator regardless of career, which will allow you to automate spending experience.===(941D197)==="
+                    },
+                    "advances.costModifier" : {
+                        "label" : "XP修正値"
+                    }
+                }
+            },
+            "talent" : {
+                "FIELDS" : {
+                    "tests.value" : {
+                        "label" : "テスト"
+                    },
+                    "max" : {
+                        "value" : {
+                            "label" : "最大修得回数"
+                        },
+                        "formula" : {
+                            "label" : "計算式",
+                            "hint" : "例：@characteristics.int.bonus + @characteristics.wp.bonus"
+                        }
+                    },
+                    "advances.force" : {
+                        "label" : "Force Advancement Indicator===(941D203)===",
+                        "hint" : "Show the Advancement Indicator regardless of career, which will allow you to automate spending experience.===(941D204)==="
+                    }
+                }
+            },
+            "mutation" : {
+                "FIELDS" : {
+                    "modifier.value": {
+                        "label": "修正値"
+                    },
+                    "mutationType.value" : {
+                        "label" : "混沌変異の種類"
+                    }
+                }
+            },
+            "critical" : {
+                "FIELDS" : {
+                    "wounds.value" : {
+                        "label" : "失う「耐久値」"
+                    },
+                    "prompt" : {
+                        "label" : "部位の入力",
+                        "hint" : "アクターに追加されるときに部位の入力を促す。"
+                    },
+                    "location.value" : {
+                        "label" : "部位"
+                    }
+                }
+            },
+            "injury" : {
+                "FIELDS" : {
+                    "duration" : {
+                        "value" : {
+                            "label": "持続時間"
+                        },
+                        "permanent" : {
+                            "label" : "永続的"
+                        }
+                    },
+                    "prompt" : {
+                        "label" : "部位の入力",
+                        "hint" : "アクターに追加されるときに部位の右か左の選択を促す。"
+                    },
+                    "location.value" : {
+                        "label" : "部位"
+                    }
+                }
+            },
+            "prayer" : {
+                "FIELDS" : {
+                    "type.value" : {
+                        "label" : "種類"
+                    },
+                    "god.value" : {
+                        "label" : "神"
+                    },
+                    "range.value" : {
+                        "label" : "射程"
+                    },
+                    "duration.value" : {
+                        "label" : "持続時間"
+                    },
+                    "target" : {
+                        "value" : {
+                            "label" : "目標"
+                        },
+                        "aoe" : {
+                            "label" : "効果範囲"
+                        },
+                        "extendableAoE" : {
+                            "label" : "効果範囲の追加",
+                            "hint" : "成功レベルにより効果の範囲を増やすことが出来るか？"
+                        }
+                    },
+                    "damage" : {
+                        "value" : {
+                            "label" : "計算式"
+                        },
+                        "dice" : {
+                            "label" : "さいころ",
+                            "hint" : "ダメージに追加するダイス・ロール"
+                        },
+                        "addSL" : {
+                            "label" : "成功レベル追加",
+                            "hint" : "成功レベル（SL）に等しい追加ダメージを追加"
+                        }
+                    },
+                    "overcast" : {
+                        "enabled" : {
+                            "label" : "超過発動の選択肢"
+                        }
+                    }
+                }
+            },
+            "spell" : {
+                "FIELDS" : {
+                    "cn.value" : {
+                        "label" : "発動値（CN）"
+                    },
+                    "lore.value" : {
+                        "label" : "魔法体系"
+                    },
+                    "skill.value" : {
+                        "label" : "発動技能"
+                    },
+                    "wind.value" : {
+                        "label" : "魔風交信技能"
+                    },
+                    "ritual.value" : {
+                        "label" : "儀式"
+                    },
+                    "ritual.xp" : {
+                        "label" : "Learning XP===(941D235)==="
+                    },
+                    "range.vortex" : {
+                        "label" : "不規則な渦"
+                    },
+                    "range.value" : {
+                        "label" : "射程"
+                    },
+                    "duration.value" : {
+                        "label" : "持続時間"
+                    },
+                    "duration.extendable" : {
+                        "label" : "持続時間の延長",
+                        "hint" : "この呪文が終了する時、君は【意志力】テストに功することで、「持続時間」を＋1ラウンド延長することができる。"
+                    },
+                    "magicMissile.value" : {
+                        "label" : "射撃系呪文"
+                    },
+
+                    "target" : {
+                        "value" : {
+                            "label" : "目標"
+                        },
+                        "aoe" : {
+                            "label" : "効果範囲"
+                        }
+                    },
+                    "damage" : {
+                        "value" : {
+                            "label" : "計算式"
+                        },
+                        "dice" : {
+                            "label" : "さいころ",
+                            "hint" : "ダメージに追加するダイス・ロール"
+                        }
+                    },
+                    "overcast" : {
+                        "enabled" : {
+                            "label" : "超過発動の選択肢"
+                        }
+                    }
+                }
+            },
+            "trait" : {
+                "FIELDS" : {
+                    "category" : {
+                        "label" : "分類"
+                    },
+                    "rollable" : {
+                        "value" : {
+                            "label" : "ロール可能"
+                        },
+                        "damage" : {
+                            "label" : "ダメージ発生"
+                        },
+                        "skill" : {
+                            "label" : "技能"
+                        },
+                        "rollCharacteristic" : {
+                            "label" : "ロールする能力値"
+                        },
+                        "bonusCharacteristic" : {
+                            "label" : "ボーナス能力値"
+                        },
+                        "dice" : {
+                            "label" : "ダイス・ロール"
+                        },
+                        "defaultDifficulty" : {
+                            "label" : "難易度"
+                        },
+                        "SL" : {
+                            "label" : "SLを追加"
+                        },
+                        "attackType" : {
+                            "label" : "攻撃種別"
+                        }
+                    },
+                    "specification.value" : {
+                        "label" : "明細事項"
+                    }
+                }
+            },
+            "trapping" : {
+                "FIELDS" : {
+                    "trappingType.value" : {
+                        "label" : "所持品タイプ"
+                    }
+                }
+            },
+            "vehicleMod" : {
+                "FIELDS" : {
+                    "modType.value" : {
+                        "label" : "改造タイプ"
+                    }
+                }
+            },
+            "vehicleRole" : {
+                "FIELDS" : {
+                    "test" : {
+                        "label" : "テスト技能"
+                    }
+                }
+            },
+            "vehicleTest" : {
+                "FIELDS" : {
+                    "roles" : {
+                        "value" : {
+                            "label" : "Roles===(941D262)==="
+                        },
+                        "vital" : {
+                            "label" : "Vital Roles===(941D263)==="
+                        }
+                    },
+                    "handling" : {
+                        "label" : "Vehicle Handling===(941D264)==="
+                    }
+                }
+            },
+            "weapon" : {
+                "FIELDS" : {
+                    "weaponGroup.value" : {
+                        "label" : "武器の分類"
+                    },
+                    "skill.value" : {
+                        "label" : "技能"
+                    },
+                    "modeOverride.value" : {
+                        "label" : "攻撃種別"
+                    },
+                    "damage" : {
+                        "value" : {
+                            "label" : "ダメージ値"
+                        },
+                        "dice" : {
+                            "label" : "さいころ",
+                            "hint" : "ダメージに追加するダイス・ロール"
+                        }
+                    },
+                    "reach" : {
+                        "value" : {
+                            "label" : "間合い"
+                        }
+                    },
+                    "range" : {
+                        "value" : {
+                            "label" : "射程"
+                        }
+                    },
+                    "ammunitionGroup" : {
+                        "value" : {
+                            "label" : "矢弾グループ"
+                        }
+                    },
+                    "consumesAmmo" : {
+                        "value" : {
+                            "label" : "矢弾の消費"
+                        }
+                    },
+                    "twohanded" : {
+                        "value" : {
+                            "label" : "両手"
+                        }
+                    },
+                    "special" : {
+                        "value" : {
+                            "label" : "特殊"
+                        }
+                    }
+                }
+            },
+            "template" : {
+                "FIELDS" : {
+                    "alterName": {
+                        "pre": {
+                            "label": "名前の接頭辞を変更"
+                        },
+                        "post": {
+                            "label": "名前の接尾辞を変更"
+                        }
+                    }
+                }
+            }
+        },
+
+        "Components" : {
+            "Locational" : {
+                "FIELDS" : {
+                    "prompt" : {
+                        "label" : "Prompt Location===(941D279)===",
+                        "hint" : "Prompt for a location when added to an Actor.===(941D280)==="
+                    },
+                    "location.value" : {
+                        "label" : "部位"
+                    }
+                }
+            }
+        }
+      }
+,
+    "WFRP4eJaJp.comment.core-en.json": "これ以降、元のen.jsonに含まれない",
+    "Dodge": "回避",
+    "Prompt Location": "部位選択",
+    "Choose Location": "部位選択",
+    "Item": "アイテム",
+    "Actor": "アクター",
+    "Script": "スクリプト",
+    "Script Lock": "スクリプト・ロック",
+    "Enter Your Grudge": "苦情を入力",
+    "EFFECT.PenaltyToAllTests": "すべてのテストにペナルティ（@effect.name）",
+    "Ethereal": "エーテル状態",
+    "WFRP4e Table Settings": "WFRP4eロール表設定",
+    "Configure which tables to roll on when multiple of the same key exist.": "同じキーのロール表が複数存在する場合に使用するロール表を設定する。",
+    "Table Settings": "ロール表設定",
+    "PROPERTY.Flaw": "難点",
+    "PROPERTY.Quality": "特性",
+    "Toughness": "頑健力",
+    "WFRP4eJaJp.comment.rule0": "===(.\\d{2})=== 通常の未訳言語ファイル",
+    "WFRP4eJaJp.comment.rule1": "===(z\\d{3})=== 使用箇所が見つからない未訳言語ファイル",
+    "WFRP4eJaJp.comment.rule2": "===(-\\d{3})=== 削除済キー、バージョン\\d{3}まで存在",
+    "WFRP4e Starter Set Setup": "WFRP4eスターターセットセットアップ",
+    "Import or update the content from the WFRP4e Starter Set Module": "WFRP4eスターターセットのモジュールからコンテンツをインポートまたは更新",
+    "WFRP4e RNHD Setup": "WFRP4e RNHD セットアップ",
+    "Import or update the content from the WFRP4e RNHD Module": "WFRP4e RNHD(眠れぬ夜と息つけぬ昼)のモジュールからコンテンツをインポートまたは更新",
+    "Show Clock": "時計を表示",
+    "Shows the Clock Application on load.": "時計アプリケーションを起動時に表示する。",
+    "Sync Clock with Simple Calendar": "Simple Calendarと時計を同期",
+    "Synchronizes the clock with the Simple Calendar module": "Simmple Calendarモジュールと時計を同期する。",
+    "WFRP4e Ubersreik Adventures I Setup": "WFRP4eユーべルスライク冒険集セットアップ",
+    "Import or update the content from the WFRP4e Ubersreik Adventures I Module": "WFRP4ユーベルスライク冒険集モジュールからコンテンツをインポートまたは更新",
+    "WFRP4eJaJp.comment.start": "===start===",
+    "days": "日間",
+    "SHEET.AdvCost": "<strong>コスト</strong>：{Cost}",
+    "TOKEN.CharLink": "トークンのリンク",
+    "Tier" : "階級",
+    "Standing" : "段位",
+    "Overrides": "上書き",
+    "Edit": "編集",
+    "Remove": "削除",
+    "Post to Chat": "チャットに投稿",
+    "Count Enc.": "荷重に数える",
+    "Weapon Modifiers": "武器修正値",
+    "WFRP4eJaJp.comment.end": "===end==="
+}

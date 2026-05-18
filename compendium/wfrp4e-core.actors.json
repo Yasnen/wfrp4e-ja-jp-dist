@@ -1,0 +1,242 @@
+{
+	"label": "怪物寓話集（コア）",
+	"comment": "hitloc：使用する命中部位表の修正のため",
+	"mapping": {
+		"gmnotes": "system.details.gmnotes.value",
+		"hitloc": "system.details.hitLocationTable.value",
+		"species": {
+			"path": "system.details.species.value",
+			"converter": "actor_species"
+		},
+		"gender": {
+			"path": "system.details.gender.value",
+			"converter": "actor_gender"
+		},
+		"haircolour": {
+			"path": "system.details.haircolour.value",
+			"converter": "actor_color"
+		},
+		"eyecolour": {
+			"path": "system.details.eyecolour.value",
+			"converter": "actor_color"
+		},
+		"items": {
+			"path": "items",
+			"converter": "items_converter"
+		},
+		"tokenName": {
+			"path": "prototypeToken.name",
+			"converter": "actor_prototypeToken_name"
+		},
+		"effects": {
+			"path": "effects",
+			"converter": "actor_effects_converter"
+		}
+	},
+	"entries": {
+		"Basilisk": {
+			"name": "バジリスク"
+		},
+		"Bear": {
+			"name": "ベア（熊）"
+		},
+		"Black Bella": {
+			"name": "“黒の”ベッラ"
+		},
+		"Bloodletter of Khorne": {
+			"name": "ブラッドレター・オヴ・コーン（コーン神の流血悪魔）",
+			"tokenName": "ブラッドレター・オヴ・コーン"
+		},
+		"Boar": {
+			"name": "ボアー（猪）"
+		},
+		"Bog Octopus": {
+			"name": "ボグ・オクトパス",
+			"hitloc": "spider"
+		},
+		"Bray-Shaman": {
+			"name": "ビュレイシャーマン（いななき呪い師）",
+			"tokenName": "ビュレイシャーマン"
+		},
+		"Cairn Wraith": {
+			"name": "ケルン・レイス（墓塚の魔霊）",
+			"tokenName": "ケルン・レイス"
+		},
+		"Cave Squig": {
+			"name": "ケイヴ・スクイッグ"
+		},
+		"Chaos Warrior": {
+			"name": "ケイオス・ウォリアー"
+		},
+		"Clanrat": {
+			"name": "クランラット（鼠雑兵）",
+			"tokenName": "クランラット"
+		},
+		"Crypt Ghoul": {
+			"name": "クリプト・グール（地下埋葬室の食屍鬼）",
+			"tokenName": "クリプト・グール"
+		},
+		"Cultist": {
+			"name": "混沌教徒"
+		},
+		"Daemonette of Slaanesh": {
+			"name": "デモネット・オヴ・スラーネッシュ（スラーネッシュ神の蠱惑悪魔）",
+			"tokenName": "デモネット・オヴ・スラーネッシュ"
+		},
+		"Demigryph": {
+			"name": "デミグリフ"
+		},
+		"Dieter Käsegeier": {
+			"name": "ディーター・カーゼガイヤー"
+		},
+		"Dire Wolf": {
+			"name": "ダイア・ウルフ"
+		},
+		"Dog": {
+			"name": "ドッグ（犬）"
+		},
+		"Dragon": {
+			"name": "ドラゴン"
+		},
+		"Dwarf": {
+			"name": "ドワーフ"
+		},
+		"Fenbeast": {
+			"name": "フェンビースト"
+		},
+		"Fimir": {
+			"name": "フィミール"
+		},
+		"Fr'hough Mournbreath": {
+			"name": "フルホッフ・モウルンブレス──ナーグルのディーモン・プリンス",
+			"tokenName": "フルホッフ・モウルンブレス"
+		},
+		"Ghost": {
+			"name": "ゴースト（幽霊）",
+			"tokenName": "ゴースト"
+		},
+		"Giant": {
+			"name": "ジャイアント（巨人）",
+			"tokenName": "ジャイアント"
+		},
+		"Giant Rat": {
+			"name": "ジャイアント・ラット"
+		},
+		"Giant Spider": {
+			"name": "ジャイアント・スパイダー",
+			"hitloc": "spider"
+		},
+		"Goblin": {
+			"name": "ゴブリン"
+		},
+		"Gor": {
+			"name": "ゴール"
+		},
+		"Griffon": {
+			"name": "グリフォン"
+		},
+		"Halfling": {
+			"name": "ハーフリング"
+		},
+		"High Elf": {
+			"name": "ハイ・エルフ"
+		},
+		"Hippogryph": {
+			"name": "ヒポグリフ"
+		},
+		"Horse": {
+			"name": "ホース（馬）"
+		},
+		"Human": {
+			"name": "人間"
+		},
+		"Hydra": {
+			"name": "ヒドラ"
+		},
+		"Jabberslythe": {
+			"name": "ジャバースライス"
+		},
+		"Kastor Erichson": {
+			"name": "カスター・エリクソン"
+		},
+		"Manticore": {
+			"name": "マンティコア"
+		},
+		"Minotaur": {
+			"name": "ミノタウロス"
+		},
+		"Mutant": {
+			"name": "ミュータント（変異種）",
+			"tokenName": "ミュータント"
+		},
+		"Ogre": {
+			"name": "オウガ"
+		},
+		"Orc": {
+			"name": "オーク"
+		},
+		"Pegasus": {
+			"name": "ペガサス"
+		},
+		"Pigeon": {
+			"name": "ピジョン（鳩）"
+		},
+		"Pol Dankels": {
+			"name": "ポル・ダンケルズ──人間の魔女"
+		},
+		"Rat Ogre": {
+			"name": "ラット・オウガ（鼠鬼兵）",
+			"tokenName": "ラット・オウガ"
+		},
+		"Skeleton": {
+			"name": "スケルトン"
+		},
+		"Slenderthigh Whiptongue": {
+			"name": "スレンダーサイ・ウィップトング──スラーネッシュのディーモン・プリンス",
+			"tokenName": "スレンダーサイ・ウィップトング"
+		},
+		"Snake": {
+			"name": "スネーク（蛇）",
+			"hitloc": "snake"
+		},
+		"Snotling": {
+			"name": "スノットリング"
+		},
+		"Stellemar": {
+			"name": "ステルマー、忠実なる猟犬",
+			"tokenName": "ステルマー"
+		},
+		"Stormvermin": {
+			"name": "ストームヴァーミン（鼠強兵）",
+			"tokenName": "ストームヴァーミン"
+		},
+		"Tomb Banshee": {
+			"name": "トゥーム・バンシー"
+		},
+		"Troll": {
+			"name": "トロール"
+		},
+		"Ungor": {
+			"name": "アンゴール"
+		},
+		"Vampire": {
+			"name": "ヴァンパイア（吸血鬼）",
+			"tokenName": "ヴァンパイア"
+		},
+		"Varghulf": {
+			"name": "ヴァルグールフ"
+		},
+		"Wolf": {
+			"name": "ウルフ（狼）"
+		},
+		"Wood Elf": {
+			"name": "ウッド・エルフ"
+		},
+		"Wyvern": {
+			"name": "ワイヴァーン"
+		},
+		"Zombie": {
+			"name": "ゾンビ"
+		}
+	}
+}

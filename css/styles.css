@@ -1,0 +1,41 @@
+/* アクティブ効果設定のラベルが日本語で折り返されるのを防ぐ */
+.active-effect-config .form-fields label {
+  white-space: nowrap;
+}
+
+/* アクターシートの能力値表の行ラベルの幅を広げる、三文字の日本語折り返しを防ぐ */
+.characteristic-table .row-label {
+  width: 4em;
+}
+
+/* キャラクターの技能、NPC・クリーチャーの主要タブ */
+/*   ヘッダーの能力値列（.small 1番目） */
+.skill-lists .list-header .row-content .small:first-of-type {
+  white-space: nowrap;
+  min-width: 2.5em;
+}
+/*   データ行の能力値列（row-contentの2番目の子）、武技・射技への対応 */
+.skill-lists .list-row .row-content > :nth-child(2) {
+  white-space: nowrap;
+  min-width: 2.5em;
+}
+
+/* 乗り物を除くアクターシートの効果タブ */
+/*   data-key ごとにフォントサイズを縮小（6文字=100%基準） */
+.condition-section .condition[data-key="entangled"] a[data-tooltip],
+.condition-section .condition[data-key="blinded"] a[data-tooltip] {
+  font-size: 0.75em; /* 8文字 → 6/8 */
+}
+.condition-section .condition[data-key="surprised"] a[data-tooltip] {
+  font-size: 0.667em; /* 9文字 → 6/9 = 2/3 */
+}
+
+/* 事典ブラウザの開くボタンのテキストが折り返されるのを防ぐ */
+#compendium > header > div > button.open-compendium-browser {
+    white-space: nowrap; /* テキストを折り返さない */
+}
+
+/* ロール表の「編集」のspanを修正して折り返しを防ぐ */
+[id^="RollTableSheet-RollTable-"] section header button span {
+  white-space: nowrap;  
+}

@@ -1,0 +1,891 @@
+{
+	"label": "ロール表（コア）",
+	"mapping": {
+		"results": {
+			"path": "results",
+			"converter": "tableResultsJP"
+		}
+	},
+	"folders": {
+		"Career Tables": "キャリア表",
+		"Character Creation": "キャラクタ作成",
+		"Core Rulebook": "コアルール",
+		"Corruption & Mutation Tables": "堕落と混沌変異表",
+		"Critical Hit Tables": "致命的負傷表",
+		"GM Booklet": "ゲームマスター・ガイド",
+		"Hit Location": "命中部位表",
+		"Moo's Homebrew": "Moo's Homebrew"
+	},
+	"entries": {
+		"Career - Dwarf": {
+			"name": "キャリア－ドワーフ",
+			"_id": "OT9tBLUxvNWc62i1",
+			"results": {
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Apothecary}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{薬剤師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Engineer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{技師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Lawyer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{弁護士}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Physician}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{医者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Scholar}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{学者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Agitator}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{扇動家}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Artisan}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{職人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{Beggar}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{物乞い}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Investigator}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{捜査官}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Merchant}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{商人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Rat Catcher}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{ネズミ捕り}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Townsman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{都市住民}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Watchman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{警備兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Advisor}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{顧問}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Artist}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{芸術家}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Duellist}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{決闘者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Envoy}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{渉外使者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Noble}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{貴族}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{Servant}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{召使い}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Spy}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{密偵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Warden}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{所領管理人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{Bailiff}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{領地代官}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Hunter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{狩人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{Miner}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{鉱夫}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Scout}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{偵察兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Villager}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{村人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Bounty Hunter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{賞金稼ぎ}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Coachman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{御者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Entertainer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{芸人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Messenger}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{伝書}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Pedlar}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{行商人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Boatman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{川舟乗り}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Huffer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{水先案内人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Riverwoman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{河川の民}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Seaman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{船乗り}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Smuggler}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{密輸商人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Stevedore}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{港湾労働者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{Wrecker}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{難破船荒らし}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Fence}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{故売人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Outlaw}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{無法者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Racketeer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{ゆすり屋}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Thief}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{盗賊}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Guard}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{衛兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Pit Fighter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{剣闘士}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Protagonist}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{流れ者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Soldier}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{兵士}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5leTOZ6Wj35bS1IV]{Slayer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5leTOZ6Wj35bS1IV]{スレイヤー}"
+			}
+		},
+		"Career - Halfling": {
+			"name": "キャリア－ハーフリング",
+			"_id": "RQ0G7UVPeXR3jp2J",
+			"results": {
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Apothecary}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{薬剤師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Engineer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{技師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Lawyer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{弁護士}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Physician}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{医者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Scholar}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{学者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Agitator}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{扇動家}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Artisan}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{職人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{Beggar}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{物乞い}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Investigator}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{捜査官}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Merchant}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{商人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Rat Catcher}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{ネズミ捕り}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Townsman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{都市住民}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Watchman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{警備兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Advisor}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{顧問}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Artist}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{芸術家}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Envoy}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{渉外使者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{Servant}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{召使い}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Spy}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{密偵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Warden}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{所領管理人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{Bailiff}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{領地代官}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Herbalist}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{薬草師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Hunter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{狩人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{Miner}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{鉱夫}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Scout}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{偵察兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Villager}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{村人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Bounty Hunter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{賞金稼ぎ}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Coachman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{御者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Entertainer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{芸人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Messenger}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{伝書}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Pedlar}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{行商人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Road warden}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{街道巡視員}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Boatman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{川舟乗り}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Huffer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{水先案内人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{Riverwarden}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{河川巡視員}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Riverwoman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{河川の民}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Seaman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{船乗り}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Smuggler}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{密輸商人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Stevedore}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{港湾労働者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Bawd}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{斡旋人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Charlatan}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{いかさま師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Fence}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{故売人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{Grave Robber}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{墓荒らし}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Outlaw}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{無法者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Racketeer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{ゆすり屋}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Thief}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{盗賊}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Guard}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{衛兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Pit Fighter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{剣闘士}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Soldier}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{兵士}"
+			}
+		},
+		"Career - High Elf": {
+			"name": "キャリア－ハイ・エルフ",
+			"_id": "wDt3rHbbBVUfX6nw",
+			"results": {
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Apothecary}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{薬剤師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Lawyer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{弁護士}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Physician}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{医者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Scholar}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{学者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Wizard}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{魔術師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Artisan}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{職人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Investigator}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{捜査官}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Merchant}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{商人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Townsman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{都市住民}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Watchman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{警備兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Advisor}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{顧問}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Artist}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{芸術家}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Duellist}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{決闘者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Envoy}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{渉外使者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Noble}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{貴族}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Spy}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{密偵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Warden}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{所領管理人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Herbalist}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{薬草師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Hunter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{狩人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Scout}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{偵察兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Bounty Hunter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{賞金稼ぎ}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Entertainer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{芸人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Messenger}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{伝書}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Boatman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{川舟乗り}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Seaman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{船乗り}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Smuggler}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{密輸商人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Bawd}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{斡旋人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Charlatan}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{いかさま師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Outlaw}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{無法者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{Cavalryman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{騎兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Guard}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{衛兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Knight}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{騎士}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Pit Fighter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{剣闘士}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Protagonist}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{流れ者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Soldier}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{兵士}"
+			}
+		},
+		"Career - Human": {
+			"name": "キャリア－人間",
+			"_id": "0vV4bJ7fhZzuPkVh",
+			"results": {
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Apothecary}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{薬剤師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Engineer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{技師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Lawyer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{弁護士}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.f5m7s9K2y1zQNmej]{Nun}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.f5m7s9K2y1zQNmej]{修道士}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Physician}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{医者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.h1l9jvaIxsb92wtM]{Priest}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.h1l9jvaIxsb92wtM]{司祭}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Scholar}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{学者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Wizard}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{魔術師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Agitator}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{扇動家}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Artisan}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{職人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{Beggar}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{物乞い}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Investigator}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{捜査官}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Merchant}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{商人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Rat Catcher}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{ネズミ捕り}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Townsman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{都市住民}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Watchman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{警備兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Advisor}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{顧問}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Artist}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{芸術家}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Duellist}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{決闘者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Envoy}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{渉外使者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Noble}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{貴族}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{Servant}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{召使い}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Spy}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{密偵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Warden}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{所領管理人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{Bailiff}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{領地代官}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.03Nnub5GHNRCU9kg]{Hedge Witch}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.03Nnub5GHNRCU9kg]{似非魔術師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Herbalist}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{薬草師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Hunter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{狩人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{Miner}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{鉱夫}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mystic}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{占い師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Scout}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{偵察兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Villager}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{村人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Bounty Hunter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{賞金稼ぎ}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Coachman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{御者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Entertainer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{芸人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0kij2AX9aaUnCxPv]{Flagellant}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0kij2AX9aaUnCxPv]{鞭打苦行者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Messenger}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{伝書}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Pedlar}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{行商人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Road warden}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{街道巡視員}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ADYQOtpsk5n1EHen]{Witch Hunter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ADYQOtpsk5n1EHen]{魔狩人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Boatman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{川舟乗り}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Huffer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{水先案内人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{Riverwarden}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{河川巡視員}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Riverwoman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{河川の民}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Seaman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{船乗り}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Smuggler}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{密輸商人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Stevedore}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{港湾労働者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{Wrecker}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{難破船荒らし}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Bawd}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{斡旋人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Charlatan}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{いかさま師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Fence}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{故売人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{Grave Robber}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{墓荒らし}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Outlaw}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{無法者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Racketeer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{ゆすり屋}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Thief}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{盗賊}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Witch}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{魔女}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{Cavalryman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{騎兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Guard}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{衛兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Knight}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{騎士}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Pit Fighter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{剣闘士}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Protagonist}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{流れ者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Soldier}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{兵士}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.iYVpqJ6bz8fokdmf]{Warrior Priest}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.iYVpqJ6bz8fokdmf]{戦闘司祭}"
+			}
+		},
+		"Career - Wood Elf": {
+			"name": "キャリア－ウッド・エルフ",
+			"_id": "sHYQ3gGxjpOJNxId",
+			"results": {
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Scholar}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{学者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Wizard}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{魔術師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Artisan}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{職人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Advisor}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{顧問}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Artist}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{芸術家}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Envoy}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{渉外使者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Noble}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{貴族}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Spy}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{密偵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Herbalist}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{薬草師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Hunter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{狩人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mystic}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{占い師}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Scout}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{偵察兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Bounty Hunter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{賞金稼ぎ}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Entertainer}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{芸人}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Messenger}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{伝書}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{Wrecker}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{難破船荒らし}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Outlaw}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{無法者}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{Cavalryman}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{騎兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Guard}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{衛兵}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Knight}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{騎士}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Pit Fighter}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{剣闘士}",
+				"@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Soldier}": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{兵士}"
+			}
+		},
+		"Eye Colour - Dwarf": {
+			"name": "目の色－ドワーフ"
+		},
+		"Eye Colour - Halfling": {
+			"name": "目の色－ハーフリング"
+		},
+		"Eye Colour - High Elf": {
+			"name": "目の色－ハイ・エルフ",
+			"_id": "kCQgOdJM75fWwLm3",
+			"results": [
+				{
+					"_id": "BCU4dg9YaoHeF30Z",
+					"type": 0,
+					"text": "黒玉色",
+					"range": [
+						2,
+						2
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				},
+				{
+					"type": 0,
+					"documentCollection": "",
+					"weight": 1,
+					"range": [
+						3,
+						3
+					],
+					"drawn": false,
+					"_id": "QLaKNBImnDVmpVup",
+					"text": "紫水晶色",
+					"img": "icons/svg/d20-black.svg",
+					"documentId": null,
+					"flags": {}
+				},
+				{
+					"_id": "Pw9ZO8725RLZkI4x",
+					"type": 0,
+					"text": "藍青色（アクアマリン）",
+					"range": [
+						4,
+						4
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				},
+				{
+					"_id": "DJtuXDquIcPQ8iEO",
+					"type": 0,
+					"text": "瑠璃色（サファイア）",
+					"range": [
+						5,
+						7
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				},
+				{
+					"_id": "371zkGnj4BKIegbN",
+					"type": 0,
+					"text": "トルコ石色",
+					"range": [
+						8,
+						11
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				},
+				{
+					"_id": "909oy27ivW8QfUPw",
+					"type": 0,
+					"text": "エメラルド色",
+					"range": [
+						12,
+						14
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				},
+				{
+					"_id": "ZYF4aKVwiVA79MuK",
+					"type": 0,
+					"text": "琥珀色",
+					"range": [
+						15,
+						17
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				},
+				{
+					"_id": "u2vyjGrdBj8LfRay",
+					"type": 0,
+					"text": "銅色",
+					"range": [
+						18,
+						18
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				},
+				{
+					"_id": "1ojinsSueON8UPII",
+					"type": 0,
+					"text": "黄水晶色（シトリン）",
+					"range": [
+						19,
+						19
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				},
+				{
+					"_id": "1iqPfO5TpyjN3DLB",
+					"type": 0,
+					"text": "金色",
+					"range": [
+						20,
+						20
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				}
+			]
+		},
+		"Eye Colour - Human": {
+			"name": "目の色－人間"
+		},
+		"Eye Colour - Wood Elf": {
+			"name": "目の色－ウッド・エルフ",
+			"_id": "ovsFYzUj4bUbVlLJ",
+			"results": [
+				{
+					"_id": "TrilzmFJWbxnLejU",
+					"type": 0,
+					"text": "象牙色",
+					"range": [
+						2,
+						2
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				},
+				{
+					"type": 0,
+					"documentCollection": "",
+					"weight": 1,
+					"range": [
+						3,
+						3
+					],
+					"drawn": false,
+					"_id": "uy9oXcIEYQnaCJLM",
+					"text": "黒炭色",
+					"img": "icons/svg/d20-black.svg",
+					"documentId": null,
+					"flags": {}
+				},
+				{
+					"_id": "WnjX0nQr5NvP9EtI",
+					"type": 0,
+					"text": "暗い黄緑色（アイヴィー・グリーン）",
+					"range": [
+						4,
+						4
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				},
+				{
+					"_id": "IJLt8lueIvM57BLW",
+					"type": 0,
+					"text": "モス・グリーン",
+					"range": [
+						5,
+						7
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				},
+				{
+					"_id": "2dZz34LGRthiG5LB",
+					"type": 0,
+					"text": "栗色",
+					"range": [
+						8,
+						14
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				},
+				{
+					"_id": "ZVye38lLSvKAnimS",
+					"type": 0,
+					"text": "暗褐色",
+					"range": [
+						15,
+						17
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				},
+				{
+					"_id": "pGdpQMUZnHNiUvNZ",
+					"type": 0,
+					"text": "黄褐色",
+					"range": [
+						18,
+						18
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				},
+				{
+					"_id": "1UD6afjk2GsXjHiA",
+					"type": 0,
+					"text": "砂褐色（サンディ・ブラウン）",
+					"range": [
+						19,
+						19
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				},
+				{
+					"_id": "AsIpnchIuJwhYpBF",
+					"type": 0,
+					"text": "スミレ色",
+					"range": [
+						20,
+						20
+					],
+					"drawn": false,
+					"flags": {},
+					"img": "icons/svg/d20-black.svg",
+					"documentCollection": "",
+					"documentId": null,
+					"weight": 1
+				}
+			]
+		},
+		"Hair Colour - Dwarf": {
+			"name": "髪の色－ドワーフ"
+		},
+		"Hair Colour - Halfling": {
+			"name": "髪の色－ハーフリング"
+		},
+		"Hair Colour - High Elf": {
+			"name": "髪の色－ハイ・エルフ"
+		},
+		"Hair Colour - Human": {
+			"name": "髪の色－人間"
+		},
+		"Hair Colour - Wood Elf": {
+			"name": "髪の色－ウッド・エルフ"
+		},
+		"Species": {
+			"name": "種族",
+			"_id": "FM6ASUoNX21MHuWa",
+			"results": {
+				"Human": "人間",
+				"Halfling": "ハーフリング",
+				"Dwarf": "ドワーフ",
+				"High Elf": "ハイ・エルフ",
+				"Wood Elf": "ウッド・エルフ"
+			}
+		},
+		"Talents - Character Creation": {
+			"name": "異能－キャラクター作成",
+			"_id": "FRkn5r1xM27CblfH",
+			"results": {
+				"Ambidextrous": "両手利き",
+				"Animal Affinity": "動物共感",
+				"Artistic": "芸術家肌",
+				"Attractive": "魅力的",
+				"Coolheaded": "冷静沈着",
+				"Flee!": "逃走！",
+				"Hardy": "スタミナ",
+				"Lightning Reflexes": "反射神経",
+				"Linguistics": "言語学",
+				"Luck": "幸運",
+				"Marksman": "射撃術",
+				"Mimic": "ものまね",
+				"Night Vision": "夜目",
+				"Nimble Fingered": "器用な指先",
+				"Noble Blood": "貴族の血統",
+				"Orientation": "方角感知",
+				"Perfect Pitch": "絶対音感",
+				"Pure Soul": "清らかな魂",
+				"Read/Write": "読み書き",
+				"Savvy": "分別",
+				"Sharp": "抜け目なさ",
+				"Sixth Sense": "第六感",
+				"Strong Legs": "脚のバネ",
+				"Sturdy": "運搬者",
+				"Suave": "低姿勢",
+				"Super Numerate": "暗算力",
+				"Very Resilient": "強靭",
+				"Very Strong": "剛力",
+				"Warrior Born": "生来の戦士",
+				"Acute Sense": "鋭敏感覚",
+				"Craftsman": "職人",
+				"Resistance": "耐性"
+			}
+		},
+		"Beyond the Social Norm": {
+			"name": "てやんでえ、社会通念が何だってんだ"
+		},
+		"Dooming (Alternate)": {
+			"name": "Dooming (Alternate)"
+		},
+		"Drive Failure": {
+			"name": "操縦失敗"
+		},
+		"Events Table": {
+			"name": "イベント表"
+		},
+		"Major Miscast Table": {
+			"name": "大誤発動表"
+		},
+		"Minor Miscast Table": {
+			"name": "小誤発動表"
+		},
+		"Oops! Table": {
+			"name": "やっちまった！表"
+		},
+		"Stinking Drunk": {
+			"name": "泥酔"
+		},
+		"The Swirling Winds": {
+			"name": "渦巻く魔力の風"
+		},
+		"Travel Table": {
+			"name": "旅のイベント"
+		},
+		"Wrath of the Gods Table": {
+			"name": "神々の天罰表"
+		},
+		"Dissolution of Body and Mind - Dwarf": {
+			"name": "心身の崩壊－ドワーフ"
+		},
+		"Dissolution of Body and Mind - Halfling": {
+			"name": "心身の崩壊－ハーフリング"
+		},
+		"Dissolution of Body and Mind - High Elf": {
+			"name": "心身の崩壊－ハイ・エルフ"
+		},
+		"Dissolution of Body and Mind - Human": {
+			"name": "心身の崩壊－人間"
+		},
+		"Dissolution of Body and Mind - Wood Elf": {
+			"name": "心身の崩壊－ウッド・エルフ"
+		},
+		"Mental Corruption": {
+			"name": "精神堕落表",
+			"_id": "5HKnpyOk4XDPdZ7V",
+			"results": {
+				"Awful Cravings": "ひどい渇望",
+				"Beast Within": "内なる野獣",
+				"Chaotic Dreams": "混沌めいた醒めざる夢",
+				"Crawling Skin": "鳥肌が立つ",
+				"Erratic Fantasist": "とりとめのない夢想家的空想",
+				"Fearful Concern": "ゾッとする心配事",
+				"Hateful Impulses": "忌々しい衝動",
+				"Hollow Heart": "虚ろな心",
+				"Jealous Thoughts": "嫉妬の炎",
+				"Lonely Spirit": "孤独感",
+				"Mental Blocks": "記憶の遮断",
+				"Profane Urgency": "冒涜的な切迫感",
+				"Shaky Morale": "ぐらつく士気",
+				"Suspicious Mind": "猜疑心の塊",
+				"Thrill Hunter": "スリル・ハンター",
+				"Tortured Visions": "拷問の幻視",
+				"Totally Unhinged": "完全な悩乱",
+				"Unending Malice": "尽きせぬ敵意",
+				"Unholy Rage": "不浄な憤激",
+				"Worried Jitters": "ひどい神経過敏"
+			}
+		},
+		"Physical Mutation": {
+			"name": "肉体堕落表",
+			"_id": "YQ5XdjikeSiwo8fn",
+			"results": {
+				"Animalistic Legs": "動物めいた脚",
+				"Corpulent": "肥満",
+				"Distended Digits": "指の肥大化",
+				"Emaciated": "痩せ衰え",
+				"Enormous Eye": "巨大な片眼",
+				"Extra Leg Joints": "余分な脚部の関節",
+				"Extra Mouth": "余分な口",
+				"Fleshy Tentacle": "肉質の触手",
+				"Glowing Skin": "光沢ある皮膚",
+				"Inhuman Beauty": "人間離れした美しさ",
+				"Inverted Face": "上下逆さまの顔",
+				"Iron Skin": "鉄の皮膚",
+				"Lolling Tongue": "回転する舌",
+				"Patchy Feathers": "パッチワーク状の羽毛",
+				"Short Legs": "短足",
+				"Thorny Scales": "とげとげの鱗",
+				"Uneven Horns": "不ぞろいな角",
+				"Weeping Pus": "流れでる膿",
+				"Whiskered Snout": "獣の鼻口",
+				"<b>GM's Choice</b>: The GM chooses a Mutation or Creature Trait": "<b>GM の任意</b>：GM が 1 つの「混沌変異」か「クリーチャー特徴」を選ぶ（P.338）"
+			}
+		},
+		"Critical Hits - Arm": {
+			"name": "腕部の致命的負傷",
+			"_id": "JYX8E8WgNb2em8g3",
+			"results": {
+				"Jarred Arm": "腕痺れ",
+				"Minor Arm Cut": "小さな裂傷（腕）",
+				"Sprain": "捻挫",
+				"Badly Jarred Arm": "ひどい腕痺れ",
+				"Torn Muscles": "筋断裂",
+				"Bleeding hand": "手の出血",
+				"Wrenched Arm": "肩の捻挫",
+				"Gaping Arm Wound": "大きな傷口（腕）",
+				"Clean Break": "単純骨折",
+				"Ruptered Ligament": "靭帯断裂",
+				"Deep Cut": "深手",
+				"Damaged Artery": "動脈破損",
+				"Crushed Elbow": "肘粉砕",
+				"Dislocated Shoulder": "肩の脱臼",
+				"Severed Finger": "指切断",
+				"Cleft Hand": "手の半切断",
+				"Mauled Bicep": "力こぶがズタズタに",
+				"Mangled Hand": "片手が屑肉同然に",
+				"Sliced Tendons": "腱切断（靭帯断裂）",
+				"Brutal Dismemberment": "残酷な腕の喪失"
+			}
+		},
+		"Critical Hits - Body": {
+			"name": "胴体の致命的負傷",
+			"_id": "CUIX4e2hiHdSoJ64",
+			"results": {
+				"Tis But A Scratch!": "ただのかすり傷だって！",
+				"Gut Blow": "みぞおちへの一打",
+				"Low Blow!": "下腹部に直撃！",
+				"Twisted Back": "背中を捻じる",
+				"Winded": "息ができない",
+				"Bruised Ribs": "肋骨に青あざ",
+				"Wrenched Collar Bone": "鎖骨捻じれ",
+				"Ragged Wound": "裂傷",
+				"Cracked Ribs": "肋骨にひびが",
+				"Gaping Chest Wound": "大きな傷口（胴）",
+				"Painful Cut": "激痛を伴う裂傷",
+				"Arterial Damage": "動脈損傷",
+				"Pulled Back": "背筋断裂",
+				"Fractured Hip": "股関節骨折",
+				"Major Chest Wound": "胸郭の大怪我",
+				"Gut Wound": "内臓の損傷",
+				"Smashed Rib Cage": "胸郭粉砕",
+				"Broken Collar Bone": "鎖骨粉砕",
+				"Internal Bleeding": "内臓出血",
+				"Torn Apart": "胴部両断"
+			}
+		},
+		"Critical Hits - Head": {
+			"name": "頭部の致命的負傷",
+			"_id": "7KReueNRjaI6dVLk",
+			"results": {
+				"Dramatic Injury": "勲章となる傷",
+				"Minor Head Cut": "小さな裂傷（頭）",
+				"Poked Eye": "眼窩の負傷",
+				"Ear Bash": "耳朶への強打",
+				"Rattling Blow": "朦朧化打撃",
+				"Black Eye": "眼の周りの青あざ",
+				"Sliced Ear": "耳朶の裂傷",
+				"Struck Forehead": "額への一打",
+				"Fractured Jaw": "顎骨折",
+				"Major Eye Wound": "眼窩の大怪我",
+				"Major Ear Wound": "耳朶の大怪我",
+				"Broken Nose": "鼻砕き",
+				"Broken Jaw": "顎粉砕",
+				"Concussive Blow": "脳震盪打撃",
+				"Smashed Mouth": "口粉砕",
+				"Mangled Ear": "耳が屑肉に",
+				"Devastated Eye": "眼球破裂",
+				"Disfiguring Blow": "顔が化け物のように",
+				"Mangled Jaw": "顎が屑肉に",
+				"Decapitated": "斬首刑さながらに"
+			}
+		},
+		"Critical Hits - Leg": {
+			"name": "脚部の致命的負傷",
+			"_id": "j2joGAVBNJgS1G1g",
+			"results": {
+				"Stubbed Toe": "爪先をぶつける",
+				"Twisted Ankle": "足首の捻挫",
+				"Minor Leg Cut": "小さな裂傷（脚）",
+				"Lost Footing": "足がかりを失う",
+				"Thigh Strike": "太腿への打撃",
+				"Sprained Ankle": "足首の筋断裂",
+				"Twisted Knee": "膝の捻挫",
+				"Badly Cut Toe": "爪先のひどい裂傷",
+				"Bad Cut": "ひどい裂傷",
+				"Badly Twisted Knee": "膝のひどい捻挫",
+				"Hacked Leg": "脚への痛打",
+				"Torn Thigh": "太腿への深手",
+				"Ruptured Tendon": "腱断裂",
+				"Carved Shin": "脛への深手",
+				"Broken Knee": "膝粉砕",
+				"Dislocated Knee": "膝関節脱臼",
+				"Crushed Foot": "足粉砕",
+				"Severed Foot": "足切断",
+				"Cut Tendon": "アキレス腱切断",
+				"Shattered Pelvis": "骨盤粉砕"
+			}
+		},
+		"Character Ambition": {
+			"name": "キャラクターの大望"
+		},
+		"Character Motivation": {
+			"name": "キャラクターの動機"
+		},
+		"Character Quirk": {
+			"name": "キャラクターの癖"
+		},
+		"Character Trait": {
+			"name": "キャラクターの特徴"
+		},
+		"Dooming": {
+			"name": "《運命づけ》"
+		},
+		"How Do I Know You Again?": {
+			"name": "どんな風に知り合ったか？"
+		},
+		"I Need A Job! - What": {
+			"name": "仕事をくれ！ - 何を"
+		},
+		"I Need A Job! - Who": {
+			"name": "仕事をくれ！ - 誰が"
+		},
+		"I Need A Job! - Why": {
+			"name": "仕事をくれ！ - 何故"
+		},
+		"You Find Yourself In A Tavern - What Happens Next?": {
+			"name": "酒場での出来事 - 次に何が起きる？"
+		},
+		"Hit Location": {
+			"name": "命中部位表"
+		},
+		"Hit Location - Snake": {
+			"name": "代替命中部位表－蛇"
+		},
+		"Hit Location - Spider": {
+			"name": "代替命中部位表－蜘蛛"
+		},
+		"Catastrophic Miscast Table (Moo)": {
+			"name": "Catastrophic Miscast Table (Moo)"
+		},
+		"Gunpowder Fumble Table (Moo)": {
+			"name": "Gunpowder Fumble Table (Moo)"
+		},
+		"Major Miscast Table (Moo)": {
+			"name": "Major Miscast Table (Moo)"
+		},
+		"Minor Miscast Table (Moo)": {
+			"name": "Minor Miscast Table (Moo)"
+		}
+	}
+}

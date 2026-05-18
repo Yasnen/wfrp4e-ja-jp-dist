@@ -1,0 +1,41 @@
+{
+	"label": "シーン（コア）",
+	"mapping": {
+		"drawings": {
+			"path": "drawings",
+			"converter": "sceneDrawingsJP"
+		},
+		"notes": {
+			"path": "notes",
+			"converter": "sceneNotesJP"
+		},
+		"tokens": {
+			"path": "tokens",
+			"converter": "sceneTokensJP"
+		}
+	},
+	"entries": {
+		"Barony of Böhrn": {
+			"name": "ベールン男爵領"
+		},
+		"GM Screen": {
+			"name": "GMスクリーン"
+		},
+		"Reikland": {
+			"name": "ライクランド",
+			"_id": "vGrxlojYtdObKLF6",
+			"notes": {
+				"Barony of Böhrn": {
+					"text": "ベールン男爵領",
+					"_id": "AbZqv2KOiyJTcJu0",
+					"flags.anchor.slug": "ライクランド公領の一例",
+					"flags.anchor.name": "ライクランド公領の一例"
+				},
+				"Th Schïlder": "シルデル川",
+				"The Mos": "モス川",
+				"The Ober": "オーベル川",
+				"The Tranig": "トラニグ川"
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+{
+	"label": "ジャーナル（コア）",
+	"mapping": {
+		"pages": {
+			"path": "pages",
+			"converter": "fvttJaJournalPages"
+		}
+	},
+	"entries": {
+		"Bestiary": {
+			"name": "第12章：怪物寓話集"
+		},
+		"Between Adventures": {
+			"name": "第６章：冒険の合間"
+		},
+		"Character": {
+			"name": "第２章：キャラクター"
+		},
+		"Class and Careers": {
+			"name": "第３章：クラスとキャリア"
+		},
+		"Glorious Reikland": {
+			"name": "第10章：荘厳なるライクランド"
+		},
+		"GM's Guide": {
+			"name": "ゲームマスター・ガイド"
+		},
+		"Magic": {
+			"name": "第８章：魔法"
+		},
+		"Religion and Belief": {
+			"name": "第７章：宗教と信仰"
+		},
+		"Rules": {
+			"name": "第５章：ルール"
+		},
+		"Skills and Talents": {
+			"name": "第４章：技能と異能"
+		},
+		"The Consumers' Guide": {
+			"name": "第11章：消費者購入手引"
+		},
+		"The Gamemaster": {
+			"name": "第９章：ゲームマスター"
+		}
+	}
+}

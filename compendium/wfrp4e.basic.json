@@ -1,0 +1,17 @@
+{
+	"label": "基本アイテム",
+	"mapping": {
+		"itemName": {
+			"path": "name",
+			"converter": "itemName"
+		},
+		"system": {
+			"path": "system",
+			"converter": "itemSystem"
+		},
+		"effects": {
+			"path": "effects",
+			"converter": "itemEffects"
+		}
+	}
+}

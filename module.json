@@ -1,0 +1,89 @@
+{
+  "id": "wfrp4e-ja-jp",
+  "title": "日本語 WFRP4e(MRyas私家版)",
+  "description": "WFRP4eシステムの日本語化",
+  "version": "5.0.0",
+  "languages": [
+    {
+      "lang": "ja",
+      "name": "日本語",
+      "path": "lang/ja.json"
+    },
+    {
+      "lang": "ja",
+      "name": "日本語",
+      "path": "lang/wfrp4e-ja.json",
+      "system": "wfrp4e"
+    },
+    {
+      "lang": "ja",
+      "name": "日本語",
+      "path": "lang/wfrp4e-core-ja.json",
+      "module": "wfrp4e-core"
+    }
+  ],
+  "esmodules": [
+    "src/wfrp4e-ja-jp.js"
+  ],
+  "styles": [
+    "css/styles.css"
+  ],
+  "packs": [
+    {
+      "name": "macros",
+      "label": "WFRP4e-ja-JP Macros",
+      "path": "packs/macros",
+      "type": "Macro",
+      "module": "wfrp4e-ja-jp",
+      "system": "wfrp4e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/Yasnen/wfrp4e-ja-jp-dist",
+  "download": "https://github.com/Yasnen/wfrp4e-ja-jp-dist/releases/download/v5.0.0/wfrp4e-ja-jp-v5.0.0.zip",
+  "manifest": "https://raw.githubusercontent.com/Yasnen/wfrp4e-ja-jp-dist/main/module.json",
+  "authors": [
+    {
+      "name": "MRyas.jp",
+      "discord": "mryasjp",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "babele",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "fvtt-ja",
+        "type": "module",
+        "compatibility": {}
+      }
+    ],
+    "systems": [
+      {
+        "id": "wfrp4e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "9.0.0",
+          "verified": "9.6.0"
+        }
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351"
+  }
+}

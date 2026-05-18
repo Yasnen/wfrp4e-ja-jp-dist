@@ -1,0 +1,67 @@
+{
+	"label": "アイテム（コア）",
+	"mapping": {
+		"itemName": {
+			"path": "name",
+			"converter": "itemName"
+		},
+		"system": {
+			"path": "system",
+			"converter": "itemSystem"
+		},
+		"effects": {
+			"path": "effects",
+			"converter": "itemEffects"
+		}
+	},
+	"folders": {
+		"Careers": "キャリア",
+		"Criticals": "致命的負傷",
+		"Diseases": "病気",
+		"Injuries": "負傷",
+		"Mutations": "混沌変異",
+		"Prayers": "祈祷",
+			"Blessings": "祝福",
+			"Manann": "マナン",
+			"Morr": "モール",
+			"Myrmidia": "ミュルミディア",
+			"Ranald": "ラナルド",
+			"Rhya": "リア",
+			"Shallya": "シャリア",
+			"Sigmar": "シグマー",
+			"Taal": "タール",
+			"Ulric": "ウルリック",
+			"Verena": "ヴェレナ",
+		"Psychologies": "心理ルール",
+		"Skills": "技能",
+		"Spells": "呪文",
+			"Chaos Magic": "混沌魔術",
+			"Lore of Beasts": "獣の魔法体系",
+			"Lore of Daemonology": "悪魔術の魔法体系",
+			"Lore of Death": "死の魔法体系",
+			"Lore of Fire": "焔の魔法体系",
+			"Lore of Heavens": "天空の魔法体系",
+			"Lore of Hedgecraft": "似非魔術の魔法体系",
+			"Lore of Life": "生命の魔法体系",
+			"Lore of Light": "光の魔法体系",
+			"Lore of Metal": "金属の魔法体系",
+			"Lore of Necromancy": "死霊術の魔法体系",
+			"Lore of Shadow": "影の魔法体系",
+			"Lore of Witchcraft": "俗魔術の魔法体系",
+			"Petty Spells": "初歩呪文",
+		"Talents": "異能",
+		"Traits": "特徴",
+		"Trappings": "所持品",
+			"Ammunition": "矢弾",
+			"Armour": "鎧",
+			"Books and Documents": "書物と文書",
+			"Clothing and Accessories": "衣服と装飾品",
+			"Drugs and Poisons": "薬物と毒物",
+			"Food and Drink": "食料と飲料、宿泊",
+			"Herbs and Draughts": "薬草とドラフト",
+			"Miscellaneous": "その他",
+			"Packs and Containers": "容器と運搬具",
+			"Tools and Kits": "道具類",
+			"Weapons": "武器"
+	}
+}
