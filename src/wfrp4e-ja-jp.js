@@ -1,4 +1,4 @@
-globalThis.__WFRP4E_JA_JP_BUILD__ = '2026-05-18T18:40:29.646Z';
+globalThis.__WFRP4E_JA_JP_BUILD__ = '2026-05-18T18:49:09.769Z';
 import { Wfrp4eJaJp } from './Wfrp4eJaJp.js';
 import './hooks-babele.js';
 import './hooks-init.js';
