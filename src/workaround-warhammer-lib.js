@@ -3,7 +3,7 @@ import { Wfrp4eJaJp } from './Wfrp4eJaJp.js';
 // warhammer-lib v2.10.0 時点の WarhammerModuleContentHandler.prototype.delete の toString() ハッシュ。
 // await なし（バグあり）状態のハッシュ。ブラウザの toString() 結果との差異がある場合は
 // コンソールに出力される「実際値」でこの定数を更新すること。
-const EXPECTED_DELETE_HASH = "451eab39cd9618459773eada11643f729ad319ab94c6f35237e5c9045dadcb4c";
+const EXPECTED_DELETE_HASH = "02065c8e3892e6454c272e34924a0e08a605be02a4e8b8f4572fcbe2a083ed35";
 
 async function verifyDeleteMethod(src) {
     try {
@@ -11,13 +11,15 @@ async function verifyDeleteMethod(src) {
         const hashHex = Array.from(new Uint8Array(hashBuf))
             .map(b => b.toString(16).padStart(2, '0')).join('');
         if (hashHex !== EXPECTED_DELETE_HASH) {
+            const version = game.modules.get("warhammer-lib")?.version ?? "unknown";
             Wfrp4eJaJp.warn(
                 `WarhammerModuleContentHandler.delete() のハッシュが変化しています。workaround-warhammer-lib.js の見直しが必要な可能性があります。` +
+                `\n  warhammer-lib バージョン: ${version}` +
                 `\n  期待値: ${EXPECTED_DELETE_HASH}\n  実際値: ${hashHex}`
             );
             if (game.user?.isGM) {
                 ui.notifications.warn(
-                    `[wfrp4e-ja-jp] warhammer-lib が更新されています。WarhammerModuleContentHandler パッチの確認が必要です。`,
+                    `[wfrp4e-ja-jp] warhammer-lib (v${version}) が更新されています。WarhammerModuleContentHandler パッチの確認が必要です。`,
                     { permanent: true }
                 );
             }

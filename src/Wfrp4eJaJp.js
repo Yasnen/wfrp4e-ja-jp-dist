@@ -380,7 +380,7 @@ export class Wfrp4eJaJp {
         if (mergeDictFolder !== "") {
             let dictFiles = [];
             try {
-                let result = await FilePicker.browse('data', mergeDictFolder);
+                let result = await foundry.applications.apps.FilePicker.browse('data', mergeDictFolder);
                 result.files.forEach(file => dictFiles.push(file));
             } catch (err) {
                 Wfrp4eJaJp.warn(err);
