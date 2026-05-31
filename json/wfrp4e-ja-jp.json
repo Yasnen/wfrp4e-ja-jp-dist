@@ -7438,6 +7438,39 @@
         }
       }
     },
+    "template": {
+      "mapping": {
+        "itemName": {
+          "path": "name",
+          "converter": "itemName"
+        },
+        "description": "system.description.value",
+        "gmdescription": "system.gmdescription.value",
+        "preAlterName": "system.alterName.pre",
+        "postAlterName": "system.alterName.post",
+        "skills": {
+          "path": "skills.list",
+          "converter": "skillsList"
+        },
+        "talents": {
+          "path": "talents.list",
+          "converter": "talentsList"
+        },
+        "lores": {
+          "path": "lores.list",
+          "converter": "loresList"
+        },
+        "traits": {
+          "path": "traits.list",
+          "converter": "traitsList"
+        },
+        "effects": {
+          "path": "effects",
+          "converter": "itemEffects"
+        }
+      },
+      "entries": {}
+    },
     "trait": {
       "mapping": {
         "itemName": {

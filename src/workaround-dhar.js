@@ -1,7 +1,10 @@
 import { Wfrp4eJaJp } from './Wfrp4eJaJp.js';
 
-// wfrp4e-eis v7.2.0 時点の dhar.js の SHA-256。異なる場合はパッチの見直しが必要。
-const DHAR_JS_EXPECTED_HASH = "69b8183c643a218a4cb29e0f29179db9c03dadf191147587dac3512216373832";
+// wfrp4e-eis v7.2.0 時点の dhar.js の SHA-256。
+// 既知ハッシュ外の値が出た場合はロジック変更の可能性があり、パッチの見直しが必要。
+const DHAR_JS_KNOWN_HASHES = new Set([
+    "b1f05d3bb1fa65d2a32382af8cb12f924278f30bb8f556cd44c76da3dca8ab14", // wfrp4e-eis v7.2.0
+]);
 
 async function verifyDharJs() {
     try {
@@ -11,10 +14,10 @@ async function verifyDharJs() {
         const hashBuf = await crypto.subtle.digest('SHA-256', buf);
         const hashHex = Array.from(new Uint8Array(hashBuf))
             .map(b => b.toString(16).padStart(2, '0')).join('');
-        if (hashHex !== DHAR_JS_EXPECTED_HASH) {
+        if (!DHAR_JS_KNOWN_HASHES.has(hashHex)) {
             Wfrp4eJaJp.warn(
                 `wfrp4e-eis/dhar.js のハッシュが変化しています。workaround-dhar.js の見直しが必要な可能性があります。` +
-                `\n  期待値: ${DHAR_JS_EXPECTED_HASH}\n  実際値: ${hashHex}`
+                `\n  実際値: ${hashHex}`
             );
             if (game.user.isGM) {
                 ui.notifications.warn(

@@ -32,23 +32,7 @@ export class Wfrp4eJaJp {
         }
         await Wfrp4eJaJp.localizeDict();
     }
-    static log(message, obj) {
-        if (typeof message === "string") {
-            let msg = "wfrp4e-ja-jp | " + message
-            console.log(msg);
-        } else {
-            console.log("wfrp4e-ja-jp ⇒");
-            console.table(message)
-        }
-        if (obj) {
-            if (typeof obj === "string") {
-                console.log("wfrp4e-ja-jp ⇒" + obj)
-            } else {
-                console.log("wfrp4e-ja-jp ⇒");
-                console.table(obj)
-            }
-        }
-    }
+    static get log() { return console.log.bind(console, 'wfrp4e-ja-jp |'); }
     static _warnUpdateProcedure() {
         if (Wfrp4eJaJp._updateProcedureShown) return;
         Wfrp4eJaJp._updateProcedureShown = true;
@@ -59,22 +43,7 @@ export class Wfrp4eJaJp {
             "  3. エクスポートしたJSONを参照して翻訳ファイルの text・_text を更新"
         );
     }
-    static warn(message, obj) {
-        if (typeof message === "string") {
-            console.warn("wfrp4e-ja-jp | " + message)
-        } else {
-            console.warn("wfrp4e-ja-jp ⇒");
-            console.warn(message)
-        }
-        if (obj) {
-            if (typeof obj === "string") {
-                console.warn("%cwfrp4e-ja-jp ⇒" + obj)
-            } else {
-                console.warn("%cwfrp4e-ja-jp ⇒");
-                console.warn(obj)
-            }
-        }
-    }
+    static get warn() { return console.warn.bind(console, 'wfrp4e-ja-jp |'); }
     static notify(message) {
         if (typeof message === "string") {
             ui.notifications.notify("WFRP4e-ja-JP: " + message)

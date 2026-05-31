@@ -26,6 +26,38 @@ Hooks.once('babele.init', (babele) => {
                 return name;
             }
         },
+        "skillsList": (skills, translation, item, translationCompendium, translations) => {
+            if (!Array.isArray(skills)) return skills;
+            let dict = ConvertersJa.getItemDict(game.wfrp4ejajp.dict.item, "skill");
+            return skills.map(skill => {
+                let entry = ConvertersJa.getItemEntry(dict.entries, skill.name);
+                skill.name = ConvertersJa.getItemName(entry, skill.name);
+                return skill;
+            });
+        },
+        "talentsList": (talents, translation, item, translationCompendium, translations) => {
+            if (!Array.isArray(talents)) return talents;
+            let dict = ConvertersJa.getItemDict(game.wfrp4ejajp.dict.item, "talent");
+            return talents.map(talent => {
+                let entry = ConvertersJa.getItemEntry(dict.entries, talent.name);
+                talent.name = ConvertersJa.getItemName(entry, talent.name);
+                return talent;
+            });
+        },
+        "traitsList": (traits, translation, item, translationCompendium, translations) => {
+            if (!Array.isArray(traits)) return traits;
+            let dict = ConvertersJa.getItemDict(game.wfrp4ejajp.dict.item, "trait");
+            return traits.map(trait => {
+                let entry = ConvertersJa.getItemEntry(dict.entries, trait.name);
+                trait.name = ConvertersJa.getItemName(entry, trait.name);
+                return trait;
+            });
+        },
+        "loresList": (lores, translation, item, translationCompendium, translations) => {
+            if (!Array.isArray(lores) || !lores.length) return lores;
+            Wfrp4eJaJp.warn("コンバータ「loresList」は未実装です:", lores);
+            return lores;
+        },
         "systemMappingCheck": (system, translation, item, translationCompendium, translations) => {
             // コンバータを使わない辞書ファイルの、更新確認
             Wfrp4eJaJp.log(`systemMappingCheck [${item?.name}]:`, translation);
