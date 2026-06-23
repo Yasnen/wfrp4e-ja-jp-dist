@@ -2,7 +2,7 @@
   "id": "wfrp4e-ja-jp",
   "title": "日本語 WFRP4e(MRyas私家版)",
   "description": "WFRP4eシステムの日本語化",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "languages": [
     {
       "lang": "ja",
@@ -44,8 +44,8 @@
     }
   ],
   "url": "https://github.com/Yasnen/wfrp4e-ja-jp-dist",
-  "download": "https://github.com/Yasnen/wfrp4e-ja-jp-dist/releases/download/v5.0.2/wfrp4e-ja-jp-v5.0.2.zip",
-  "manifest": "https://github.com/Yasnen/wfrp4e-ja-jp-dist/releases/download/v5.0.2/module.json",
+  "download": "https://github.com/Yasnen/wfrp4e-ja-jp-dist/releases/download/v5.0.3/wfrp4e-ja-jp-v5.0.3.zip",
+  "manifest": "https://github.com/Yasnen/wfrp4e-ja-jp-dist/releases/download/v5.0.3/module.json",
   "authors": [
     {
       "name": "MRyas.jp",

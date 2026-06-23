@@ -156,7 +156,7 @@
     "SETTINGS.UnofficialGrimoire" : "非公式な魔導書の魔術",
     "SETTINGS.UnofficialGrimoireHint" : "非公式な魔導書（Unofficial Grimoire）に触発されたルール、詳細はWiki参照：<a href='https://github.com/moo-man/WFRP4e-FoundryVTT/wiki/Homebrew-Rules#magic-insiperd-by-unofficial-grimoire'>ここ</a>",
     "SETTINGS.UseGroupAdvantage" : "グループ優位を使用する",
-    "SETTINGS.UseGroupAdvantageHint" : "プレイヤーと敵の両方とも優位をグループ化する（『武器を掲げよ！』に記載されている）。アクターが「プレイヤー」の仲間になるには、アクターがプレイヤーが所有しているか、トークンの性質が「友好的」である必要があり、そうでない場合は「敵」グループとして扱われる。",
+    "SETTINGS.UseGroupAdvantageHint" : "プレイヤーと敵の両方とも優位をグループ化する（『武器を掲げよ！』に記載されている）。アクターが「プレイヤー」の仲間になるには、アクターがプレイヤーが所有しているか、トークンの陣営が「友好的」である必要があり、そうでない場合は「敵」グループとして扱われる。",
     "Configure": "設定",
 
     "SETTINGS.TABLE_species" : "種族",
@@ -838,7 +838,7 @@
     "DIALOG.QuickcastingTooltip" : "移動と全てのフリー・アクションを放棄することで、そのターンで素早く魔風交信と発動を使用しても良い。急いでやるため、誤発動の深刻度が一段階高くなる。（例、小が大に、大が破滅的に）。",
     "DIALOG.EnterQuantity" : "数は？",
     "DIALOG.PostQuantity" : "掲示回数",
-    "DIALOG.PostQuantityContent" : "How many times can this Item be retrieved? Leave blank for unrestricted.===(941D074)===",
+    "DIALOG.PostQuantityContent" : "このアイテムを取得可能な回数。無制限にする場合は空白。",
     "Post": "掲示",
     "DIALOG.MemorizeSpell" : "呪文の習得",
     "DIALOG.MemorizeSpellContent" : "呪文の習得に{xp} XP消費します。",
@@ -849,7 +849,7 @@
     "DIALOG.ErrorMustSelectItem" : "最低１個のアイテム選択が必要",
     "DIALOG.ItemDialog" : "アイテム・ダイアログ",
     "DIALOG.ChoosePassenger" : "Choose Passenger===(941D075)===",
-    "DIALOG.ChooseArmour" : "Choose Armour to damage===(941D076)===",
+    "DIALOG.ChooseArmour" : "損傷させる鎧を選択",
 
     "CHAT.Quickcasting" : "高速詠唱",
     "CHAT.CareerChoose" : "キャリアを選択する",
@@ -859,8 +859,8 @@
     "CHAT.DamageApplied" : "ダメージの適用",
     "CHAT.ApplyDamageBasic" : "<b>{name}</b> は、@DAMAGE ダメージを受けた",
     "CHAT.ApplyHack" : "「切断」を適用",
-    "CHAT.CriticalDeflection" : "Critical Deflection===(941D077)===",
-	"CHAT.DamageToArmour" : "1 Damage applied to {item} ({type})===(941D078)===",
+    "CHAT.CriticalDeflection" : "致命的負傷を鎧が受けとめる",
+	"CHAT.DamageToArmour" : "{item}に1点損傷させた（{type}）",
     "CHAT.DamageShield" : "盾",
     "CHAT.CriticalsNullified" : "クリティカルは無視された",
     "CHAT.DamageAP" : "APに1ダメージ",
@@ -1771,9 +1771,9 @@
     "VEHICLE.O" : "櫂",
     "VEHICLE.Morale" : "士気",
     "VEHICLE.VehicleMorale" : "乗り物の士気",
-    "VEHICLE.MoraleEffects" : "Morale Effects===(457)===",
-    "VEHICLE.MoraleRolls" : "Morale Rolls===(724-08)===",
-    "VEHICLE.NoMoraleModifiers" : "No Active Morale Modifiers===(724-09)===",
+    "VEHICLE.MoraleEffects" : "士気効果",
+    "VEHICLE.MoraleRolls" : "士気ロール",
+    "VEHICLE.NoMoraleModifiers" : "アクティブな士気修正値がない",
     "VEHICLE.ManannsMood" : "Manann's Mood===(458)===",
     "VEHICLE.ManannsMoodRolls" : "Manann's Mood Rolls===(724-10)===",
     "VEHICLE.NoManannsMoodModifiers" : "No Active Mood Modifiers===(724-11)===",
@@ -1866,9 +1866,9 @@
     "MountError": "自分より小さいクリーチャーには騎乗できません。",
 
 
-    "minor": "Minor===(941D109)===",
-    "moderate": "Moderate===(941D110)===",
-    "major": "Major===(941D111)===",
+    "minor": "小規模",
+    "moderate": "中規模",
+    "major": "大規模",
     "Minor": "軽度",
     "Moderate": "中度",
     "Major": "重度",
@@ -2070,15 +2070,15 @@
             "vehicle" : {
                 "FIELDS" : {
                     "vehicleType" : {
-                        "label" : "Vehicle Type===(941D135)==="
+                        "label" : "乗り物の種類"
                     },
                     "details.hitLocationTable.value" : {
-                        "label" : "Hit Location Table===(941D136)===",
-                        "hint" : "Defines a custom hit location table for when this Actor is attacked.===(941D137)==="
+                        "label" : "命中部位表",
+                        "hint" : "このアクターが攻撃されたときに使用する既定の命中部位表を指定する。"
                     },
                     "status.morale.transferEffects" : {
-                        "label" : "Transfer Morale Effects===(941D138)===",
-                        "hint" : "Apply morale effects to Actors on this vehicle.===(941D139)==="
+                        "label" : "士気効果の転送",
+                        "hint" : "この乗り物に乗車しているアクターに士気効果を適用する。"
                     }
                 }
             },
@@ -2269,8 +2269,8 @@
                         "label" : "修正値"
                     },
                     "advances.force" : {
-                        "label" : "Force Advancement Indicator===(941D196)===",
-                        "hint" : "Show the Advancement Indicator regardless of career, which will allow you to automate spending experience.===(941D197)==="
+                        "label" : "成長ボタン表示",
+                        "hint" : "キャリアに関係なく成長ボタン（自動で経験値が消費される）を表示する。"
                     },
                     "advances.costModifier" : {
                         "label" : "XP修正値"
@@ -2292,8 +2292,8 @@
                         }
                     },
                     "advances.force" : {
-                        "label" : "Force Advancement Indicator===(941D203)===",
-                        "hint" : "Show the Advancement Indicator regardless of career, which will allow you to automate spending experience.===(941D204)==="
+                        "label" : "習得ボタン表示",
+                        "hint" : "キャリアに関係なく習得ボタン（自動で経験値が消費される）を表示する。"
                     }
                 }
             },
@@ -2647,5 +2647,8 @@
     "Weapon Modifiers": "武器修正値",
     "WFRP4eJaJp.Cancel": "fvtt14の言語キーから消えたが、WFRP4e systemの中でまだ使用されているキー",
     "Cancel": "キャンセル",
+    "Water": "水上",
+    "Land":  "陸上",
+    "Air":   "空中",
     "WFRP4eJaJp.comment.end": "===end==="
 }

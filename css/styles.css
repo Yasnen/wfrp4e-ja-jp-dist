@@ -37,5 +37,37 @@
 
 /* ロール表の「編集」のspanを修正して折り返しを防ぐ */
 [id^="RollTableSheet-RollTable-"] section header button span {
-  white-space: nowrap;  
+  white-space: nowrap;
+}
+
+/* === テスト結果チャットカード色分け === */
+/* 色は hooks-chat.js が成功/失敗・SLレベルから算出し、カードルートに    */
+/* CSS変数（--wfrp4e-ja-bg / --border / --text / --sl-fg）として注入する。 */
+/* 各ルールは「有効化された箇所クラス」が付いた要素にのみ変数を適用する。 */
+/* 箇所・色の追加は hooks-chat.js 側のパレット／クラス付与で完結する。     */
+
+/* SLボックス背景 */
+.wfrp4e-ja-slcolor--t-slbg .sl-container {
+  background-color: var(--wfrp4e-ja-bg);
+  color: var(--wfrp4e-ja-sl-fg, inherit);
+}
+
+/* SLボックス枠線 */
+.wfrp4e-ja-slcolor--t-slborder .sl-container {
+  border-color: var(--wfrp4e-ja-border);
+}
+
+/* カード左枠 */
+.wfrp4e-ja-slcolor--t-cardborder {
+  border-left: 4px solid var(--wfrp4e-ja-border);
+}
+
+/* テスト名（文字色） */
+.wfrp4e-ja-slcolor--t-title .test-title {
+  color: var(--wfrp4e-ja-text);
+}
+
+/* 判定結果（文字色） */
+.wfrp4e-ja-slcolor--t-desc .description {
+  color: var(--wfrp4e-ja-text);
 }

@@ -1,0 +1,21 @@
+<div class="color-settings-fields">
+    {{#each fields as |field|}}
+    <div class="form-group">
+        <label>{{field.name}}</label>
+        <div class="form-fields">
+            {{#if field.isSelect}}
+            <select name="{{field.key}}">
+                {{#each field.choices as |choice|}}
+                <option value="{{choice.value}}" {{#if choice.selected}}selected{{/if}}>{{choice.label}}</option>
+                {{/each}}
+            </select>
+            {{else if field.isCheckbox}}
+            <input type="checkbox" name="{{field.key}}" {{#if field.value}}checked{{/if}}>
+            {{else}}
+            <input type="text" name="{{field.key}}" value="{{field.value}}">
+            {{/if}}
+        </div>
+        {{#if field.hint}}<p class="hint">{{field.hint}}</p>{{/if}}
+    </div>
+    {{/each}}
+</div>

@@ -1,7 +1,67 @@
 import { ConvertersJa } from './converters-ja.js';
 import { Wfrp4eJaJp } from './Wfrp4eJaJp.js';
+import { ColorSettingsMenu } from './apps/color-settings-menu.js';
 
 Hooks.once('init', async () => {
+    game.settings.registerMenu("wfrp4e-ja-jp", "colorSettingsMenu", {
+        name: "Wfrp4eJaJp.Settings.colorSettingsMenu.name",
+        label: "Wfrp4eJaJp.Settings.colorSettingsMenu.label",
+        hint: "Wfrp4eJaJp.Settings.colorSettingsMenu.hint",
+        icon: "fa-solid fa-palette",
+        type: ColorSettingsMenu,
+        restricted: false,
+    });
+    // 成功時の色
+    game.settings.register("wfrp4e-ja-jp", "successHue", {
+        name: "Wfrp4eJaJp.Settings.successHue.name",
+        hint: "Wfrp4eJaJp.Settings.successHue.hint",
+        type: String,
+        scope: 'client',
+        default: "blue",
+        config: false,
+        choices: {
+            "none":      "Wfrp4eJaJp.Settings.hue.none",
+            "blue":      "Wfrp4eJaJp.Settings.hue.blue",
+            "green":     "Wfrp4eJaJp.Settings.hue.green",
+            "lightblue": "Wfrp4eJaJp.Settings.hue.lightblue",
+        },
+        onChange: () => ui.chat?.render(),
+    });
+    // 失敗時の色
+    game.settings.register("wfrp4e-ja-jp", "failureHue", {
+        name: "Wfrp4eJaJp.Settings.failureHue.name",
+        hint: "Wfrp4eJaJp.Settings.failureHue.hint",
+        type: String,
+        scope: 'client',
+        default: "red",
+        config: false,
+        choices: {
+            "none":   "Wfrp4eJaJp.Settings.hue.none",
+            "red":    "Wfrp4eJaJp.Settings.hue.red",
+            "orange": "Wfrp4eJaJp.Settings.hue.orange",
+            "yellow": "Wfrp4eJaJp.Settings.hue.yellow",
+        },
+        onChange: () => ui.chat?.render(),
+    });
+    // 色を適用する箇所（独立 ON/OFF）
+    for (const key of ["targetSlBg", "targetSlBorder", "targetCardBorder", "targetTestTitle", "targetDescription"]) {
+        game.settings.register("wfrp4e-ja-jp", key, {
+            name: `Wfrp4eJaJp.Settings.${key}.name`,
+            type: Boolean,
+            scope: 'client',
+            default: false,
+            config: false,
+            onChange: () => ui.chat?.render(),
+        });
+    }
+    // 旧 chatCardColor（enum）からの移行用に登録のみ残す（UI非表示・ラベル不要）
+    game.settings.register("wfrp4e-ja-jp", "chatCardColor", {
+        type: String,
+        scope: 'client',
+        default: "none",
+        config: false,
+    });
+
     game.settings.register("wfrp4e-ja-jp", "travelLocalize", {
         name: "Wfrp4eJaJp.Settings.travelLocalize.name",
         hint: "Wfrp4eJaJp.Settings.travelLocalize.hint",
@@ -113,7 +173,27 @@ Hooks.once('init', async () => {
 
     Wfrp4eJaJp.init();
 
+    migrateLegacyChatCardColor();
+
 });
+
+/**
+ * 旧 `chatCardColor`（enum: none/sl/card-border/both）を新しい箇所別 ON/OFF 設定へ移行する。
+ * 移行後は `chatCardColor` を "none" に戻して再移行を防ぐ（client スコープのためユーザー毎に1回だけ動作）。
+ */
+async function migrateLegacyChatCardColor() {
+    const legacy = game.settings.get("wfrp4e-ja-jp", "chatCardColor");
+    if (!legacy || legacy === "none") return;
+    const set = (k, v) => game.settings.set("wfrp4e-ja-jp", k, v);
+    if (legacy === "sl" || legacy === "both") {
+        await set("targetSlBg", true);
+        await set("targetSlBorder", true);
+    }
+    if (legacy === "card-border" || legacy === "both") {
+        await set("targetCardBorder", true);
+    }
+    await set("chatCardColor", "none");
+}
 
 Hooks.once("i18nInit", () => {
     Wfrp4eJaJp.charGenLocalize();
